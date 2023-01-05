@@ -505,6 +505,103 @@ section{
     color: #4a4a4a;
 }
 
+/* Custome Dropdown Select */
+
+li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-select-btn{
+    cursor: pointer;
+}
+
+.option-select-btn i{
+    font-size: 31px;
+    transition: transform 0.3s linear;
+}
+.option-select-wrapper.active .option-select-btn i{
+    transform: rotate(-180deg);
+}
+
+.option-content{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+    z-index: 100;
+}
+
+.option-select-wrapper.active .option-content{
+    display: block;
+}
+
+.option-content .search{
+    position: relative;
+}
+
+.option-content .search i{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    font-size: 14px;
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--primary-color);
+    transform: translateY(-50%);
+}
+
+.option-content .search input{
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
+    padding: 11px 35px;
+}
+
+.option-content .search input::placeholder{
+    font-size: 14px;
+    font-weight: var(--font-weight-extra-bold);
+    color: #757575;
+}
+
+.option-content .filter-options{
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.filter-options::-webkit-scrollbar{
+    width: 7px;
+}
+
+.filter-options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+.filter-options::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 25px;
+}
+
+.filter-options::-webkit-scrollbar-thumb:hover{
+    background: var(--primary-color);
+}
+
+.filter-options li{
+    font-size: 16px;
+    padding: 7px 14px;
+}
+
+.filter-options li:hover, li.selected{
+    background: #f2f2f2;
+}
+
 /* Explore More */
 
 .explore-more-wpr{
@@ -670,100 +767,4 @@ section{
 .offer-item .item-footer .book-flight{
     font-weight: var(--font-weight-extra-bold);
     color: var(--primary-color);
-}
-
-/* Custome Dropdown Select */
-
-li{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.select-btn{
-    cursor: pointer;
-}
-
-.select-btn i{
-    font-size: 31px;
-    transition: transform 0.3s linear;
-}
-.wrapper.active .select-btn i{
-    transform: rotate(-180deg);
-}
-
-.content{
-    position: absolute;
-    top: 35%;
-    left: 0;
-    width: 100%;
-    display: none;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
-    z-index: 100;
-}
-
-.wrapper.active .content{
-    display: block;
-}
-
-.content .search{
-    position: relative;
-}
-
-.search i{
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    font-size: 14px;
-    color: var(--text-color);
-    transform: translateY(-50%);
-}
-
-.search input{
-    width: 100%;
-    outline: none;
-    font-size: 14px;
-    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
-    padding: 11px 35px;
-}
-
-.search input::placeholder{
-    font-size: 14px;
-    font-weight: var(--font-weight-extra-bold);
-    color: #757575;
-}
-
-.content .options{
-    margin-top: 10px;
-    max-height: 250px;
-    overflow-y: auto;
-}
-
-.options::-webkit-scrollbar{
-    width: 7px;
-}
-
-.options::-webkit-scrollbar-track{
-    background: #f1f1f1;
-    border-radius: 25px;
-}
-
-.options::-webkit-scrollbar-thumb{
-    background: var(--primary-color);
-    border-radius: 25px;
-}
-
-.options::-webkit-scrollbar-thumb:hover{
-    background: var(--primary-color);
-}
-
-.options li{
-    font-size: 16px;
-    padding: 7px 14px;
-}
-
-.options li:hover, li.selected{
-    background: #f2f2f2;
 }

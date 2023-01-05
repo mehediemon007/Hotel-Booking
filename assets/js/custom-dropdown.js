@@ -1,7 +1,7 @@
-const wrapper = document.querySelector(".wrapper"),
-selectBtn = wrapper.querySelector(".select-btn"),
-searchInp = wrapper.querySelector("input"),
-options = wrapper.querySelector(".options");
+const wrapper = document.querySelector(".option-select-wrapper"),
+selectBtn = wrapper.querySelector(".option-select-btn"),
+searchInp = wrapper.querySelector(".option-content input"),
+options = wrapper.querySelector(".filter-options");
 
 let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh", "Belgium", "Bhutan",
                  "Brazil", "Canada", "China", "Denmark", "Ethiopia", "Finland", "France", "Germany",
