@@ -423,7 +423,7 @@ section{
     background: var(--white-color);
     border-radius: 8px;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 10%);
-    padding: 60px 20px 0;
+    padding: 60px 20px 40px;
     margin-top: -40px;
 }
 
@@ -473,6 +473,98 @@ section{
     line-height: 100%;
 }
 
+.fights-filter-options{
+    display: flex;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+}
+
+.fights-filter-options .single-option{
+    position: relative;
+    border-right: solid 1px #e7e7e7;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.fights-filter-options .single-option:hover{
+    background-color: #eaf5ff;
+}
+
+.single-option .option-label{
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.single-option .select-btn h2{
+    font-size: 30px;
+    font-weight: var(--font-weight-extra-bold);
+    margin-bottom: 0;
+}
+
+.single-option .select-btn p{
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+/* Explore More */
+
+.explore-more-wpr{
+    position: relative;
+    top: -65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-more-wpr .explore-txt{
+    color: var(--white-color);
+    margin-bottom: 8px;
+}
+
+.more-options-wpr{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 30px 0 rgb(0 0 0 / 10%);
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.more-options-wpr .single-option{
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    grid-gap: 16px;
+    align-items: center;
+    border-right: 1px#d8d8d8 solid;
+    padding: 12px 15px;
+}
+
+.more-options-wpr .single-option:last-of-type{
+    border-right: none;
+}
+
+.more-options-wpr .single-option.active{
+    background-color: #fef6e8;
+}
+
+.single-option .option-content p{
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 14px;
+}
+
+.more-options-wpr .single-option.active p{
+    font-weight: var(--font-weight-extra-bold);
+}
+
+.single-option .option-content span{
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.more-options-wpr .single-option.active span{
+    color: #00a19c;
+}
+
 /* Offers */
 
 .offers-wpr{
@@ -480,7 +572,7 @@ section{
     box-shadow: 0 3px 30px 0 rgb(0 0 0 / 10%);
     background-color: #ffffff;
     padding: 25px 0 40px 40px;
-    margin: 80px 0;
+    margin-bottom: 80px;
 }
 
 .offers-sec-heading{
@@ -510,13 +602,19 @@ section{
     border-bottom-color: #008cff
 }
 
+.offers-slider .slider-item{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .offers-slider .offer-item{
     border-radius: 6px;
     -webkit-box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
     box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
     background-color: #ffffff;
     padding: 10px;
-    margin: 5px 10px 5px 2px;
+    margin: 5px 16px 5px 2px;
     cursor: pointer;
 }
 
@@ -572,4 +670,100 @@ section{
 .offer-item .item-footer .book-flight{
     font-weight: var(--font-weight-extra-bold);
     color: var(--primary-color);
+}
+
+/* Custome Dropdown Select */
+
+li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-btn{
+    cursor: pointer;
+}
+
+.select-btn i{
+    font-size: 31px;
+    transition: transform 0.3s linear;
+}
+.wrapper.active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.content{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+    z-index: 100;
+}
+
+.wrapper.active .content{
+    display: block;
+}
+
+.content .search{
+    position: relative;
+}
+
+.search i{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    font-size: 14px;
+    color: var(--text-color);
+    transform: translateY(-50%);
+}
+
+.search input{
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
+    padding: 11px 35px;
+}
+
+.search input::placeholder{
+    font-size: 14px;
+    font-weight: var(--font-weight-extra-bold);
+    color: #757575;
+}
+
+.content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.options::-webkit-scrollbar{
+    width: 7px;
+}
+
+.options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb:hover{
+    background: var(--primary-color);
+}
+
+.options li{
+    font-size: 16px;
+    padding: 7px 14px;
+}
+
+.options li:hover, li.selected{
+    background: #f2f2f2;
 }
