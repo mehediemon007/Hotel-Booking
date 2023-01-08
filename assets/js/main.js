@@ -148,7 +148,8 @@
     // Ticket Options
 
     $(".option-select-btn").on("click",function(){
-        $(".travel-options").addClass("show");
+        $(this).next(".travel-options").addClass("show")
+        // $(".travel-options").addClass("show");
     })
 
     $(".travel-options .opts-apply").on("click",function(){
