@@ -10,8 +10,8 @@ const airports = document.querySelectorAll(".airport-select");
 airports.forEach(each => {
 
     const selectBtn = each.querySelector(".option-select-btn"),
-        searchInp = each.querySelector(".option-select-content input"),
-        options = each.querySelector(".filter-options");
+    searchInp = each.querySelector(".option-select-content input"),
+    options = each.querySelector(".filter-options");
 
     function addCountry(selectedCountry) {
         options.innerHTML = "";
@@ -21,9 +21,9 @@ airports.forEach(each => {
             options.insertAdjacentHTML("beforeend", li);
         });
     }
-    
+
     addCountry();
-    
+
     function updateName(selectedLi) {
         searchInp.value = "";
         addCountry(selectedLi.innerText);
@@ -32,11 +32,11 @@ airports.forEach(each => {
     }
 
     options.querySelectorAll("li").forEach(each => {
-        each.addEventListener("click", function() {
+        each.addEventListener("click", function(e) {
             updateName(this)
         })
     })
-    
+
     searchInp.addEventListener("keyup", () => {
         let arr = [];
         let searchWord = searchInp.value.toLowerCase();
@@ -48,10 +48,10 @@ airports.forEach(each => {
         }).join("");
         options.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
     });
-    
+
     selectBtn.addEventListener("click", () => each.classList.toggle("active"));
     
-})
+});
 
 // selectBtn = airports.querySelector(".option-select-btn"),
 // searchInp = wrapper.querySelector(".option-select-content input"),
