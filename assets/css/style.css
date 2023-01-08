@@ -672,10 +672,11 @@ li{
     background: #f2f2f2;
 }
 
-.return-info{
+.single-option .option-select-btn .return-info{
     font-size: 12px;
     font-weight: var(--font-weight-extra-bold);
     color: #9b9b9b;
+    margin-top: 4px;
 }
 
 .travel-options{

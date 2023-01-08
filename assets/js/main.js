@@ -73,77 +73,19 @@
             // },
         }
     })
-    
-    // Services Slider
 
-    $(".services-wpr").owlCarousel({
-        items:5,
-        loop:true,
-        autoplay:true,
-        margin: 12,
-        stagePadding:8,
-        nav:true,
-        navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
-        dots:false,
-        responsive:{
-            0:{
-                items: 2,
-                center:false
-            },
-            575:{
-                items: 5,
-                center:true,
-            },
-        }
-    })
+     // Range Date Picker
 
-    // Client Review
-
-    $(".client-reviews").owlCarousel({
-        loop:true,
-        autoplay:true,
-        margin:16,
-        nav:false,
-        smartSpeed:500,
-        responsive:{
-            0:{
-                items: 1.25
-            },
-            575:{
-                items: 2.35
-            },
-        }
-    })
-
-    $('.owl-dots button').attr('aria-label', 'owl-btn');
-    $('.owl-nav button').attr('aria-label', 'owl-nav');
-
-    // Counter
-
-    if($('.counter').length){
-
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
+     $(function() {
+        $('input[name="datetimes"]').daterangepicker({
+          timePicker: false,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale: {
+            format: 'DD/M'
+          }
         });
-    
-    }
-
-    // Mobile Menu
-
-    $(".nav-toggle").on("click",function(){
-        $(".nav-list").addClass("open")
-    })
-
-    $(".nav-close").on("click",function(){
-        $(".nav-list").removeClass("open")
-    })
-
-    $(".nav-list li a").on("click",function(){
-        if($(".nav-list").hasClass("open")){
-            $(".nav-list").removeClass("open")
-        }
-    })
+    });
 
     // Ticket Options
 
