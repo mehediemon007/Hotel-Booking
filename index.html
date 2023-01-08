@@ -54,8 +54,36 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="header-wpr">
+        <div class="header-wpr">
+            <div class="container">
+                <div class="main-header-container">
+                    <div class="logo">
+                        <a href="#"><img src="./assets/images/header-logo.png" alt="Booking"></a>
+                    </div>
+                    <ul class="nav main-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active">
+                                <i class="icofont-ui-flight"></i>
+                                <p>Flights</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icofont-5-star-hotel"></i>
+                                <p>Hotels</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icofont-ticket"></i>
+                                <p>Visa</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="toolbar-right">
+                        <a href="#" class="login-btn">Login or Create Account</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -140,6 +168,93 @@
                                                             <input spellcheck="false" type="text" placeholder="From">
                                                         </div>
                                                         <ul class="filter-options"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">DEPARTURE <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <h2>9 <sub>Jan'23</sub></h2>
+                                                        <p>Monday</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">RETURN <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <!-- <div class="option-select-btn">
+                                                        <h2>9 <sub>Jan'23</sub></h2>
+                                                        <p>Monday</p>
+                                                    </div> -->
+                                                    <p class="return-info">Tap to add a return date for bigger discounts</p>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Travellers & CLASS <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <h2>1 <sub>Traveller</sub></h2>
+                                                        <p>Economy/Premuim Econimy</p>
+                                                        <p class="info">Group Bookings Available!</p>
+                                                    </div>
+                                                    <div class="travel-options">
+                                                        <div class="single-travel-option">
+                                                            <p>ADULTS (12y +)</p>
+                                                            <ul>
+                                                                <li><input type="radio" name="adult" id="a1" checked><label for="a1">1</label></li>
+                                                                <li><input type="radio" name="adult" id="a2"><label for="a2">2</label></li>
+                                                                <li><input type="radio" name="adult" id="a3"><label for="a3">3</label></li>
+                                                                <li><input type="radio" name="adult" id="a4"><label for="a4">4</label></li>
+                                                                <li><input type="radio" name="adult" id="a5"><label for="a5">5</label></li>
+                                                                <li><input type="radio" name="adult" id="a6"><label for="a6">6</label></li>
+                                                                <li><input type="radio" name="adult" id="a7"><label for="a7">7</label></li>
+                                                                <li><input type="radio" name="adult" id="a8"><label for="a8">8</label></li>
+                                                                <li><input type="radio" name="adult" id="a9"><label for="a9">9</label></li>
+                                                                <li><input type="radio" name="adult" id="a9+"><label for="a9+">>9</label></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="single-travel-option">
+                                                                    <p>CHILDREN (2y - 12y )</p>
+                                                                    <ul>
+                                                                        <li><input type="radio" name="child" id="c1" checked><label for="c1">1</label></li>
+                                                                        <li><input type="radio" name="child" id="c2"><label for="c2">2</label></li>
+                                                                        <li><input type="radio" name="child" id="c3"><label for="c3">3</label></li>
+                                                                        <li><input type="radio" name="child" id="c4"><label for="c4">4</label></li>
+                                                                        <li><input type="radio" name="child" id="c5"><label for="c5">5</label></li>
+                                                                        <li><input type="radio" name="child" id="c6"><label for="c6">6</label></li>
+                                                                        <li><input type="radio" name="child" id="c6+"><label for="c6+">>9</label></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="single-travel-option">
+                                                                    <p>INFANTS (below 2y)</p>
+                                                                    <ul>
+                                                                        <li><input type="radio" name="infant" id="i1" checked><label for="i1">1</label></li>
+                                                                        <li><input type="radio" name="infant" id="i2"><label for="i2">2</label></li>
+                                                                        <li><input type="radio" name="infant" id="i3"><label for="i3">3</label></li>
+                                                                        <li><input type="radio" name="infant" id="i4"><label for="i4">4</label></li>
+                                                                        <li><input type="radio" name="infant" id="i5"><label for="i5">5</label></li>
+                                                                        <li><input type="radio" name="infant" id="i6"><label for="i6">6</label></li>
+                                                                        <li><input type="radio" name="infant" id="i6+"><label for="i6+">>9</label></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-travel-option">
+                                                            <p>CHOOSE TRAVEL CLASS</p>
+                                                            <ul class="ticket-cls">
+                                                                <li><input type="radio" name="ticket-class" id="eco" checked><label for="eco">Economy/Premium Economy</label></li>
+                                                                <li><input type="radio" name="ticket-class" id="pre-eco"><label for="pre-eco">Premium Economy</label></li>
+                                                                <li><input type="radio" name="ticket-class" id="business"><label for="business">Business</label></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="opts-apply">Apply</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

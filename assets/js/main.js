@@ -144,6 +144,16 @@
             $(".nav-list").removeClass("open")
         }
     })
+
+    // Ticket Options
+
+    $(".option-select-btn").on("click",function(){
+        $(".travel-options").addClass("show");
+    })
+
+    $(".travel-options .opts-apply").on("click",function(){
+        $(".travel-options").removeClass("show");
+    })
       
 
 })(jQuery);
@@ -152,11 +162,11 @@
 
     // Sticky Nav
 
-    const headerContainer = document.querySelector(".clo-header.fixed");
+    const headerContainer = document.querySelector(".header-wpr");
 
-    if(headerContainer != null && window.screen.width > 991){
+    if(headerContainer != null){
         window.onscroll = ()=>{
-            this.scrollY > 100 ? headerContainer.style.display = 'none' : headerContainer.style.display = 'block';
+            this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
         }
     }
 
