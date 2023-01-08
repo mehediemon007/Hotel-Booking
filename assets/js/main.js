@@ -28,6 +28,51 @@
             // },
         }
     })
+
+    // Trip Slider
+
+    
+    $(".trips-slider").owlCarousel({
+        items:5.5,
+        loop:true,
+        autoplay:false,
+        slideBy: 1,
+        nav:true,
+        navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
+        dots:false,
+        margin: 16,
+        responsive:{
+            // 0:{
+            //     items: 2,
+            //     center:false
+            // },
+            // 575:{
+            //     items: 5,
+            //     center:true,
+            // },
+        }
+    })
+
+    $(".quick-links-slider").owlCarousel({
+        items:3,
+        loop:true,
+        autoplay:false,
+        slideBy: 1,
+        nav:true,
+        navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
+        dots:false,
+        margin: 16,
+        responsive:{
+            // 0:{
+            //     items: 2,
+            //     center:false
+            // },
+            // 575:{
+            //     items: 5,
+            //     center:true,
+            // },
+        }
+    })
     
     // Services Slider
 
