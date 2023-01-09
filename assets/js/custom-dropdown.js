@@ -11,7 +11,7 @@ airports.forEach(each => {
 
     const selectBtn = each.querySelector(".option-select-btn"),
     searchInp = each.querySelector(".option-select-content input"),
-    options = each.querySelector(".filter-options");
+    options = each.querySelector(".filter-options-list");
 
     function addCountry(selectedCountry) {
         options.innerHTML = "";

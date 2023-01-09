@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
@@ -116,9 +117,9 @@
                             </li>
                         </ul>
                         <div class="filter-container">
-                            <div class="tab-content filter-content" id="myTabContent">
+                            <div class="tab-content filter-content-wpr" id="myTabContent">
                                 <div class="tab-pane fade show active" id="flights" role="tabpanel" aria-labelledby="flights-tab">
-                                    <div class="flights-filter-content">
+                                    <div class="flights-filter-content filter-content">
                                         <div class="filter-types">
                                             <div class="single-type">
                                                 <label for="one-way">
@@ -139,7 +140,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="fights-filter-options">
+                                        <div class="filter-options">
                                             <div class="single-option">
                                                 <p class="option-label">From</p>
                                                 <div class="option-select-wrapper airport-select">
@@ -152,11 +153,12 @@
                                                             <i class="icofont-search"></i>
                                                             <input spellcheck="false" type="text" placeholder="From">
                                                         </div>
-                                                        <ul class="filter-options"></ul>
+                                                        <ul class="filter-options-list"></ul>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="single-option">
+                                                <div class="toggle-airport"><i class="icofont-exchange"></i></div>
                                                 <p class="option-label">To</p>
                                                 <div class="option-select-wrapper airport-select">
                                                     <div class="option-select-btn">
@@ -168,12 +170,12 @@
                                                             <i class="icofont-search"></i>
                                                             <input spellcheck="false" type="text" placeholder="From">
                                                         </div>
-                                                        <ul class="filter-options"></ul>
+                                                        <ul class="filter-options-list"></ul>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="single-option">
-                                                <p class="option-label">DEPARTURE <i class="icofont-rounded-down"></i></p>
+                                                <p class="option-label">Departure <i class="icofont-rounded-down"></i></p>
                                                 <div class="option-select-wrapper">
                                                     <div class="option-select-btn">
                                                         <h2>9 <sub>Jan'23</sub></h2>
@@ -182,7 +184,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-option">
-                                                <p class="option-label">RETURN <i class="icofont-rounded-down"></i></p>
+                                                <p class="option-label">Return <i class="icofont-rounded-down"></i></p>
                                                 <div class="option-select-wrapper">
                                                     <div class="option-select-btn">
                                                         <input type="text" name="datetimes" id="date"/>
@@ -193,7 +195,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-option">
-                                                <p class="option-label">Travellers & CLASS <i class="icofont-rounded-down"></i></p>
+                                                <p class="option-label">Travellers & Class <i class="icofont-rounded-down"></i></p>
                                                 <div class="option-select-wrapper">
                                                     <div class="option-select-btn">
                                                         <h2>1 <sub>Traveller</sub></h2>
@@ -261,13 +263,179 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="text-center">
+                                            <button class="filter-submit">Search</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
-                                    <h1>HHHH</h1>
+                                    <div class="room-filter-content filter-content">
+                                        <div class="filter-types">
+                                            <div class="single-type">
+                                                <label for="five-rooms">
+                                                    <input type="radio" name="room" id="five-rooms" checked>
+                                                    UPTO 5 ROOMS
+                                                </label>
+                                            </div>
+                                            <div class="single-type">
+                                                <label for="five-rooms+">
+                                                    <input type="radio" name="room" id="five-rooms+">
+                                                    5+ ROOMS
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-options">
+                                            <div class="single-option">
+                                                <p class="option-label">City, Property name or Location</p>
+                                                <div class="option-select-wrapper airport-select">
+                                                    <div class="option-select-btn">
+                                                        <h2>Dhaka</h2>
+                                                        <p>Hotel La Meridian</p>
+                                                    </div>
+                                                    <div class="option-select-content">
+                                                        <div class="search">
+                                                            <i class="icofont-search"></i>
+                                                            <input spellcheck="false" type="text" placeholder="From">
+                                                        </div>
+                                                        <ul class="filter-options-list"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Check In <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <h2>9 <sub>Jan'23</sub></h2>
+                                                        <p>Monday</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Check Out <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <h2>12 <sub>Jan'23</sub></h2>
+                                                        <p>Monday</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Rooms & Guests <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <h2>1 <sub>Room</sub> 4 <sub>Adults</sub></h2>
+                                                    </div>
+                                                    <div class="room-options">
+                                                        <div class="single-room-option">
+                                                            <p>Rooms</p>
+                                                            <div class="room-quantity">
+                                                                <button class="qun-dwn"><i class="icofont-minus"></i></button>
+                                                                <input type="number" class="quantity-input" value="1">
+                                                                <button class="qun-up"><i class="icofont-plus"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-room-option">
+                                                            <p>ADULTS (12y +)</p>
+                                                            <div class="room-quantity">
+                                                                <button class="qun-dwn"><i class="icofont-minus"></i></button>
+                                                                <input type="number" class="quantity-input" value="1">
+                                                                <button class="qun-up"><i class="icofont-plus"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-room-option">
+                                                            <p>CHILDREN (below 12y)</p>
+                                                            <div class="room-quantity">
+                                                                <button class="qun-dwn"><i class="icofont-minus"></i></button>
+                                                                <input type="number" class="quantity-input" value="1">
+                                                                <button class="qun-up"><i class="icofont-plus"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <button class="opts-apply">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Price Per Night <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <select name="room-rent" id="room-rent">
+                                                            <option value="0">৳0 - ৳1500</option>
+                                                            <option value="1">৳1500 - ৳2500</option>
+                                                            <option value="2" selected>৳2500 - ৳3500</option>
+                                                            <option value="3">৳5000 - ৳15000</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="filter-submit">Search</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="visa-tab">
-                                    <h1>III</h1>
+                                    <div class="visa-filter-content filter-content">
+                                        <div class="filter-options">
+                                            <div class="single-option">
+                                                <p class="option-label">Country</p>
+                                                <div class="option-select-wrapper airport-select">
+                                                    <div class="option-select-btn">
+                                                        <h2>United Arab Emirates</h2>
+                                                        <p>AE</p>
+                                                    </div>
+                                                    <div class="option-select-content">
+                                                        <div class="search">
+                                                            <i class="icofont-search"></i>
+                                                            <input spellcheck="false" type="text" placeholder="From">
+                                                        </div>
+                                                        <ul class="filter-options-list"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Intended Flying Date <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <h2>22 <sub>Jan'23</sub></h2>
+                                                        <p>Monday</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Nationality</p>
+                                                <div class="option-select-wrapper airport-select">
+                                                    <div class="option-select-btn">
+                                                        <h2>BD</h2>
+                                                        <p>Bangladesh</p>
+                                                    </div>
+                                                    <div class="option-select-content">
+                                                        <div class="search">
+                                                            <i class="icofont-search"></i>
+                                                            <input spellcheck="false" type="text" placeholder="From">
+                                                        </div>
+                                                        <ul class="filter-options-list"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-option">
+                                                <p class="option-label">Travellers <i class="icofont-rounded-down"></i></p>
+                                                <div class="option-select-wrapper">
+                                                    <div class="option-select-btn">
+                                                        <div class="traveller-quantity">
+                                                            <button class="qun-dwn"><i class="icofont-minus"></i></button>
+                                                            <input type="number" class="quantity-input" value="1">
+                                                            <button class="qun-up"><i class="icofont-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="filter-submit">Search</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1293,6 +1461,7 @@
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/moment.min.js"></script>
     <script src="./assets/js/daterangepicker.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
     <script src="./assets/js/custom-dropdown.js"></script>
     <script src="./assets/js/main.js"></script>
 

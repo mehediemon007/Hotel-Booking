@@ -122,6 +122,12 @@ input::placeholder{
 
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* General Css */
 
 .scroll-margin{
@@ -315,6 +321,26 @@ section{
     background-color: rgba(235, 0, 139, .2);
 }
 
+.nice-select{
+    font-weight: var(--font-weight-extra-bold);
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.nice-select .current{
+    color: #9b9b9b;
+}
+
+.nice-select:after{
+    content: none;
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
 /* Header */
 
 .trv-toolbar{
@@ -479,11 +505,11 @@ section{
     background: var(--white-color);
     border-radius: 8px;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 10%);
-    padding: 60px 20px 40px;
+    padding: 60px 20px 0;
     margin-top: -40px;
 }
 
-.flights-filter-content .filter-types{
+.filter-content .filter-types{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -529,21 +555,41 @@ section{
     line-height: 100%;
 }
 
-.fights-filter-options{
+.filter-options{
     display: grid;
     grid-template-columns: 1fr 1fr .8fr .8fr .9fr;
     border: 1px solid #e7e7e7;
     border-radius: 10px;
 }
 
-.fights-filter-options .single-option{
+.visa-filter-content .filter-options{
+    grid-template-columns: 1.2fr 1fr .8fr .8fr;
+}
+
+.filter-options .single-option{
     position: relative;
     border-right: solid 1px #e7e7e7;
     padding: 16px;
     cursor: pointer;
 }
 
-.fights-filter-options .single-option:hover{
+.filter-options .toggle-airport{
+    position: absolute;
+    left: -19px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    background: var(--white-color);
+    border: 1px solid #eeedeb;
+    border-radius: 50%;
+    box-shadow: 0 1px 30px 0 rgb(0 0 0 / 10%);
+    text-align: center;
+    line-height: 40px;
+    transform: translateY(-50%);
+}
+
+.filter-options .single-option:hover{
     background-color: #eaf5ff;
 }
 
@@ -575,6 +621,90 @@ section{
     color: #cf8100;
 }
 
+.single-room-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.room-quantity ,
+.traveller-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.traveller-quantity{
+    width: 70%;
+    border: 0;
+}
+
+.room-quantity button,
+.traveller-quantity button {
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.traveller-quantity button{
+    width: 20%;
+    height: 80%;
+    color: var(--primary-color);
+    background-color: rgb(0 140 255 / 10%);
+    border-radius: 5px;
+}
+
+.traveller-quantity button i{
+    font-size: 16px;
+}
+
+.room-quantity .quantity-input ,
+.traveller-quantity  .quantity-input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    width: 40%;
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.traveller-quantity  .quantity-input{
+    width: 60%;
+    font-weight: var(--font-weight-extra-bold);
+    background-color: transparent;
+}
+
+.room-rent{
+    appearance: none;
+    background-color: transparent !important;
+}
+
+.filter-submit{
+    position: relative;
+    bottom: -20px;
+    display: inline-block;
+    min-width: 216px;
+    width: auto;
+    color: #fff;
+    background-image: linear-gradient(93deg,#53b2fe,#065af3);
+    border: 0;
+    border-radius: 34px;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 20%);
+    outline: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
 /* Custome Dropdown Select */
 
 li{
@@ -583,9 +713,9 @@ li{
     cursor: pointer;
 }
 
-.option-select-btn{
+/* .option-select-btn{
     cursor: pointer;
-}
+} */
 
 .option-select-btn i{
     font-size: 31px;
@@ -639,36 +769,36 @@ li{
     color: #757575;
 }
 
-.option-select-content .filter-options{
+.option-select-content .filter-options-list{
     margin-top: 10px;
     max-height: 200px;
     overflow-y: auto;
 }
 
-.filter-options::-webkit-scrollbar{
+.filter-options-list::-webkit-scrollbar{
     width: 7px;
 }
 
-.filter-options::-webkit-scrollbar-track{
+.filter-options-list::-webkit-scrollbar-track{
     background: #f1f1f1;
     border-radius: 25px;
 }
 
-.filter-options::-webkit-scrollbar-thumb{
+.filter-options-list::-webkit-scrollbar-thumb{
     background: var(--primary-color);
     border-radius: 25px;
 }
 
-.filter-options::-webkit-scrollbar-thumb:hover{
+.filter-options-list::-webkit-scrollbar-thumb:hover{
     background: var(--primary-color);
 }
 
-.filter-options li{
+.filter-options-list li{
     font-size: 16px;
     padding: 7px 14px;
 }
 
-.filter-options li:hover, li.selected{
+.filter-options-list li:hover, li.selected{
     background: #f2f2f2;
 }
 
@@ -679,7 +809,8 @@ li{
     margin-top: 4px;
 }
 
-.travel-options{
+.travel-options,
+.room-options{
     position: absolute;
     top: 40px;
     right: 0;
@@ -692,7 +823,12 @@ li{
     z-index: 1;
 }
 
-.travel-options.show{
+.room-options{
+    width: 400px;
+}
+
+.travel-options.show,
+.room-options.show{
     display: block;
 }
 
@@ -737,7 +873,7 @@ li{
     border-radius: 4px;
 }
 
-.travel-options .opts-apply{
+.opts-apply{
     width: 100px;
     height: 30px;
     background-image: linear-gradient(93deg,#53b2fe,#065af3);

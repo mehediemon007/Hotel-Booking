@@ -97,7 +97,21 @@
     $(".travel-options .opts-apply").on("click",function(){
         $(".travel-options").removeClass("show");
     })
-      
+
+    // Room Options
+    
+    $(".option-select-btn").on("click",function(){
+        $(this).next(".room-options").addClass("show")
+        // $(".travel-options").addClass("show");
+    })
+
+    $(".room-options .opts-apply").on("click",function(){
+        $(".room-options").removeClass("show");
+    })
+
+    // Nice Select
+
+    $("select").niceSelect();
 
 })(jQuery);
 
