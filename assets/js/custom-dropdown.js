@@ -26,7 +26,7 @@ airports.forEach(each => {
 
     function updateName(selectedLi) {
         searchInp.value = "";
-        addCountry(selectedLi.innerText);
+        // addCountry(selectedLi.innerText);
         each.classList.remove("active");
         selectBtn.firstElementChild.innerText = selectedLi.innerText;
     }
