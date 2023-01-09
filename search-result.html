@@ -165,7 +165,7 @@
                                         <p class="option-label">Return <i class="icofont-rounded-down"></i></p>
                                         <div class="option-select-wrapper">
                                             <div class="option-select-btn">
-                                                <input type="text" name="datetimes" id="date"/>
+                                                <input type="text" name="datetimes" id="date">
                                                 <!-- <h2>9 <sub>Jan'23</sub></h2>
                                                 <p>Monday</p> -->
                                                 <p class="return-info">Tap to add a return date for bigger discounts</p>
@@ -254,9 +254,102 @@
         <!-- Flights List -->
         <div class="trv-filter-result-wpr">
             <div class="container">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-4">
-
+                        <div class="sidebar-filter-widget">
+                            <div class="filter-item text-center">
+                                <h6 class="filter-name">Session Timeout in</h6>
+                                <div class="session-time">
+                                    <p id="countdown"><span>10</span> : <span>00</span></p>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Departure time in Dhaka</h6>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="departure-time">
+                                            <input type="radio" name="dept-time" id="day">
+                                            <label for="day">
+                                                <i class="icofont-sun-alt"></i>
+                                                <p><b>Day</b></p>
+                                                <p class="time">24:00 - 17:59 (10)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="departure-time">
+                                            <input type="radio" name="dept-time" id="night" checked>
+                                            <label for="night">
+                                                <i class="icofont-moon"></i>
+                                                <p><b>Evening</b></p>
+                                                <p class="time">18:00 - 23:59 (7)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Stops From Dhaka</h6>
+                                <div class="filter-input">
+                                    <div class="valued-opt">
+                                        <label for="stopis-1">
+                                            <input type="checkbox" name="t-time" id="stopis-1" checked>
+                                            Non Stop (5)
+                                        </label>
+                                        <p>BDT 3,483</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Check in Baggage Allowance</h6>
+                                <div class="filter-input">
+                                    <label for="bag-weight-1">
+                                        <input type="checkbox" name="t-time" id="bag-weight-1">
+                                        20 KG (5)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Refundable</h6>
+                                <div class="filter-input">
+                                    <label for="refund-1">
+                                        <input type="checkbox" name="t-time" id="refund-1">
+                                        Partially Refundable (5)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Airlines</h6>
+                                <div>
+                                    <div class="valued-opt filter-input">
+                                        <label for="air-1">
+                                            <input type="checkbox" name="t-time" id="air-1">
+                                            US Bangla Airlines
+                                        </label>
+                                        <p>BDT 3,483</p>
+                                    </div>
+                                    <div class="valued-opt filter-input">
+                                        <label for="air-2">
+                                            <input type="checkbox" name="t-time" id="air-2">
+                                            Air Astra
+                                        </label>
+                                        <p>BDT 3,487</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Transit Time in (Dhaka - Chittagong)</h6>
+                                <div class="filter-input">
+                                    <label for="tt-1">
+                                        <input type="checkbox" name="t-time" id="tt-1">
+                                        No Transit Time (5)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <button class="clr-filter-btn">Clear Filters</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-8">
                         <div class="flight-list-wpr">
@@ -267,13 +360,13 @@
                             </div>
                             <ul class="nav flight-category" id="flightTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="cheap-tab" data-bs-toggle="tab" href="#cheap" role="tab" aria-controls="all" aria-selected="true">
+                                    <a class="nav-link active" id="cheap-tab" data-bs-toggle="tab" href="#cheap" role="tab" aria-controls="cheap" aria-selected="true">
                                         <h6>Cheapest</h6>
                                         <p>To get the cheapest available flights</p>
                                     </a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="short-tab" data-bs-toggle="tab" href="#short" role="tab" aria-controls="flights-offer" aria-selected="true">
+                                    <a class="nav-link" id="short-tab" data-bs-toggle="tab" href="#short" role="tab" aria-controls="short" aria-selected="true">
                                         <h6>Shortest</h6>
                                         <p>To get the shortest available flights</p>
                                     </a>

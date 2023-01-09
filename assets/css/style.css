@@ -1388,6 +1388,135 @@ section{
     margin-bottom: 16px;
 }
 
+/* Sidebar Filtering */
+
+.sidebar-filter-widget{
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding-bottom: 32px;
+}
+
+.filter-item{
+    border-bottom: 1px solid #dee2e6;
+    padding: 24px;
+}
+
+.filter-item .filter-name{
+    font-size: 18px;
+    font-weight: var(--font-weight-semi-bold);
+    margin-bottom: 16px;
+}
+
+#countdown{
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+}
+
+#countdown span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 8px;
+}
+
+.departure-time input[type="radio"]{
+    display: none;
+}
+
+.departure-time label{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.departure-time input[type="radio"]:checked + label{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.departure-time input[type="radio"]:checked + label *{
+    color: var(--white-color);
+}
+
+.departure-time label .time{
+    font-size: 10px;
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.filter-item .filter-input{
+    margin-bottom: 12px;
+}
+
+.filter-item input[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+}
+
+.filter-item input[type="checkbox"]:checked{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.filter-item input[type="checkbox"]:checked:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\2713";
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 100%;
+}
+
+.filter-item label,
+.filter-item .valued-opt p{
+    font-size: 14px;
+    color: #52556f;
+}
+
+.filter-item .valued-opt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.clr-filter-btn{
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.clr-filter-btn:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
 /* Footer */
 
 .footer{
