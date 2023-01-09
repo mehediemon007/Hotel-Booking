@@ -707,7 +707,7 @@ section{
 
 /* Custome Dropdown Select */
 
-li{
+.filter-options-list li{
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -1266,6 +1266,126 @@ li{
 .single-faq p{
     font-size: 12px;
     margin-top: 16px;
+}
+
+/* Search Results */
+
+.trv-flight-list-wpr{
+    margin: 50px 0 30px;
+}
+
+.route-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.route-name h2{
+    font-size: 30px;
+    font-weight: var(--font-weight-extra-bold);
+    margin-bottom: 0;
+}
+
+.route-name i:first-child{
+    transform: rotate(-180deg);
+}
+
+.route-name i{
+    font-size: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.flight-category{
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.flight-category .nav-item{
+    flex: 1 auto;
+}
+
+.flight-category .nav-link{
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.flight-category .nav-link.active{
+    background-color: rgba(203,212,230,.2);
+}
+
+.flight-category .nav-link h6{
+    color: var(--text-color);
+}
+
+.flight-category .nav-link p{
+    font-size: 15px;
+    color: #7c8db0;
+}
+
+.flights-container .flight-list .single-flight{
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.flight-list .single-flight .flight-info-details{
+    display: grid;
+    grid-template-columns: repeat(6,minmax(max-content,1fr));
+    grid-gap: 24px;
+}
+
+.flight-info-details .air-img{
+    width: 80px;
+}
+
+.flight-info-details .tag{
+    font-size: 12px;
+    color: #7c8db0;
+    margin-bottom: 4px;
+}
+
+.flight-info-details .date,
+.flight-info-details .flight-type{
+    font-size: 12px;
+    font-weight: var(--font-weight-semi-bold);
+    margin: 4px 0 12px;
+}
+
+.flight-info-details .location{
+    font-size: 14px;
+}
+
+.flight-info-details .book-btn{
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.single-flight .flight-meta-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flight-meta-info .refund-info{
+    font-size: 12px;
+    font-weight: var(--font-weight-bold);
+    color: green;
+}
+
+.flight-meta-info .info-toggle{
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-bottom: 16px;
 }
 
 /* Footer */
