@@ -1287,14 +1287,41 @@ section{
     margin-bottom: 0;
 }
 
-.route-name i:first-child{
-    transform: rotate(-180deg);
-}
-
 .route-name i{
     font-size: 24px;
     color: var(--primary-color);
     cursor: pointer;
+}
+
+.route-name .prev-day{
+    transform: rotate(-180deg);
+}
+
+.prev-day span,
+.next-day span{
+    position: absolute;
+    top: 105%;
+    left: -90px;
+    width: 180px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.prev-day span{
+    top: auto;
+    bottom: 105%;
+    transform: rotate(180deg);
+}
+
+.prev-day:hover span,
+.next-day:hover span{
+    visibility: visible;
+    opacity: 1;
 }
 
 .flight-category{
@@ -1425,6 +1452,64 @@ section{
     text-align: center;
     line-height: 40px;
     margin: 0 8px;
+}
+
+/* Range Slider */
+
+.range-field .value{
+    display: inline-block;
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: var(--font-weight-bold);
+    margin-top: 8px;
+}
+
+.range-field input{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: rgb(0 140 255 / 10%);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    z-index: 2222;
+}
+
+.range-field .range-bg{
+    position: absolute;
+    width: 40%;
+    height: 6px;
+    left: 0;
+    top: 12px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.range-field input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--white-color);
+    border: 5px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.range-field input::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--white-color);
+    border: 5px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.range-field input::-moz-range-progress{
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 10px;
 }
 
 .departure-time input[type="radio"]{

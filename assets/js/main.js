@@ -53,6 +53,8 @@
         }
     })
 
+    // Quick Links Slider
+
     $(".quick-links-slider").owlCarousel({
         items:3,
         loop:true,
@@ -113,6 +115,30 @@
 
     $("select").niceSelect();
 
+    // Toggle Price Range
+
+    $(".flight-category .nav-link").on("click",function(){
+        if($("#short-tab").hasClass("active")){
+            $(".price-filter").css("display", "none")
+        }else{
+            $(".price-filter").css("display", "block");
+        }
+    })
+
+})(jQuery);
+
+(function(){
+
+    // Sticky Nav
+
+    const headerContainer = document.querySelector(".header-wpr");
+
+    if(headerContainer != null){
+        window.onscroll = ()=>{
+            this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
+        }
+    }
+
     // Countdown Timer
 
     const startMinutes = 10;
@@ -132,18 +158,24 @@
         time--;
     }
 
-})(jQuery);
+    // Range Slider
 
-(function(){
+   const slideValue = document.querySelector(".range-value .right");
+   const inputSlider = document.querySelector(".range-field input");
+   const rangeBg = document.querySelector(".range-bg");
 
-    // Sticky Nav
+   let minValue = 3000;
+   let currentValue = inputSlider.value - minValue;
+   let maxValue = 10000;
+   let rangeValue = (maxValue - minValue);
 
-    const headerContainer = document.querySelector(".header-wpr");
+   rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
 
-    if(headerContainer != null){
-        window.onscroll = ()=>{
-            this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
-        }
-    }
+   inputSlider.oninput = (()=>{
+        currentValue = inputSlider.value - minValue;
+        console.log(currentValue);
+        slideValue.innerHTML = inputSlider.value + ' tk';
+        rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
+   });
 
 })()

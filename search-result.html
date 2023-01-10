@@ -263,22 +263,47 @@
                                     <p id="countdown"><span>10</span> : <span>00</span></p>
                                 </div>
                             </div>
+                            <div class="filter-item price-filter">
+                                <h6 class="filter-name">One Way Price</h6>
+                                <div class="price-range">
+                                    <div class="range-field">
+                                        <div class="position-relative">
+                                            <input type="range" min="3365" max="10000" value="4227" steps="500">
+                                            <span class="range-bg"></span>
+                                        </div>
+                                        <div class="range-value">
+                                            <span class="value left">3,365 tk - </span>
+                                            <span class="value right">4,227 tk</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="filter-item">
                                 <h6 class="filter-name">Departure time in Dhaka</h6>
-                                <div class="row">
+                                <div class="row g-4">
                                     <div class="col-5">
                                         <div class="departure-time">
-                                            <input type="radio" name="dept-time" id="day">
-                                            <label for="day">
-                                                <i class="icofont-sun-alt"></i>
-                                                <p><b>Day</b></p>
-                                                <p class="time">24:00 - 17:59 (10)</p>
+                                            <input type="radio" name="dept-time" id="morning" checked>
+                                            <label for="morning">
+                                                <i class="icofont-sun-rise"></i>
+                                                <p><b>Morning</b></p>
+                                                <p class="time">6:00 - 11:59 (1)</p>
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-5">
                                         <div class="departure-time">
-                                            <input type="radio" name="dept-time" id="night" checked>
+                                            <input type="radio" name="dept-time" id="noon">
+                                            <label for="noon">
+                                                <i class="icofont-sun-alt"></i>
+                                                <p><b>After Noon</b></p>
+                                                <p class="time">12:00 - 17:59 (5)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="departure-time">
+                                            <input type="radio" name="dept-time" id="night">
                                             <label for="night">
                                                 <i class="icofont-moon"></i>
                                                 <p><b>Evening</b></p>
@@ -354,9 +379,15 @@
                     <div class="col-8">
                         <div class="flight-list-wpr">
                             <div class="route-name">
-                                <i class="icofont-ui-play"></i>
+                                <div class="prev-day position-relative">
+                                    <i class="icofont-ui-play"></i>
+                                    <span>Search for previous day flights</span>
+                                </div>
                                 <h2>Flights from Dhaka to Chittagong</h2>
-                                <i class="icofont-ui-play"></i>
+                                <div class="next-day position-relative">
+                                    <i class="icofont-ui-play"></i>
+                                    <span>Search for previous day flights</span>
+                                </div>
                             </div>
                             <ul class="nav flight-category" id="flightTab" role="tablist">
                                 <li class="nav-item" role="presentation">
