@@ -125,6 +125,12 @@
         }
     })
 
+    // toggle Flight Info
+
+    $(".info-toggle").on("click",function(){
+        $(this).parent().siblings('.flight-info-details').slideToggle('fast')
+    })
+
 })(jQuery);
 
 (function(){

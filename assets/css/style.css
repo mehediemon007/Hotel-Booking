@@ -1362,40 +1362,40 @@ section{
     margin-bottom: 24px;
 }
 
-.flight-list .single-flight .flight-info-details{
+.flight-list .single-flight .flight-details{
     display: grid;
     grid-template-columns: repeat(6,minmax(max-content,1fr));
     grid-gap: 24px;
 }
 
-.flight-info-details .air-img{
+.flight-details .air-img{
     width: 80px;
 }
 
-.flight-info-details .tag{
+.flight-details .tag{
     font-size: 12px;
     color: #7c8db0;
     margin-bottom: 4px;
 }
 
-.flight-info-details .date,
-.flight-info-details .flight-type{
+.flight-details .date,
+.flight-details .flight-type{
     font-size: 12px;
     font-weight: var(--font-weight-semi-bold);
     margin: 4px 0 12px;
 }
 
-.flight-info-details .location{
+.flight-details .location{
     font-size: 14px;
 }
 
-.flight-info-details .book-btn{
+.flight-details .book-btn{
     font-weight: var(--font-weight-bold);
     color: var(--white-color);
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 8px 16px;
 }
 
 .single-flight .flight-meta-info{
@@ -1413,6 +1413,25 @@ section{
     color: var(--primary-color);
     cursor: pointer;
     margin-bottom: 16px;
+}
+
+.flight-info-details{
+    display: none;
+    border-top: 1px solid #dee2e6;
+    padding: 16px 0;
+}
+
+.flight-info-links .nav-link{
+    font-size: 12px;
+    color: var(--text-color);
+    padding: 7px 10px;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.flight-info-links .nav-link.active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 3px;
 }
 
 .trv-pagination{
