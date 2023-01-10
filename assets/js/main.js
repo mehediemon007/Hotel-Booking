@@ -128,6 +128,11 @@
     // toggle Flight Info
 
     $(".info-toggle").on("click",function(){
+        if($(this).text() == 'Show Flight Details'){
+            $(this).text("Hide Flight Details")
+        }else{
+            $(this).text("Show Flight Details")
+        }
         $(this).parent().siblings('.flight-info-details').slideToggle('fast')
     })
 

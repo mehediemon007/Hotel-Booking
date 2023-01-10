@@ -1416,7 +1416,7 @@ section{
 }
 
 .flight-info-details{
-    display: none;
+    /* display: none; */
     border-top: 1px solid #dee2e6;
     padding: 16px 0;
 }
@@ -1432,6 +1432,41 @@ section{
     color: var(--white-color);
     background-color: var(--primary-color);
     border-radius: 3px;
+}
+
+.flight-info-content{
+    border: 1px solid#dee2e6;
+    margin-top: 24px;
+}
+
+.flight-info-content .content-head{
+    border-bottom: 1px solid#dee2e6;
+    padding: 8px 16px;
+}
+
+.content-head h5{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.content-body .fare-info-wpr{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-gap: 16px;
+}
+
+.content-body .fare-info-wpr h6 span{
+    font-weight: var(--font-weight-medium);
+}
+
+.content-body .fare-info-wpr p{
+    font-size: 12px;
+    font-weight: var(--font-weight-bold);
+}
+
+.fare-sum-table th,
+.fare-sum-table td{
+    font-size: 14px;
 }
 
 .trv-pagination{
