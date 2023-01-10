@@ -1523,7 +1523,7 @@ section{
     color: var(--text-color);
     border: 1px solid #dee2e6;
     border-right: 0;
-    padding: 8px 16px;
+    padding: 6px 14px;
 }
 
 .pagination-item:hover{
