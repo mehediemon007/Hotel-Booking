@@ -33,34 +33,11 @@
     <!-- Header -->
 
     <header class="trv-header">
-        <div class="trv-toolbar">
-            <div class="container">
-                <div class="row align-items-center g-1">
-                    <div class="col-sm-4">
-                        <div class="logo">
-                            <a href="./index.html"><img src="./assets/images/logo.png" alt="Booking"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="toolbar-right">
-                            <div class="offer d-flex align-items-center">
-                                <img src="./assets/images/icons/discount.png" alt="Offer Discount">
-                                <div class="content">
-                                    <p><b>Supper Offer</b></p>
-                                    <p>Explore great deals & offers</p>
-                                </div>
-                            </div>
-                            <a href="#" class="login-btn">Login or Create Account</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-wpr">
+        <div class="header-wpr position-static">
             <div class="container">
                 <div class="main-header-container">
                     <div class="logo">
-                        <a href="#"><img src="./assets/images/header-logo.png" alt="Booking"></a>
+                        <a href="./index.html"><img src="./assets/images/header-logo.png" alt="Booking"></a>
                     </div>
                     <ul class="nav main-nav">
                         <li class="nav-item">
@@ -91,159 +68,125 @@
     </header>
 
     <main class="trv-main-content">
-        <!-- Banner -->
-        <div class="trv-banner">
+        
+        <!-- Booking Review -->
+        <div class="trv-booking-review-wpr py-5">
             <div class="container">
                 <div class="row">
-                    <div class="booking-filter-wpr">
-                        <div class="filter-container">
-                            <div class="flights-filter-content filter-content">
-                                <div class="filter-types">
-                                    <div class="single-type">
-                                        <label for="one-way">
-                                            <input type="radio" name="flight" id="one-way" checked>
-                                            One Way
-                                        </label>
-                                    </div>
-                                    <div class="single-type">
-                                        <label for="round-way">
-                                            <input type="radio" name="flight" id="round-way">
-                                            Round Trip
-                                        </label>
-                                    </div>
-                                    <div class="single-type">
-                                        <label for="multi-way">
-                                            <input type="radio" name="flight" id="multi-way">
-                                            Multi City
-                                        </label>
-                                    </div>
+                    <div class="col-8">
+                        <div class="booking-review-content">
+                            <div class="sec-title">
+                                <h4>Review Your Booking</h4>
+                            </div>
+                            <div class="booking-review-card">
+                                <span class="content-toggle"><i class="icofont-circled-up"></i></span>
+                                <div class="card-heading">
+                                    <h5 class="mb-0">DAC-CGP</h5>
+                                    <a href="#" class="btn view-btn me-5">View Baggage</a>
                                 </div>
-                                <div class="filter-options">
-                                    <div class="single-option">
-                                        <p class="option-label">From</p>
-                                        <div class="option-select-wrapper airport-select">
-                                            <div class="option-select-btn">
-                                                <h2>Dhaka</h2>
-                                                <p>Hazrat Shahjalal International Airport</p>
-                                            </div>
-                                            <div class="option-select-content">
-                                                <div class="search">
-                                                    <i class="icofont-search"></i>
-                                                    <input spellcheck="false" type="text" placeholder="From">
-                                                </div>
-                                                <ul class="filter-options-list"></ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-option">
-                                        <div class="toggle-airport"><i class="icofont-exchange"></i></div>
-                                        <p class="option-label">To</p>
-                                        <div class="option-select-wrapper airport-select">
-                                            <div class="option-select-btn">
-                                                <h2>Singapor</h2>
-                                                <p>Hazrat Shahjalal International Airport</p>
-                                            </div>
-                                            <div class="option-select-content">
-                                                <div class="search">
-                                                    <i class="icofont-search"></i>
-                                                    <input spellcheck="false" type="text" placeholder="From">
-                                                </div>
-                                                <ul class="filter-options-list"></ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-option">
-                                        <p class="option-label">Departure <i class="icofont-rounded-down"></i></p>
-                                        <div class="option-select-wrapper">
-                                            <div class="option-select-btn">
-                                                <h2>9 <sub>Jan'23</sub></h2>
-                                                <p>Monday</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-option">
-                                        <p class="option-label">Return <i class="icofont-rounded-down"></i></p>
-                                        <div class="option-select-wrapper">
-                                            <div class="option-select-btn">
-                                                <input type="text" name="datetimes" id="date">
-                                                <!-- <h2>9 <sub>Jan'23</sub></h2>
-                                                <p>Monday</p> -->
-                                                <p class="return-info">Tap to add a return date for bigger discounts</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-option">
-                                        <p class="option-label">Travellers & Class <i class="icofont-rounded-down"></i></p>
-                                        <div class="option-select-wrapper">
-                                            <div class="option-select-btn">
-                                                <h2>1 <sub>Traveller</sub></h2>
-                                                <p>Economy/Premuim Econimy</p>
-                                                <p class="info">Group Bookings Available!</p>
-                                            </div>
-                                            <div class="travel-options">
-                                                <div class="single-travel-option">
-                                                    <p>ADULTS (12y +)</p>
-                                                    <ul>
-                                                        <li><input type="radio" name="adult" id="a1" checked><label for="a1">1</label></li>
-                                                        <li><input type="radio" name="adult" id="a2"><label for="a2">2</label></li>
-                                                        <li><input type="radio" name="adult" id="a3"><label for="a3">3</label></li>
-                                                        <li><input type="radio" name="adult" id="a4"><label for="a4">4</label></li>
-                                                        <li><input type="radio" name="adult" id="a5"><label for="a5">5</label></li>
-                                                        <li><input type="radio" name="adult" id="a6"><label for="a6">6</label></li>
-                                                        <li><input type="radio" name="adult" id="a7"><label for="a7">7</label></li>
-                                                        <li><input type="radio" name="adult" id="a8"><label for="a8">8</label></li>
-                                                        <li><input type="radio" name="adult" id="a9"><label for="a9">9</label></li>
-                                                        <li><input type="radio" name="adult" id="a9+"><label for="a9+">>9</label></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="single-travel-option">
-                                                            <p>CHILDREN (2y - 12y )</p>
-                                                            <ul>
-                                                                <li><input type="radio" name="child" id="c1" checked><label for="c1">1</label></li>
-                                                                <li><input type="radio" name="child" id="c2"><label for="c2">2</label></li>
-                                                                <li><input type="radio" name="child" id="c3"><label for="c3">3</label></li>
-                                                                <li><input type="radio" name="child" id="c4"><label for="c4">4</label></li>
-                                                                <li><input type="radio" name="child" id="c5"><label for="c5">5</label></li>
-                                                                <li><input type="radio" name="child" id="c6"><label for="c6">6</label></li>
-                                                                <li><input type="radio" name="child" id="c6+"><label for="c6+">>9</label></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="single-travel-option">
-                                                            <p>INFANTS (below 2y)</p>
-                                                            <ul>
-                                                                <li><input type="radio" name="infant" id="i1" checked><label for="i1">1</label></li>
-                                                                <li><input type="radio" name="infant" id="i2"><label for="i2">2</label></li>
-                                                                <li><input type="radio" name="infant" id="i3"><label for="i3">3</label></li>
-                                                                <li><input type="radio" name="infant" id="i4"><label for="i4">4</label></li>
-                                                                <li><input type="radio" name="infant" id="i5"><label for="i5">5</label></li>
-                                                                <li><input type="radio" name="infant" id="i6"><label for="i6">6</label></li>
-                                                                <li><input type="radio" name="infant" id="i6+"><label for="i6+">>9</label></li>
-                                                            </ul>
+                                <div class="card-body p-0">
+                                    <div class="p-3 border-bottom">
+                                        <div class="row align-items-center">
+                                            <div class="col-8">
+                                                <div class="fare-info-wpr">
+                                                    <img src="./assets/images/services/BG.png" alt="Biman BD">
+                                                    <div class="fare-info">
+                                                        <p>Biman Bangladesh Airlines</p>
+                                                        <b>BG | 617</b>
+                                                        <div class="d-flex">
+                                                            <p>Aircraft : DHC8 Dash 8</p>
+                                                            <p>Operated by : BG</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="single-travel-option">
-                                                    <p>CHOOSE TRAVEL CLASS</p>
-                                                    <ul class="ticket-cls">
-                                                        <li><input type="radio" name="ticket-class" id="eco" checked><label for="eco">Economy/Premium Economy</label></li>
-                                                        <li><input type="radio" name="ticket-class" id="pre-eco"><label for="pre-eco">Premium Economy</label></li>
-                                                        <li><input type="radio" name="ticket-class" id="business"><label for="business">Business</label></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="text-end">
-                                                    <button class="opts-apply">Apply</button>
-                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="text-end">Economy Class</p>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flight-details">
+                                        <div>
+                                            <p class="tag">Depart</p>
+                                            <b>19:45</b>
+                                            <p class="date">Thu, 10 Jan 2023</p>
+                                            <b>(DAC)</b>
+                                            <p class="location">Dhaka</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="tag">55 minutes</p>
+                                            <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
+                                            <p class="flight-type">Non Stop</p>
+                                        </div>
+                                        <div>
+                                            <p class="tag">Arrive</p>
+                                            <b>21:00</b>
+                                            <p class="date">Thu, 10 Jan 2023</p>
+                                            <b>(CGP)</b>
+                                            <p class="location">Chittagong</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <button class="filter-submit">Search</button>
+                            </div>
+                        </div>
+                        <div class="traveler-details">
+                            <div class="sec-title">
+                                <h4>Enter Traveler Details</h4>
+                            </div>
+                            <div class="traveler-details-card">
+                                <span class="content-toggle"><i class="icofont-circled-up"></i></span>
+                                <div class="card-heading">
+                                    <h5 class="mb-0">Traveler 1</h5>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sidebar-widget">
+                            <div class="fare-sum-card position-relative">
+                                <span class="content-toggle"><i class="icofont-circled-up"></i></span>
+                                <div class="card-heading d-block border-bottom-0">
+                                    <div class="heading-content d-flex align-items-center border-bottom pb-3">
+                                        <img src="./assets/images/services/BG.png" alt="Biman Bangla">
+                                        <h6 class="mb-0">Biman Bangla Airlines</h6>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="px-3">
+                                        <h6>Fare Summary</h6>
+                                        <p>Adult ( 1 traveller)</p>
+                                        <ul class="fare-fees">
+                                            <li class="fare-fee">
+                                                <p>Base Fare</p>
+                                                <div>
+                                                    <p>BDT <b>2,707</b></p>
+                                                    <p class="qty">( 1 x 2,707 )</p>
+                                                </div>
+                                            </li>
+                                            <li class="fare-fee">
+                                                <p>Taxes + Fees</p>
+                                                <div>
+                                                    <p>BDT <b>776</b></p>
+                                                    <p class="qty">( 1 x 776 )</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-total fare-fee">
+                                            <p>Sub-total</p>
+                                            <div>
+                                                <p>BDT <b>3,483</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="total-fees fare-fee">
+                                        <b>You Pay <span class="qty">(for 1 traveler)</span></b>
+                                        <b>BDT 3,483</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="session-time">
+                                <h6 class="mb-3">Session Timeout in</h6>
+                                <p id="countdown"><span>9</span> : <span>42</span></p>
                             </div>
                         </div>
                     </div>

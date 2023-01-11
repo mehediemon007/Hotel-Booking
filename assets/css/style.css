@@ -1733,6 +1733,113 @@ section{
     background-color: var(--primary-color);
 }
 
+/* Booking Review */
+
+.sec-title h4{
+    color: var(--primary-color);
+}
+
+.card-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+    padding: 16px;
+}
+
+.card-heading img{
+    width: 50px;
+}
+
+.card-heading .view-btn{
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+.content-toggle{
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 62px;
+    font-size: 24px;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.booking-review-card,
+.traveler-details-card{
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    margin: 24px 0;
+}
+
+.booking-review-card .content-toggle{
+    top: 16px;
+}
+
+.booking-review-card .fare-info-wpr{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-gap: 24px;
+    align-items: center;
+}
+
+.booking-review-card .flight-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.fare-sum-card{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+}
+
+.fare-sum-card .qty{
+    font-size: 12px;
+    color: #6e7491;
+    text-align: right;
+}
+
+.fare-fee{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.fare-fee > p{
+    font-size: 14px;
+    color: #6e7491;
+}
+
+.sub-total{
+    border-top: 1px solid #dee2e6;
+    padding: 12px 0 4px;
+}
+
+.total-fees{
+    background-color: rgb(0 140 255 / 10%);
+    border-radius: 0 0 8px 8px;
+    padding: 24px 16px;
+}
+
+.sidebar-widget .session-time{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+
 /* Footer */
 
 .footer{

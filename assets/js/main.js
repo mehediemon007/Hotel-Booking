@@ -136,6 +136,13 @@
         $(this).parent().siblings('.flight-info-details').slideToggle('fast')
     })
 
+    // Card Content Toggle
+
+    $(".content-toggle").on("click",function(){
+        $("i", this).toggleClass("icofont-circled-up icofont-circled-down");
+        $(this).siblings(".card-body").slideToggle("300")
+    })
+
 })(jQuery);
 
 (function(){
