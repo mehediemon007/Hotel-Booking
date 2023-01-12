@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" type="text/css" href="assets/css/datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/inTelInput.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
@@ -76,8 +77,13 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="booking-review-content">
-                            <div class="sec-title">
+                            <div class="sec-title d-flex justify-content-between align-items-center">
                                 <h4>Review Your Booking</h4>
+                                <div class="trv-breadcrumb">
+                                    <a href="./search-result.html">Flight Selection</a>
+                                    <a href="#" class="active">Booking</a>
+                                    <a href="./payment.html">Payment</a>
+                                </div>
                             </div>
                             <div class="booking-review-card">
                                 <span class="content-toggle"><i class="icofont-circled-up"></i></span>
@@ -147,20 +153,20 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <fieldset class="input-grp">
-                                                        <label for="" class="required">Select Title </label>
-                                                        <div>
-                                                            <label for="mr">
+                                                        <label class="required">Select Title </label>
+                                                        <div class="d-flex mb-2">
+                                                            <div class="honor-input">
                                                                 <input type="radio" id="mr" name="honor">
-                                                                Mr
-                                                            </label>
-                                                            <label for="mrs">
+                                                                <label for="mr">Mr</label>
+                                                            </div>
+                                                            <div class="honor-input">
                                                                 <input type="radio" id="mrs" name="honor">
-                                                                Mrs
-                                                            </label>
-                                                            <label for="ms">
+                                                                <label for="mrs">Mrs</label>
+                                                            </div>
+                                                            <div class="honor-input">
                                                                 <input type="radio" id="ms" name="honor">
-                                                                Ms
-                                                            </label>
+                                                                <label for="ms">Ms</label>
+                                                            </div>
                                                         </div>
                                                     </fieldset>
                                                 </div>
@@ -215,7 +221,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="contact-details">
+                                    <div class="contact-details mt-4">
                                         <h5 class="mb-0">Contact Details</h5>
                                         <p class="alert"><i class="icofont-exclamation-circle"></i> Receive booking confirmation & updates</p>
                                         <form class="contact-info-form info-form">
@@ -228,8 +234,8 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <fieldset class="input-grp">
-                                                        <label for="p-num" class="required">Contact Number</label>
-                                                        <input type="tel" placeholder="" id="p-num">
+                                                        <label for="phone" class="required">Contact Number</label>
+                                                        <input name="phone" type="text" placeholder="" id="phone">
                                                     </fieldset>
                                                 </div>
                                                 <div class="col-6">
@@ -255,6 +261,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <a href="./payment.html" class="continue-btn">Continue</a>
                         </div>
                     </div>
                     <div class="col-4">
@@ -345,6 +352,7 @@
     <script src="./assets/js/daterangepicker.js"></script>
     <script src="./assets/js/datepicker.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/inTelInput.min.js"></script>
     <script src="./assets/js/custom-dropdown.js"></script>
     <script src="./assets/js/main.js"></script>
 

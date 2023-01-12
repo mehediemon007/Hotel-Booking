@@ -206,4 +206,13 @@
             rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
         });
     }
+
+    // IntelPhoneInput
+
+    var phoneInput = document.querySelector("#phone");
+    window.intlTelInput(phoneInput, {
+        separateDialCode: true,
+        preferredCountries: ["bd", "sa"]
+    });
+
 })()

@@ -1851,6 +1851,25 @@ section{
     background-color: #ced4da;
 }
 
+.info-form input[type="radio"]{
+    display: none;
+}
+
+.info-form .honor-input label{
+    color: #7c8db0;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.info-form input[type="radio"]:checked + label{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
 .info-form .input-grp .nice-select{
     display: block;
     width: 100%;
@@ -1890,6 +1909,10 @@ section{
     width: 100%;
 }
 
+.info-form .nice-select .current{
+    color: var(--text-color);
+}
+
 .datepicker.dropdown-menu{
     padding: 16px;
     min-width: 240px;
@@ -1899,7 +1922,7 @@ section{
 
 .datepicker-days{
     width: 100%;
-    color: var(--heading-color);
+    color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1917,6 +1940,17 @@ section{
     background-color: var(--primary-color);
     color: var(--white-color);
     border-radius: 4px;
+}
+
+.traveler-details .continue-btn{
+    display: block;
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px 16px;
 }
 
 .fare-sum-card{
@@ -1960,6 +1994,34 @@ section{
     text-align: center;
     padding: 16px;
     margin-top: 24px;
+}
+
+/* Breadcrumb */
+
+.trv-breadcrumb a{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: #6e7491;
+    margin-right: 24px;
+}
+
+.trv-breadcrumb a.active{
+    color: var(--primary-color);
+}
+
+.trv-breadcrumb a:last-of-type{
+    margin-right: 0;
+}
+
+.trv-breadcrumb a:not(:last-of-type)::after{
+    position: absolute;
+    right: -21px;
+    content: "\eaca";
+    font-family: IcoFont!important;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6e7491;
 }
 
 
