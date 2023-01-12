@@ -152,6 +152,14 @@
         });
     }
 
+    // Toggle Traveler Data
+
+    $(".continue-btn").on("click",function(){
+        $(".traveler-details-card").toggleClass("hide");
+        $(this).css("display","none");
+        $(".traveler-data-wpr").css("display","block")
+    })
+
 })(jQuery);
 
 (function(){

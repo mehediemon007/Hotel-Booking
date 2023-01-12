@@ -288,12 +288,17 @@ section{
     color: var(--white-color);
 }
 
-.btn{
+.trv-btn{
+    display: inline-block;
     width: max-content;
     height: 40px;
+    font-size: 15px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
-    padding: 0 12px;
-    line-height: 40px;
+    padding: 0 16px;
+    line-height: 36px;
     outline: none;
 }
 
@@ -301,24 +306,14 @@ section{
     box-shadow: none;
 }
 
-.primary-btn{
-    color: var(--primary-color);
-    background-color: rgba(191, 223, 249, 0.34);
-}
-
-.primary-btn:hover{
+.trv-btn:hover{
     color: var(--white-color);
     background-color: var(--primary-color);
 }
 
 .secondary-btn{
-    color: var(--white-color) !important;
-    background-color: var(--secondary-color);
-}
-
-.secondary-btn:hover{
-    color: var(--secondary-color) !important;
-    background-color: rgba(235, 0, 139, .2);
+    color: var(--primary-color);
+    background-color: var(--white-color);
 }
 
 .nice-select{
@@ -1674,7 +1669,7 @@ section{
     margin-bottom: 12px;
 }
 
-.filter-item input[type="checkbox"]{
+input[type="checkbox"]{
     position: relative;
     appearance: none;
     width: 16px;
@@ -1685,12 +1680,12 @@ section{
     vertical-align: text-bottom;
 }
 
-.filter-item input[type="checkbox"]:checked{
+input[type="checkbox"]:checked{
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-.filter-item input[type="checkbox"]:checked:before{
+input[type="checkbox"]:checked:before{
     position: absolute;
     top: 0;
     left: 0;
@@ -1794,6 +1789,10 @@ section{
     justify-content: space-between;
     align-items: center;
     padding: 16px;
+}
+
+.traveler-details-card.hide{
+    display: none;
 }
 
 .traveler-details-card .content-toggle{
@@ -1944,6 +1943,7 @@ section{
 
 .traveler-details .continue-btn{
     display: block;
+    width: 100%;
     font-weight: var(--font-weight-semi-bold);
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -1951,6 +1951,35 @@ section{
     border-radius: 8px;
     text-align: center;
     padding: 8px 16px;
+}
+
+.traveler-data-wpr{
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.total-traveler{
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.traveler-data P{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    font-size: 14px;
+    color: #6e7491;
+    margin-bottom: 8px;
+}
+
+.terms label{
+    color: #6e7491;
 }
 
 .fare-sum-card{
