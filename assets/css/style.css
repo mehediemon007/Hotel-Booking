@@ -1796,6 +1796,129 @@ section{
     padding: 16px;
 }
 
+.traveler-details-card .content-toggle{
+    top: 10px;
+}
+
+.traveler-details-card .alert{
+    font-size: 14px;
+    color: #6e7491;
+    padding: 0;
+    margin: 8px 0 16px;
+}
+
+.info-form .input-grp label{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block
+}
+
+.info-form .input-grp label.required::after{
+    position: absolute;
+    content: "*";
+    font-size: 18px;
+    color: red;
+    right: -10px;
+}
+
+.info-form .input-grp input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin-bottom: 16px;
+}
+
+.info-form .input-grp input::placeholder{
+    font-weight: 500;
+}
+
+.info-form .input-grp input:disabled{
+    background-color: #ced4da;
+}
+
+.info-form .input-grp .nice-select{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin-bottom: 16px;
+}
+
+.personal-info-form .nice-select::after{
+    top: 35%;
+    right: 24px;
+    content: "\ea6b";
+    font-family: IcoFont!important;
+    color: var(--primary-color);
+    border: 0;
+    transform: rotate(0);
+    
+}
+
+.personal-info-form .nice-select.open:after{
+   content: "\ea6e";
+}
+
+.info-form .nice-select .list{
+    width: 100%;
+}
+
+.datepicker.dropdown-menu{
+    padding: 16px;
+    min-width: 240px;
+    max-width: 100%;
+    background-color: #f0f0f0;
+}
+
+.datepicker-days{
+    width: 100%;
+    color: var(--heading-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.datepicker-days td{
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.datepicker-days .day:hover,
+.datepicker-days .day.active{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
 .fare-sum-card{
     border-radius: 8px;
     box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);

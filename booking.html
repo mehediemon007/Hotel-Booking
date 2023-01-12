@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- Template Stylesheet -->
@@ -138,6 +139,121 @@
                                 <div class="card-heading">
                                     <h5 class="mb-0">Traveler 1</h5>
                                 </div>
+                                <div class="card-body">
+                                    <div class="personal-details">
+                                        <h5 class="mb-0">Personal Details (Adult)</h5>
+                                        <p class="alert"><i class="icofont-exclamation-circle"></i> As mentioned on your passport or government approved IDs</p>
+                                        <form class="personal-info-form info-form">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="input-grp">
+                                                        <label for="" class="required">Select Title </label>
+                                                        <div>
+                                                            <label for="mr">
+                                                                <input type="radio" id="mr" name="honor">
+                                                                Mr
+                                                            </label>
+                                                            <label for="mrs">
+                                                                <input type="radio" id="mrs" name="honor">
+                                                                Mrs
+                                                            </label>
+                                                            <label for="ms">
+                                                                <input type="radio" id="ms" name="honor">
+                                                                Ms
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="f-name" class="required">First Name</label>
+                                                        <input type="text" placeholder="First Name" id="f-name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="l-name" class="required">Last Name</label>
+                                                        <input type="text" placeholder="Last Name" id="l-name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp datePicker">
+                                                        <label for="dob" class="required">Date of Birth</label>
+                                                        <input type="text" placeholder="Select a date" id="dob">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="f-num">Passport Number (Optional)</label>
+                                                        <input type="text" placeholder="Passport Number" id="p-num">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp datePicker">
+                                                        <label for="pex-date">Passport Expiry Date (Optional)</label>
+                                                        <input type="text" placeholder="Select a date" id="pex-date">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="city" class="required">City</label>
+                                                        <input type="text" placeholder="City" id="city">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="country" class="required">Country </label>
+                                                        <select id="country">
+                                                            <option value="bd">Bangladesh</option>
+                                                            <option value="ind">India</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="sau">Saudi Arabia</option>
+                                                            <option value="qatar">Qatar</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5 class="mb-0">Contact Details</h5>
+                                        <p class="alert"><i class="icofont-exclamation-circle"></i> Receive booking confirmation & updates</p>
+                                        <form class="contact-info-form info-form">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="email" class="required">Email</label>
+                                                        <input type="mail" placeholder="Email" id="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="p-num" class="required">Contact Number</label>
+                                                        <input type="tel" placeholder="" id="p-num">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="flyer">Frequent Flyer (If any)</label>
+                                                        <select id="flyer">
+                                                            <option value="nop">No Preferences</option>
+                                                            <option value="bd">Biman Bangla</option>
+                                                            <option value="nov">Novo Air</option>
+                                                            <option value="aa">Air Astra</option>
+                                                            <option value="usb">US Bangla</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-grp">
+                                                        <label for="ff-nun">Frequent Flyer (If any)</label>
+                                                        <input type="text" placeholder="Frequent Flayer Number" id="ff-num" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -227,6 +343,7 @@
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/moment-with-locales.min.js"></script>
     <script src="./assets/js/daterangepicker.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
     <script src="./assets/js/custom-dropdown.js"></script>
     <script src="./assets/js/main.js"></script>

@@ -143,6 +143,15 @@
         $(this).siblings(".card-body").slideToggle("300")
     })
 
+    // Date Picker
+
+    if($(".datePicker").length){
+        $(".datePicker").datepicker({
+            format:'dd/mm/yyyy',
+            autoclose:true,
+        });
+    }
+
 })(jQuery);
 
 (function(){
@@ -182,18 +191,19 @@
    const inputSlider = document.querySelector(".range-field input");
    const rangeBg = document.querySelector(".range-bg");
 
-   let minValue = 3000;
-   let currentValue = inputSlider.value - minValue;
-   let maxValue = 10000;
-   let rangeValue = (maxValue - minValue);
-
-   rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
-
-   inputSlider.oninput = (()=>{
-        currentValue = inputSlider.value - minValue;
-        console.log(currentValue);
-        slideValue.innerHTML = inputSlider.value + ' tk';
+   if(slideValue != null || inputSlider != null || rangeBg !=null){
+        let minValue = 3000;
+        let currentValue = inputSlider.value - minValue;
+        let maxValue = 10000;
+        let rangeValue = (maxValue - minValue);
+ 
         rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
-   });
-
+ 
+        inputSlider.oninput = (()=>{
+            currentValue = inputSlider.value - minValue;
+            console.log(currentValue);
+            slideValue.innerHTML = inputSlider.value + ' tk';
+            rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
+        });
+    }
 })()
