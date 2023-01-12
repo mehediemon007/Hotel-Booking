@@ -78,7 +78,7 @@
 
      // Range Date Picker
 
-     $(function() {
+    $(function() {
         $('input[name="datetimes"]').daterangepicker({
           timePicker: false,
           startDate: moment().startOf('hour'),
