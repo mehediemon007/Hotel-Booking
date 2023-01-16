@@ -172,7 +172,8 @@
 
     // Sign Modal
 
-    $(".login-btn").on("click",function(){
+    $(".login-btn").on("click",function(e){
+        e.preventDefault();
         $(".sign-modal-wpr").addClass("show")
     })
 
@@ -182,12 +183,14 @@
 
     // Sign Form Toggle
 
-    $(".sign-up-link").on("click",function(){
+    $(".sign-up-link").on("click",function(e){
+        e.preventDefault();
         $(".sign-in-content").css("display","none");
         $(".sign-up-content").css("display","block")
     })
 
-    $(".sign-in-link").on("click",function(){
+    $(".sign-in-link").on("click",function(e){
+        e.preventDefault();
         $(".sign-up-content").css("display","none");
         $(".sign-in-content").css("display","block")
     })

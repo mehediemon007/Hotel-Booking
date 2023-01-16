@@ -1856,6 +1856,10 @@ input[type="checkbox"]:checked:before{
     background-color: #ced4da;
 }
 
+.info-form .input-grp input:focus{
+    border-color: var(--primary-color);
+}
+
 .info-form input[type="radio"]{
     display: none;
 }
@@ -2280,12 +2284,15 @@ input[type="checkbox"]:checked:before{
     padding: 16px;
 }
 
+.modal-content input{
+    border: 2px solid #e4e4e4 !important;
+}
+
 .inputWithIcon{
     position: relative;
 }
 
 .inputWithIcon input{
-    border: 2px solid #e4e4e4 !important;
     padding-left: 50px !important;
 }
 
