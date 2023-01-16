@@ -76,7 +76,9 @@
         }
     })
 
-     // Range Date Picker
+    $('.owl-nav button').attr('aria-label', 'owl-navigation');
+
+    // Range Date Picker
 
     $(function() {
         $('input[name="datetimes"]').daterangepicker({
@@ -189,16 +191,19 @@
 
     const CountdownEl = document.getElementById("countdown");
 
-    setInterval(updateCountdown,1000)
+    if(CountdownEl != null){
 
-    function updateCountdown(){
-        const min = Math.floor(time / 60);
-        let sec = time % 60;
+        setInterval(updateCountdown,1000)
 
-        sec = sec < 10 ? '0' + sec : sec ;
+        function updateCountdown(){
+            const min = Math.floor(time / 60);
+            let sec = time % 60;
 
-        CountdownEl.innerHTML = `<span>${min}</span> : <span>${sec}</span>`;
-        time--;
+            sec = sec < 10 ? '0' + sec : sec ;
+
+            CountdownEl.innerHTML = `<span>${min}</span> : <span>${sec}</span>`;
+            time--;
+        }
     }
 
     // Range Slider
