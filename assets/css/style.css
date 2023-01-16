@@ -1148,8 +1148,9 @@ section{
 }
 
 .app-link-btn{
-    position: relative;
-    right: 120px;
+    position: absolute;
+    top: 32px;
+    right: 267px;
     width: max-content;
     height: 40px;
     color: var(--white-color);
