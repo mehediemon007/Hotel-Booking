@@ -231,9 +231,12 @@
     // IntelPhoneInput
 
     var phoneInput = document.querySelector("#phone");
-    window.intlTelInput(phoneInput, {
-        separateDialCode: true,
-        preferredCountries: ["bd", "sa"]
-    });
+
+    if(phoneInput != null){
+        window.intlTelInput(phoneInput, {
+            separateDialCode: true,
+            preferredCountries: ["bd", "sa"]
+        });
+    }
 
 })()
