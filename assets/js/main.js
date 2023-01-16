@@ -113,6 +113,12 @@
         $(".room-options").removeClass("show");
     })
 
+    $(window).click(function(){
+        if($(".room-options").hasClass("show")){
+            
+        }
+    })
+
     // Nice Select
 
     $("select").niceSelect();
@@ -151,8 +157,29 @@
         $(".datePicker").datepicker({
             format:'dd/mm/yyyy',
             autoclose:true,
+            offset: 10,
         });
+
+        $(".datePicker").on("focus",function(){
+            var dim = $(this).offset();
+
+            if($(this).parent(".option-select-wrapper")){
+                $(".datepicker.dropdown-menu").offset({
+                    top     :   dim.top + 60,
+                    left    :   dim.left - 20
+                });
+            }
+        })
     }
+
+    // Filter Date
+
+    $(".option-select-btn").on("click",function(){
+        let datePickerInput = $(this).siblings(".datePicker");
+        let dateTimeInput = $(this).siblings('input[name="datetimes"]');
+        datePickerInput.focus();
+        dateTimeInput.focus()
+    })
 
     // Toggle Traveler Data
 
