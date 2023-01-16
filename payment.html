@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- responsive tag -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/png" href="images/logo/image-logo.png">
+    <title>Paymemt</title>
+
+    <!-- Inject:css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/icofonts/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/inTelInput.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- Template Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="trv-header">
+        <div class="header-wpr position-static">
+            <div class="container">
+                <div class="main-header-container">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./assets/images/header-logo.png" alt="Booking"></a>
+                    </div>
+                    <ul class="nav main-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="icofont-ui-flight"></i>
+                                <p>Flights</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icofont-5-star-hotel"></i>
+                                <p>Hotels</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icofont-ticket"></i>
+                                <p>Visa</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="toolbar-right">
+                        <a href="#" class="login-btn">Login or Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="trv-main-content">
+        
+        <!-- Booking Review -->
+        <div class="trv-booking-review-wpr py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="booking-review-content">
+                            <div class="sec-title d-flex justify-content-between align-items-center">
+                                <h4>Review Your Booking</h4>
+                                <div class="trv-breadcrumb">
+                                    <a href="./search-result.html">Flight Selection</a>
+                                    <a href="./booking.html">Booking</a>
+                                    <a href="#" class="active">Payment</a>
+                                </div>
+                            </div>
+                            <div class="payment-details">
+                                <ul class="nav pay-currency" id="currency-Tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="bdt-tab" data-bs-toggle="tab" href="#bdt" role="tab" aria-controls="bdt" aria-selected="true">Pay With BDT</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="usd-tab" data-bs-toggle="tab" href="#usd" role="tab" aria-controls="usd" aria-selected="true">Pay With USD</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="currencyTabContent">
+                                    <div class="tab-pane fade show active" id="bdt" role="tabpanel" aria-labelledby="bdt-tab">
+                                        <ul class="nav pay-methods-links my-4" id="currency-Tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active" id="visa-tab" data-bs-toggle="tab" href="#visa" role="tab" aria-controls="visa" aria-selected="true">Visa / Master & MFS</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="amex-tab" data-bs-toggle="tab" href="#amex" role="tab" aria-controls="amex" aria-selected="true">Amex & Others</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="visa-tab">
+                                                <div class="pay-methods">
+                                                    <div class="single-method">
+                                                        <input type="radio" name="payment" id="visa-card">
+                                                        <label for="visa-card">
+                                                            <div class="method-img">
+                                                                <img src="./assets/images/icons/mastervisa.png" alt="Visa Card">
+                                                            </div>
+                                                            <p>Visa/Mastercard</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="single-method">
+                                                        <input type="radio" name="payment" id="bkash">
+                                                        <label for="bkash">
+                                                            <div class="method-img">
+                                                                <img src="./assets/images/icons/bkash.png" alt="Bkash">
+                                                            </div>
+                                                            <p>BKash</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="single-method">
+                                                        <input type="radio" name="payment" id="nagad">
+                                                        <label for="nagad">
+                                                            <div class="method-img">
+                                                                <img src="./assets/images/icons/nagad.png" alt="Nagad">
+                                                            </div>
+                                                            <p>Nagad</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="single-method">
+                                                        <input type="radio" name="payment" id="rocket">
+                                                        <label for="rocket">
+                                                            <div class="method-img">
+                                                                <img src="./assets/images/icons/dbblrct.png" alt="Rocket">
+                                                            </div>
+                                                            <p>Rocket</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="trv-btn pay-btn">Confirm & Pay</a>
+                                            </div>
+                                            <div class="tab-pane fade" id="amex" role="tabpanel" aria-labelledby="amex-tab">
+                                                <div class="pay-methods">
+                                                    <div class="single-method">
+                                                        <input type="radio" name="payment" id="ssl">
+                                                        <label for="ssl">
+                                                            <div class="method-img">
+                                                                <img src="./assets/images/icons/sslc.png" alt="SSL">
+                                                            </div>
+                                                            <p>SSL Commerz</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="single-method">
+                                                        <input type="radio" name="payment" id="nexus">
+                                                        <label for="nexus">
+                                                            <div class="method-img">
+                                                                <img src="./assets/images/icons/dbblnxpay.png" alt="Nexus Pay">
+                                                            </div>
+                                                            <p>DBBL Nexus Pay</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="trv-btn pay-btn">Confirm & Pay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="usd" role="tabpanel" aria-labelledby="usd-tab">
+                                        <div class="usd-payment">Visa / Master & Mobile</div>
+                                        <a href="#" class="trv-btn pay-btn">Confirm & Pay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sidebar-widget">
+                            <div class="fare-sum-card position-relative">
+                                <span class="content-toggle"><i class="icofont-circled-up"></i></span>
+                                <div class="card-heading d-block border-bottom-0">
+                                    <div class="heading-content d-flex align-items-center border-bottom pb-3">
+                                        <img src="./assets/images/services/BG.png" alt="Biman Bangla">
+                                        <h6 class="mb-0">Biman Bangla Airlines</h6>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="px-3">
+                                        <h6>Fare Summary</h6>
+                                        <p>Adult ( 1 traveller)</p>
+                                        <ul class="fare-fees">
+                                            <li class="fare-fee">
+                                                <p>Base Fare</p>
+                                                <div>
+                                                    <p>BDT <b>2,707</b></p>
+                                                    <p class="qty">( 1 x 2,707 )</p>
+                                                </div>
+                                            </li>
+                                            <li class="fare-fee">
+                                                <p>Taxes + Fees</p>
+                                                <div>
+                                                    <p>BDT <b>776</b></p>
+                                                    <p class="qty">( 1 x 776 )</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-total fare-fee">
+                                            <p>Sub-total</p>
+                                            <div>
+                                                <p>BDT <b>3,483</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="total-fees fare-fee">
+                                        <b>You Pay <span class="qty">(for 1 traveler)</span></b>
+                                        <b>BDT 3,483</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="session-time">
+                                <h6 class="mb-3">Session Timeout in</h6>
+                                <p id="countdown"><span>9</span> : <span>42</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="social-links">
+                        <a href="#" aria-label="facebook" target="_blank"><i class="icofont-facebook"></i></a>
+                        <a href="#" aria-label="twitter" target="_blank"><i class="icofont-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="copyright">
+                        <p>&copy; 2023 <b>Hotel Booking</b></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </footer>
+
+    <!-- Js files -->
+    <script src="./assets/js/modernizr-3.5.0.min.js"></script>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/fancybox.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/moment-with-locales.min.js"></script>
+    <script src="./assets/js/daterangepicker.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/inTelInput.min.js"></script>
+    <script src="./assets/js/custom-dropdown.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

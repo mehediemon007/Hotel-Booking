@@ -1623,6 +1623,7 @@ section{
 
 .range-field input::-moz-range-thumb{
     -webkit-appearance: none;
+    appearance: none;
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -1752,7 +1753,6 @@ input[type="checkbox"]:checked:before{
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-    padding: 0 16px;
 }
 
 .content-toggle{
@@ -1982,6 +1982,32 @@ input[type="checkbox"]:checked:before{
     color: #6e7491;
 }
 
+.booking-confirm-msg{
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding: 50px 16px 40px;
+}
+
+.booking-confirm-msg h3{
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.confirm-msg{
+    background-color: rgb(0 140 255 / 10%);
+    border: 1px dashed var(--primary-color);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+
+.confirm-msg p{
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
 .fare-sum-card{
     border-radius: 8px;
     box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
@@ -2051,6 +2077,130 @@ input[type="checkbox"]:checked:before{
     font-size: 18px;
     font-weight: 600;
     color: #6e7491;
+}
+
+/* Payment Details */
+
+.payment-details{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.pay-currency .nav-link{
+    position: relative;
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--text-color);
+    border: 2px solid #a1b0cc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding: 10px 16px;
+    margin-right: 16px;
+}
+
+.pay-currency .nav-link.active{
+    border-color: var(--primary-color);
+}
+
+.pay-currency .nav-link.active::before{
+    position: absolute;
+    top: -14px;
+    right: -8px;
+    content: "\eed7";
+    width: 20px;
+    height: 24px;
+    font-family: IcoFont!important;
+    font-size: 22px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.pay-methods-links .nav-item{
+    width: 45%;
+    height: 50px;
+    text-align: center;
+    margin-right: 16px;
+}
+
+.pay-methods-links .nav-link{
+    width: 100%;
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--text-color);
+    background-color: #edf2f4;
+    border-radius: 5px;
+    line-height: 34px;
+}
+
+.pay-methods-links .nav-link.active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pay-methods .single-method input[type="radio"]{
+    display: none;
+}
+
+.pay-methods .single-method label{
+    position: relative;
+    width: 70%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    border: 1px solid #a1b0cc;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.pay-methods .single-method input[type="radio"]:checked + label{
+    border: 2px solid var(--primary-color);
+}
+
+.pay-methods .single-method input[type="radio"]:checked + label::after{
+    position: absolute;
+    top: -14px;
+    right: -8px;
+    content: "\eed7";
+    width: 24px;
+    height: 24px;
+    font-family: IcoFont!important;
+    font-size: 22px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+.pay-methods .single-method .method-img{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.pay-methods .single-method label p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #a1b0cc;
+    padding: 8px 16px;
+}
+
+.pay-btn{
+    font-size: 18px;
+    padding: 0 20px;
+    margin-top: 8px;
+}
+
+.usd-payment{
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 24px 0;
+    text-align: center;
 }
 
 

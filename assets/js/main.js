@@ -160,6 +160,14 @@
         $(".traveler-data-wpr").css("display","block")
     })
 
+    // Confirm Message
+
+    $(".booking-btn").on("click",function(){
+        $(this).parent().css("display","none");
+        $(this).parent().siblings(".terms").css("display","none")
+        $(".booking-confirm-msg").css("display","block")
+    })
+
 })(jQuery);
 
 (function(){
