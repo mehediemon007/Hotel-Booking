@@ -2296,6 +2296,12 @@ input[type="checkbox"]:checked:before{
     transform: translate(-35px,-50%);
 }
 
+.pass-input i{
+    font-size: 20px;
+    left: auto;
+    right: -16px;
+}
+
 .remember-pass{
     display: flex;
     justify-content: space-between;

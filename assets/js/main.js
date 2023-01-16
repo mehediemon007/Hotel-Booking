@@ -192,6 +192,18 @@
         $(".sign-in-content").css("display","block")
     })
 
+    // Password Type Toggle
+
+    $(".pass-input > i").click(function(){
+        $(this).toggleClass("icofont-eye-blocked icofont-eye-alt");
+        if($(this).parents().siblings("input").attr("type") == "text"){
+           $(this).parents().siblings("input").attr("type","password")
+        }
+        else{
+         $(this).parents().siblings("input").attr("type","text")
+        }
+    })
+
 })(jQuery);
 
 (function(){
