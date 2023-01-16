@@ -1856,7 +1856,8 @@ input[type="checkbox"]:checked:before{
     background-color: #ced4da;
 }
 
-.info-form .input-grp input:focus{
+.info-form .input-grp input:focus,
+.modal-content input:focus{
     border-color: var(--primary-color);
 }
 
