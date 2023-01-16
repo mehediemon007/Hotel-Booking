@@ -170,6 +170,28 @@
         $(".booking-confirm-msg").css("display","block")
     })
 
+    // Sign Modal
+
+    $(".login-btn").on("click",function(){
+        $(".sign-modal-wpr").addClass("show")
+    })
+
+    $(".modal-close").on("click",function(){
+        $(".sign-modal-wpr").removeClass("show")
+    })
+
+    // Sign Form Toggle
+
+    $(".sign-up-link").on("click",function(){
+        $(".sign-in-content").css("display","none");
+        $(".sign-up-content").css("display","block")
+    })
+
+    $(".sign-in-link").on("click",function(){
+        $(".sign-up-content").css("display","none");
+        $(".sign-in-content").css("display","block")
+    })
+
 })(jQuery);
 
 (function(){
@@ -230,13 +252,17 @@
 
     // IntelPhoneInput
 
-    var phoneInput = document.querySelector("#phone");
+    var phoneInput = document.querySelectorAll(".phone");
 
     if(phoneInput != null){
-        window.intlTelInput(phoneInput, {
-            separateDialCode: true,
-            preferredCountries: ["bd", "sa"]
-        });
+
+        phoneInput.forEach(each => {
+
+            window.intlTelInput(each, {
+                separateDialCode: true,
+                preferredCountries: ["bd", "sa"]
+            });
+        })
     }
 
 })()
