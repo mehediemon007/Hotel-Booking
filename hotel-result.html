@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- responsive tag -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/png" href="images/logo/image-logo.png">
+    <title>Hotel Search</title>
+
+    <!-- Inject:css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/icofonts/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- Template Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="trv-header">
+        <div class="trv-toolbar">
+            <div class="container">
+                <div class="row align-items-center g-1">
+                    <div class="col-sm-4">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./assets/images/logo.png" alt="Booking"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="toolbar-right">
+                            <div class="offer d-flex align-items-center">
+                                <img src="./assets/images/icons/discount.png" alt="Offer Discount">
+                                <div class="content">
+                                    <p><b>Supper Offer</b></p>
+                                    <p>Explore great deals & offers</p>
+                                </div>
+                            </div>
+                            <a href="#" class="login-btn">Login or Create Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wpr">
+            <div class="container">
+                <div class="main-header-container">
+                    <div class="logo">
+                        <a href="#"><img src="./assets/images/header-logo.png" alt="Booking"></a>
+                    </div>
+                    <ul class="nav main-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icofont-ui-flight"></i>
+                                <p>Flights</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="icofont-5-star-hotel"></i>
+                                <p>Hotels</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icofont-ticket"></i>
+                                <p>Visa</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="toolbar-right">
+                        <a href="#" class="login-btn">Login or Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="trv-main-content">
+        <!-- Banner -->
+        <div class="trv-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-filter-wpr">
+                        <div class="filter-container">
+                            <div class="room-filter-content filter-content">
+                                <div class="filter-types">
+                                    <div class="single-type">
+                                        <label for="five-rooms">
+                                            <input type="radio" name="room" id="five-rooms" checked>
+                                            UPTO 5 ROOMS
+                                        </label>
+                                    </div>
+                                    <div class="single-type">
+                                        <label for="five-rooms+">
+                                            <input type="radio" name="room" id="five-rooms+">
+                                            5+ ROOMS
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="filter-options">
+                                    <div class="single-option">
+                                        <p class="option-label">City, Property name or Location</p>
+                                        <div class="option-select-wrapper airport-select">
+                                            <div class="option-select-btn">
+                                                <h2>Dhaka</h2>
+                                                <p>Hotel La Meridian</p>
+                                            </div>
+                                            <div class="option-select-content">
+                                                <div class="search">
+                                                    <i class="icofont-search"></i>
+                                                    <input spellcheck="false" type="text" placeholder="From">
+                                                </div>
+                                                <ul class="filter-options-list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-option">
+                                        <p class="option-label">Check In <i class="icofont-rounded-down"></i></p>
+                                        <div class="option-select-wrapper">
+                                            <label for="chk-in-date" class="visually-hidden"></label>
+                                            <input type="text" class="datePicker visually-hidden" id="chk-in-date">
+                                            <div class="option-select-btn">
+                                                <h2>9 <sub>Jan'23</sub></h2>
+                                                <p>Monday</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-option">
+                                        <p class="option-label">Check Out <i class="icofont-rounded-down"></i></p>
+                                        <div class="option-select-wrapper">
+                                            <label for="chk-out-date" class="visually-hidden"></label>
+                                            <input type="text" class="datePicker visually-hidden" id="chk-out-date">
+                                            <div class="option-select-btn">
+                                                <h2>12 <sub>Jan'23</sub></h2>
+                                                <p>Monday</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-option">
+                                        <p class="option-label">Rooms & Guests <i class="icofont-rounded-down"></i></p>
+                                        <div class="option-select-wrapper">
+                                            <div class="option-select-btn">
+                                                <h2>1 <sub>Room</sub> 4 <sub>Adults</sub></h2>
+                                            </div>
+                                            <div class="room-options">
+                                                <div class="single-room-option">
+                                                    <p>Rooms</p>
+                                                    <div class="room-quantity">
+                                                        <button class="qun-dwn"><i class="icofont-minus"></i></button>
+                                                        <input type="number" class="quantity-input" value="1">
+                                                        <button class="qun-up"><i class="icofont-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="single-room-option">
+                                                    <p>ADULTS (12y +)</p>
+                                                    <div class="room-quantity">
+                                                        <button class="qun-dwn"><i class="icofont-minus"></i></button>
+                                                        <input type="number" class="quantity-input" value="1">
+                                                        <button class="qun-up"><i class="icofont-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="single-room-option">
+                                                    <p>CHILDREN (below 12y)</p>
+                                                    <div class="room-quantity">
+                                                        <button class="qun-dwn"><i class="icofont-minus"></i></button>
+                                                        <input type="number" class="quantity-input" value="1">
+                                                        <button class="qun-up"><i class="icofont-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <button class="opts-apply">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-option">
+                                        <p class="option-label">Price Per Night <i class="icofont-rounded-down"></i></p>
+                                        <div class="option-select-wrapper">
+                                            <div class="option-select-btn">
+                                                <select name="room-rent" id="room-rent">
+                                                    <option value="0">৳0 - ৳1500</option>
+                                                    <option value="1">৳1500 - ৳2500</option>
+                                                    <option value="2" selected>৳2500 - ৳3500</option>
+                                                    <option value="3">৳5000 - ৳15000</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="./hotel-result.html" class="filter-submit">Search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flights List -->
+        <div class="trv-filter-result-wpr">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-4">
+                        <div class="sidebar-filter-widget">
+                            <div class="filter-item text-center">
+                                <h6 class="filter-name">Session Timeout in</h6>
+                                <div class="session-time">
+                                    <p id="countdown"><span>10</span> : <span>00</span></p>
+                                </div>
+                            </div>
+                            <div class="filter-item price-filter">
+                                <h6 class="filter-name">One Way Price</h6>
+                                <div class="price-range">
+                                    <div class="range-field">
+                                        <div class="position-relative">
+                                            <input type="range" min="3365" max="10000" value="4227" step="1">
+                                            <span class="range-bg"></span>
+                                        </div>
+                                        <div class="range-value">
+                                            <span class="value left">3,365 tk - </span>
+                                            <span class="value right">4,227 tk</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Departure time in Dhaka</h6>
+                                <div class="row g-4">
+                                    <div class="col-5">
+                                        <div class="departure-time">
+                                            <input type="radio" name="dept-time" id="morning" checked>
+                                            <label for="morning">
+                                                <i class="icofont-sun-rise"></i>
+                                                <p><b>Morning</b></p>
+                                                <p class="time">6:00 - 11:59 (1)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="departure-time">
+                                            <input type="radio" name="dept-time" id="noon">
+                                            <label for="noon">
+                                                <i class="icofont-sun-alt"></i>
+                                                <p><b>After Noon</b></p>
+                                                <p class="time">12:00 - 17:59 (5)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="departure-time">
+                                            <input type="radio" name="dept-time" id="night">
+                                            <label for="night">
+                                                <i class="icofont-moon"></i>
+                                                <p><b>Evening</b></p>
+                                                <p class="time">18:00 - 23:59 (7)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Stops From Dhaka</h6>
+                                <div class="filter-input">
+                                    <div class="valued-opt">
+                                        <label for="stopis-1">
+                                            <input type="checkbox" name="t-time" id="stopis-1" checked>
+                                            Non Stop (5)
+                                        </label>
+                                        <p>BDT 3,483</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Check in Baggage Allowance</h6>
+                                <div class="filter-input">
+                                    <label for="bag-weight-1">
+                                        <input type="checkbox" name="t-time" id="bag-weight-1">
+                                        20 KG (5)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Refundable</h6>
+                                <div class="filter-input">
+                                    <label for="refund-1">
+                                        <input type="checkbox" name="t-time" id="refund-1">
+                                        Partially Refundable (5)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Airlines</h6>
+                                <div>
+                                    <div class="valued-opt filter-input">
+                                        <label for="air-1">
+                                            <input type="checkbox" name="t-time" id="air-1">
+                                            US Bangla Airlines
+                                        </label>
+                                        <p>BDT 3,483</p>
+                                    </div>
+                                    <div class="valued-opt filter-input">
+                                        <label for="air-2">
+                                            <input type="checkbox" name="t-time" id="air-2">
+                                            Air Astra
+                                        </label>
+                                        <p>BDT 3,487</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <h6 class="filter-name">Transit Time in (Dhaka - Chittagong)</h6>
+                                <div class="filter-input">
+                                    <label for="tt-1">
+                                        <input type="checkbox" name="t-time" id="tt-1">
+                                        No Transit Time (5)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <button class="clr-filter-btn">Clear Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="flight-list-wpr">
+                            <div class="route-name">
+                                <div class="prev-day position-relative">
+                                    <i class="icofont-ui-play"></i>
+                                    <span>Search for previous day flights</span>
+                                </div>
+                                <h2>Flights from Dhaka to Chittagong</h2>
+                                <div class="next-day position-relative">
+                                    <i class="icofont-ui-play"></i>
+                                    <span>Search for next day flights</span>
+                                </div>
+                            </div>
+                            <ul class="nav flight-category" id="flightTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="cheap-tab" data-bs-toggle="tab" href="#cheap" role="tab" aria-controls="cheap" aria-selected="true">
+                                        <h6>Cheapest</h6>
+                                        <p>To get the cheapest available flights</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="short-tab" data-bs-toggle="tab" href="#short" role="tab" aria-controls="short" aria-selected="true">
+                                        <h6>Shortest</h6>
+                                        <p>To get the shortest available flights</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="flights-container">
+                                <div class="tab-content" id="flightTabContent">
+                                    <div class="tab-pane fade show active" id="cheap" role="tabpanel" aria-labelledby="cheap-tab">
+                                        <div class="flight-list">
+                                            <div class="single-flight">
+                                                <div class="flight-details">
+                                                    <div>
+                                                        <img src="./assets/images/services/BG.png" alt="Biman BD" class="air-img">
+                                                        <p class="tag">Biman Bangladesh Airlines</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Depart</p>
+                                                        <b>19:45</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Dhaka</p>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="tag">55 minutes</p>
+                                                        <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
+                                                        <p class="flight-type">Non Stop</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Arrive</p>
+                                                        <b>20:45</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Chittagong</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Price</p>
+                                                        <b>BDT 3,360</b>
+                                                    </div>
+                                                    <div>
+                                                        <a href="./booking.html" class="book-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="flight-meta-info">
+                                                    <p class="refund-info">Partially Refundable</p>
+                                                    <p class="info-toggle">Show Flight Details</p>
+                                                </div>
+                                                <div class="flight-info-details">
+                                                    <ul class="nav flight-info-links" id="flight-info-Tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link active" id="flight-des-tab" data-bs-toggle="tab" href="#flight-des" role="tab" aria-controls="cheap" aria-selected="true">Flight Details</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-sum-tab" data-bs-toggle="tab" href="#fare-sum" role="tab" aria-controls="fare-sum" aria-selected="true">Fare Summary</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-rule-tab" data-bs-toggle="tab" href="#fare-rule" role="tab" aria-controls="fare-rule" aria-selected="true">Fare Rules</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="flightinfoTabContent">
+                                                        <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-info-wpr">
+                                                                        <img src="./assets/images/services/BG.png" alt="Biman BD">
+                                                                        <div class="fare-info">
+                                                                            <h6>Biman Bangladesh Airlines <span>BG | 617</span></h6>
+                                                                            <div>
+                                                                                <p>Aircraft : DHC8 Dash 8</p>
+                                                                                <p>Operated by : BG</p>
+                                                                                <p>Economy (G)</p>
+                                                                                <p>Available seats: 9</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div>
+                                                                            <b>19:45</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Hazrat Shahjalal International Airport</p>
+                                                                            <p>Dhaka,Bangladesh</p>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <p class="tag">55 minutes</p>
+                                                                            <img src="./assets/images/icons/dash.png" alt="Non stop">
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>20:45</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Patenga</p>
+                                                                            <p>Chittagong,Bangladesh</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Baggage</b>
+                                                                            <p>Adult</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Check In</b>
+                                                                            <p>20 kg(s)</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Cabin</b>
+                                                                            <p>7 kg(s)</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-sum-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Fare Summary</th>
+                                                                                    <th>Base Fare</th>
+                                                                                    <th>Taxes + Fees</th>
+                                                                                    <th>Per Passenger</th>
+                                                                                    <th>Total</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Adult</td>
+                                                                                    <td>BDT 2,640</td>
+                                                                                    <td>BDT 725</td>
+                                                                                    <td>BDT (3,365 x 1)</td>
+                                                                                    <td>BDT 3,365</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tfoot>
+                                                                                <tr>
+                                                                                    <td><b>Total (1 Traveler)</b></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td><b>BDT 3,365</b></td>
+                                                                                </tr>
+                                                                            </tfoot>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Fare breakdown</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Cancellation</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 2,000</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block mb-3">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Date Change</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 1,500</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="callout-block">
+                                                                <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-flight">
+                                                <div class="flight-details">
+                                                    <div>
+                                                        <img src="./assets/images/services/US.png" alt="Biman BD" class="air-img">
+                                                        <p class="tag">US Bangla Airlines</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Depart</p>
+                                                        <b>19:45</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Dhaka</p>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="tag">55 minutes</p>
+                                                        <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
+                                                        <p class="flight-type">Non Stop</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Arrive</p>
+                                                        <b>21:00</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Chittagong</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Price</p>
+                                                        <b>BDT 2,560</b>
+                                                    </div>
+                                                    <div>
+                                                        <a href="./booking.html" class="book-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="flight-meta-info">
+                                                    <p class="refund-info">Partially Refundable</p>
+                                                    <p class="info-toggle">Show Flight Details</p>
+                                                </div>
+                                                <div class="flight-info-details">
+                                                    <ul class="nav flight-info-links" id="flight-info-Tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link active" id="flight-des-tab" data-bs-toggle="tab" href="#flight-des" role="tab" aria-controls="cheap" aria-selected="true">Flight Details</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-sum-tab" data-bs-toggle="tab" href="#fare-sum" role="tab" aria-controls="fare-sum" aria-selected="true">Fare Summary</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-rule-tab" data-bs-toggle="tab" href="#fare-rule" role="tab" aria-controls="fare-rule" aria-selected="true">Fare Rules</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="flightinfoTabContent">
+                                                        <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-info-wpr">
+                                                                        <img src="./assets/images/services/US.png" alt="US Bangla">
+                                                                        <div class="fare-info">
+                                                                            <h6>US BANGLA Airlines <span>US | 517</span></h6>
+                                                                            <div>
+                                                                                <p>Aircraft : DHC8 Dash 8</p>
+                                                                                <p>Operated by : BG</p>
+                                                                                <p>Economy (G)</p>
+                                                                                <p>Available seats: 9</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div>
+                                                                            <b>19:45</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Hazrat Shahjalal International Airport</p>
+                                                                            <p>Dhaka,Bangladesh</p>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <p class="tag">55 minutes</p>
+                                                                            <img src="./assets/images/icons/dash.png" alt="Non stop">
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>21:00</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Patenga</p>
+                                                                            <p>Chittagong,Bangladesh</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Baggage</b>
+                                                                            <p>Adult</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Check In</b>
+                                                                            <p>20 kg(s)</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Cabin</b>
+                                                                            <p>7 kg(s)</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-sum-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Fare Summary</th>
+                                                                                    <th>Base Fare</th>
+                                                                                    <th>Taxes + Fees</th>
+                                                                                    <th>Per Passenger</th>
+                                                                                    <th>Total</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Adult</td>
+                                                                                    <td>BDT 2,640</td>
+                                                                                    <td>BDT 725</td>
+                                                                                    <td>BDT (3,365 x 1)</td>
+                                                                                    <td>BDT 3,365</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tfoot>
+                                                                                <tr>
+                                                                                    <td><b>Total (1 Traveler)</b></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td><b>BDT 3,365</b></td>
+                                                                                </tr>
+                                                                            </tfoot>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Fare breakdown</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Cancellation</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 2,000</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block mb-3">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Date Change</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 1,500</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="callout-block">
+                                                                <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="short" role="tabpanel" aria-labelledby="short-tab">
+                                        <div class="flight-list">
+                                            <div class="single-flight">
+                                                <div class="flight-details">
+                                                    <div>
+                                                        <img src="./assets/images/services/2A.png" alt="Air Astra" class="air-img">
+                                                        <p class="tag">Air Astra</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Depart</p>
+                                                        <b>19:45</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Dhaka</p>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="tag">30 minutes</p>
+                                                        <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
+                                                        <p class="flight-type">Non Stop</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Arrive</p>
+                                                        <b>20:45</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Chittagong</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Price</p>
+                                                        <b>BDT 5,550</b>
+                                                    </div>
+                                                    <div>
+                                                        <a href="./booking.html" class="book-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="flight-meta-info">
+                                                    <p class="refund-info">Partially Refundable</p>
+                                                    <p class="info-toggle">Show Flight Details</p>
+                                                </div>
+                                                <div class="flight-info-details">
+                                                    <ul class="nav flight-info-links" id="flight-info-Tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link active" id="flight-des-tab" data-bs-toggle="tab" href="#flight-des" role="tab" aria-controls="cheap" aria-selected="true">Flight Details</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-sum-tab" data-bs-toggle="tab" href="#fare-sum" role="tab" aria-controls="fare-sum" aria-selected="true">Fare Summary</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-rule-tab" data-bs-toggle="tab" href="#fare-rule" role="tab" aria-controls="fare-rule" aria-selected="true">Fare Rules</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="flightinfoTabContent">
+                                                        <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-info-wpr">
+                                                                        <img src="./assets/images/services/2A.png" alt="Air Astra">
+                                                                        <div class="fare-info">
+                                                                            <h6>AIR ASTRA <span>AA | 617</span></h6>
+                                                                            <div>
+                                                                                <p>Aircraft : DHC8 Dash 8</p>
+                                                                                <p>Operated by : BG</p>
+                                                                                <p>Economy (G)</p>
+                                                                                <p>Available seats: 9</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div>
+                                                                            <b>19:45</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Hazrat Shahjalal International Airport</p>
+                                                                            <p>Dhaka,Bangladesh</p>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <p class="tag">55 minutes</p>
+                                                                            <img src="./assets/images/icons/dash.png" alt="Non stop">
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>20:45</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Patenga</p>
+                                                                            <p>Chittagong,Bangladesh</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Baggage</b>
+                                                                            <p>Adult</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Check In</b>
+                                                                            <p>20 kg(s)</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Cabin</b>
+                                                                            <p>7 kg(s)</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-sum-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Fare Summary</th>
+                                                                                    <th>Base Fare</th>
+                                                                                    <th>Taxes + Fees</th>
+                                                                                    <th>Per Passenger</th>
+                                                                                    <th>Total</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Adult</td>
+                                                                                    <td>BDT 2,640</td>
+                                                                                    <td>BDT 725</td>
+                                                                                    <td>BDT (3,365 x 1)</td>
+                                                                                    <td>BDT 3,365</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tfoot>
+                                                                                <tr>
+                                                                                    <td><b>Total (1 Traveler)</b></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td><b>BDT 3,365</b></td>
+                                                                                </tr>
+                                                                            </tfoot>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Fare breakdown</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Cancellation</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 2,000</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block mb-3">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Date Change</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 1,500</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="callout-block">
+                                                                <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-flight">
+                                                <div class="flight-details">
+                                                    <div>
+                                                        <img src="./assets/images/services/NA.png" alt="Novo Air" class="air-img">
+                                                        <p class="tag">NovoAir</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Depart</p>
+                                                        <b>19:45</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Dhaka</p>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="tag">30 minutes</p>
+                                                        <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
+                                                        <p class="flight-type">Non Stop</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Arrive</p>
+                                                        <b>20:45</b>
+                                                        <p class="date">Thu, 10 Jan 2023</p>
+                                                        <p class="location">Chittagong</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="tag">Price</p>
+                                                        <b>BDT 5,000</b>
+                                                    </div>
+                                                    <div>
+                                                        <a href="./booking.html" class="book-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="flight-meta-info">
+                                                    <p class="refund-info">Partially Refundable</p>
+                                                    <p class="info-toggle">Show Flight Details</p>
+                                                </div>
+                                                <div class="flight-info-details">
+                                                    <ul class="nav flight-info-links" id="flight-info-Tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link active" id="flight-des-tab" data-bs-toggle="tab" href="#flight-des" role="tab" aria-controls="cheap" aria-selected="true">Flight Details</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-sum-tab" data-bs-toggle="tab" href="#fare-sum" role="tab" aria-controls="fare-sum" aria-selected="true">Fare Summary</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="fare-rule-tab" data-bs-toggle="tab" href="#fare-rule" role="tab" aria-controls="fare-rule" aria-selected="true">Fare Rules</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="flightinfoTabContent">
+                                                        <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-info-wpr">
+                                                                        <img src="./assets/images/services/NA.png" alt="Nova Air">
+                                                                        <div class="fare-info">
+                                                                            <h6>NOVO AIR <span>NA | 617</span></h6>
+                                                                            <div>
+                                                                                <p>Aircraft : DHC8 Dash 8</p>
+                                                                                <p>Operated by : BG</p>
+                                                                                <p>Economy (G)</p>
+                                                                                <p>Available seats: 9</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="flight-details">
+                                                                        <div>
+                                                                            <b>19:45</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Hazrat Shahjalal International Airport</p>
+                                                                            <p>Dhaka,Bangladesh</p>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <p class="tag">55 minutes</p>
+                                                                            <img src="./assets/images/icons/dash.png" alt="Non stop">
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>20:45</b>
+                                                                            <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
+                                                                            <p>Terminal</p>
+                                                                            <p class="terminal-name">Patenga</p>
+                                                                            <p>Chittagong,Bangladesh</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Baggage</b>
+                                                                            <p>Adult</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Check In</b>
+                                                                            <p>20 kg(s)</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <b>Cabin</b>
+                                                                            <p>7 kg(s)</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Dhaka to Chittagong</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-sum-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Fare Summary</th>
+                                                                                    <th>Base Fare</th>
+                                                                                    <th>Taxes + Fees</th>
+                                                                                    <th>Per Passenger</th>
+                                                                                    <th>Total</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Adult</td>
+                                                                                    <td>BDT 2,640</td>
+                                                                                    <td>BDT 725</td>
+                                                                                    <td>BDT (3,365 x 1)</td>
+                                                                                    <td>BDT 3,365</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tfoot>
+                                                                                <tr>
+                                                                                    <td><b>Total (1 Traveler)</b></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td><b>BDT 3,365</b></td>
+                                                                                </tr>
+                                                                            </tfoot>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
+                                                            <div class="flight-info-content">
+                                                                <div class="content-head">
+                                                                    <h5>Fare breakdown</h5>
+                                                                </div>
+                                                                <div class="content-body p-3">
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Cancellation</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 2,000</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block mb-3">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                    <div class="fare-rules-table">
+                                                                        <table class="table table-bordered mb-0">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <b>Date Change</b>
+                                                                                        <p>(From Scheduled flight departure)</p>
+                                                                                    </th>
+                                                                                    <th>
+                                                                                        <b>Amount/Value</b>
+                                                                                        <p>(Per passenger)</p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Maximum penalty amount</td>
+                                                                                    <td>Adult : <b>BDT 1,500</b></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="callout-block">
+                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="callout-block">
+                                                                <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trv-pagination">
+                                <a href="#" class="pagination-item"><i class="icofont-simple-left"></i></a>
+                                <a href="#" class="pagination-item active">1</a>
+                                <a href="#" class="pagination-item">2</a>
+                                <a href="#" class="pagination-item"><i class="icofont-simple-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="social-links">
+                        <a href="#" aria-label="facebook" target="_blank"><i class="icofont-facebook"></i></a>
+                        <a href="#" aria-label="twitter" target="_blank"><i class="icofont-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="copyright">
+                        <p>&copy; 2023 <b>Hotel Booking</b></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </footer>
+
+    <!-- Js files -->
+    <script src="./assets/js/modernizr-3.5.0.min.js"></script>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/fancybox.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/moment-with-locales.min.js"></script>
+    <script src="./assets/js/daterangepicker.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/custom-dropdown.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

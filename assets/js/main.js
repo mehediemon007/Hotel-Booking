@@ -286,7 +286,6 @@
  
         inputSlider.oninput = (()=>{
             currentValue = inputSlider.value - minValue;
-            console.log(currentValue);
             slideValue.innerHTML = inputSlider.value + ' tk';
             rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
         });

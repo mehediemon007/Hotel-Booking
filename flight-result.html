@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- Template Stylesheet -->
@@ -155,6 +156,8 @@
                                     <div class="single-option">
                                         <p class="option-label">Departure <i class="icofont-rounded-down"></i></p>
                                         <div class="option-select-wrapper">
+                                            <label for="dep-date" class="visually-hidden"></label>
+                                            <input type="text" class="datePicker visually-hidden" id="dep-date">
                                             <div class="option-select-btn">
                                                 <h2>9 <sub>Jan'23</sub></h2>
                                                 <p>Monday</p>
@@ -164,9 +167,9 @@
                                     <div class="single-option">
                                         <p class="option-label">Return <i class="icofont-rounded-down"></i></p>
                                         <div class="option-select-wrapper">
+                                            <label for="re-date" class="visually-hidden"></label>
+                                            <input type="text" name="datetimes" class="visually-hidden" id="re-date">
                                             <div class="option-select-btn">
-                                                <label for="date" class="visually-hidden"></label>
-                                                <input type="text" name="datetimes" id="date">
                                                 <!-- <h2>9 <sub>Jan'23</sub></h2>
                                                 <p>Monday</p> -->
                                                 <p class="return-info">Tap to add a return date for bigger discounts</p>
@@ -243,7 +246,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <button class="filter-submit">Search</button>
+                                    <a href="./flight-result.html" class="filter-submit">Search</a>
                                 </div>
                             </div>
                         </div>
@@ -1285,6 +1288,7 @@
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/moment-with-locales.min.js"></script>
     <script src="./assets/js/daterangepicker.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
     <script src="./assets/js/custom-dropdown.js"></script>
     <script src="./assets/js/main.js"></script>
