@@ -233,7 +233,7 @@
          $(this).parents().siblings("input").attr("type","text")
         }
     })
-
+    
 })(jQuery);
 
 (function(){
