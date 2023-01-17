@@ -331,7 +331,7 @@ section{
     content: none;
 }
 
-.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{
+.nice-select .option:hover{
     color: var(--white-color);
     background-color: var(--primary-color);
 }
