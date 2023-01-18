@@ -241,15 +241,15 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <div class="nav-menu">
-                                    <a href="#about-hotel" class="active">Overview</a>
-                                    <a href="#room-select">Rooms</a>
-                                    <a href="#location">Location</a>
-                                    <a href="#">AMENITIES</a>
-                                    <a href="#">PROPERTY RULES</a>
-                                    <a href="#">USER REVIEWS</a> 
-                                    <a href="#">SIMILAR PROPERTIES</a> 
-                                </div>
+                                <ul class="nav-menu">
+                                    <li><a href="#about-hotel">Overview</a></li>
+                                    <li><a href="#room-select">Rooms</a></li>
+                                    <li><a href="#location">Location</a></li>
+                                    <!-- <li><a href="#">AMENITIES</a></li>
+                                    <li><a href="#">PROPERTY RULES</a></li>
+                                    <li><a href="#">USER REVIEWS</a> </li>
+                                    <li><a href="#">SIMILAR PROPERTIES</a> </li> -->
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div id="about-hotel" class="mb-5">
+                            <div id="about-hotel" class="scroll-margin mb-5">
                                 <h5>About The Resort</h5>
                                 <div class="mb-3">
                                     <span>CHECK IN <b>1 PM</b> </span>
@@ -418,18 +418,19 @@
                                     <div class="location-seclect">
                                         <h6>Around this property:</h6>
                                         <ul>
-                                            <li class="single-loction">
+                                            <li>Key Landmarks</li>
+                                            <li class="single-location">
                                                 <label for="kbeach"><input type="checkbox" id="kbeach"> Kolatoli Beach</label>
                                             </li>
-                                            <div class="single-loction">
+                                            <li class="single-location">
                                                 <label for="sbeach"><input type="checkbox" id="sbeach"> Sugondha Beach</label>
-                                            </div>
-                                            <div class="single-loction">
+                                            </li>
+                                            <li class="single-location">
                                                 <label for="ibeach"><input type="checkbox" id="ibeach"> Inani Beach</label>
-                                            </div>
-                                            <div class="single-loction">
+                                            </li>
+                                            <li class="single-location">
                                                 <label for="dbeach"><input type="checkbox" id="dbeach"> Dolphin Beach</label>
-                                            </div>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="map">
@@ -477,6 +478,7 @@
     <script src="./assets/js/daterangepicker.js"></script>
     <script src="./assets/js/datepicker.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/scrollwatch.js"></script>
     <script src="./assets/js/custom-dropdown.js"></script>
     <script src="./assets/js/main.js"></script>
 

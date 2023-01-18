@@ -1824,7 +1824,7 @@ section{
     justify-content: space-between;
 }
 
-.overview-navigation .nav-menu a{
+.overview-navigation .nav-menu li{
     color: var(--text-color);
     font-weight: var(--font-weight-bold);
     border-bottom: 2px solid transparent;
@@ -1833,9 +1833,13 @@ section{
     text-align: center;
 }
 
-.nav-menu a.active{
-    color: var(--primary-color);
+.nav-menu li.active{
     border-color: var(--primary-color);
+}
+
+
+.nav-menu li.active a{
+    color: var(--primary-color);
 }
 
 #about-hotel .hotel-des{
@@ -1930,6 +1934,34 @@ section{
     grid-template-columns: 300px 1fr;
     border: 1px solid #4a4a4a;
     border-radius: 8px;
+    margin-top: 16px;
+}
+
+.location-seclect h6{
+    font-size: 18px;
+    padding: 16px;
+    margin-bottom: 0;
+}
+
+.location-seclect ul{
+    background-color: #f6fbff;
+    box-shadow: 0 0 4px 0 #0000002e;
+    padding: 16px 16px 0;
+}
+
+.location-seclect li.single-location{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 0;
+}
+
+.location-seclect li.single-location:last-child{
+    border-bottom: none;
+}
+
+li.single-location label{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
 }
 
 /* Sidebar Filtering */

@@ -245,6 +245,13 @@
          $(this).parents().siblings("input").attr("type","text")
         }
     })
+
+    // ScrollToWatch
+
+    $('.overview-navigation').scrollWatchMapTo('ul.nav-menu > li', null, {
+        resolutionMode: 'focus-line',
+        viewMarginTop: 53
+    });
     
 })(jQuery);
 
