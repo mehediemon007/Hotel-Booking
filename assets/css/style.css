@@ -1731,6 +1731,57 @@ section{
     margin-top: 16px;
 }
 
+/* Hotel Details */
+
+.hotel-image-slides .owl-item,
+.hotel-image-slides .item img{
+    border-radius: 6px;
+}
+
+.hotel-images .owl-nav button{
+    top: 50%;
+    right: 24px;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.hotel-images .owl-nav button.owl-prev{
+    right: auto;
+    left: 16px;
+}
+
+.hotel-images .owl-nav button:hover{
+    background-color: transparent !important;
+}
+
+.hotel-images .owl-nav button i{
+    font-size: 50px;
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+}
+
+.hotel-details-wpr .single-widget{
+    position: relative;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+}
+
+.hotel-details-wpr .single-widget p,
+.hotel-details-wpr .single-widget span,
+.hotel-details-wpr .single-widget a{
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+}
+
+.rating-summary .read-review{
+    display: inline-block;
+    font-size: 16px !important;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+
 /* Sidebar Filtering */
 
 .sidebar-filter-widget{

@@ -76,6 +76,18 @@
         }
     })
 
+    // Hotel Image Slider
+
+    $(".hotel-image-slides").owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:false,
+        nav:true,
+        navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
+        dots:false,
+        margin:8,
+    })
+
     $('.owl-nav button').attr('aria-label', 'owl-navigation');
 
     // Range Date Picker
