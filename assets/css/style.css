@@ -40,7 +40,6 @@ body{
     font-family: var(--body-font);
     scroll-behavior: smooth;
     vertical-align: baseline;
-    overflow-x: hidden;
     transition: .3s;
 }
 
@@ -131,7 +130,7 @@ input::-webkit-inner-spin-button {
 /* General Css */
 
 .scroll-margin{
-    scroll-margin-top: 80px;
+    scroll-margin-top: 150px;
 }
 
 section{
@@ -398,7 +397,12 @@ section{
     z-index: -1;
 }
 
+.header-static .header-wpr{
+    position: static;
+}
+
 .header-wpr.sticky{
+    position: fixed;
     animation: slideInDown 0.2s linear;
     z-index: 100;
 }
@@ -1733,6 +1737,28 @@ section{
 
 /* Hotel Details */
 
+.hotel-images .item{
+    position: relative;
+}
+
+.hotel-images .item .overlay{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end; 
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    background: linear-gradient(180deg,#0000,#000000bf);
+    border-radius: 0 0 8px 8px;
+    padding: 0 15px 15px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
 .hotel-image-slides .owl-item,
 .hotel-image-slides .item img{
     border-radius: 6px;
@@ -1780,6 +1806,130 @@ section{
     font-weight: var(--font-weight-bold);
     color: var(--primary-color);
     margin-top: 40px;
+}
+
+.overview-navigation{
+    position: sticky;
+    top: 70px;
+    left: 0;
+    background: #fff;
+    border-bottom: 0.7px solid #bababa;
+    box-shadow: 0 8px 8px 0 #8a6b7614;
+    margin: 40px 0 20px;
+    z-index: 9;
+}
+
+.overview-navigation .nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-navigation .nav-menu a{
+    color: var(--text-color);
+    font-weight: var(--font-weight-bold);
+    border-bottom: 2px solid transparent;
+    padding: 16px 24px 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-menu a.active{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#about-hotel .hotel-des{
+    font-size: 16px;
+    line-height: 23px;
+}
+
+#room-select .room-facility{
+    font-weight: var(--font-weight-bold);
+    background: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 0 0 6px #0003;
+    margin-right: 10px;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.room-facility label{
+    cursor: pointer;
+}
+
+#room-select .room-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+}
+
+.room-details .room-info{
+    width: 100%;
+    overflow: hidden;
+    border-right: 1px solid #4a4a4a;
+}
+
+.room-info:last-of-type,
+.single-catalog:last-of-type,
+.room-price-option:last-of-type{
+    border: 0 !important;
+}
+
+.room-info > h6{
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #4a4a4a;
+    padding: 16px;
+    margin-bottom: 0;
+}
+
+.room-info .room-features li{
+    display: inline-block;
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-right: 16px;
+}
+
+.room-info .single-catalog{
+    border-bottom: 1px solid #4a4a4a;
+    padding: 16px;
+}
+
+.single-catalog li{
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+}
+
+.single-catalog a{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    margin-left: 16px;
+}
+
+.room-price-option{
+    height: 200px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.room-price-option p{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+}
+
+.room-price-option .discount{
+    font-weight: var(--font-weight-normal);
+    color: var(--primary-color);
+    background-color: rgb(0 140 255 / 10%);
+    padding: 8px;
+}
+
+#location .nearby-hotels{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    border: 1px solid #4a4a4a;
+    border-radius: 8px;
 }
 
 /* Sidebar Filtering */

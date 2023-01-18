@@ -298,7 +298,7 @@
  
         inputSlider.oninput = (()=>{
             currentValue = inputSlider.value - minValue;
-            slideValue.innerHTML = inputSlider.value + ' tk';
+            slideValue.innerHTML = inputSlider.value + ' BDT';
             rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
         });
     }
