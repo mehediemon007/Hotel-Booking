@@ -306,4 +306,22 @@
         })
     }
 
+    // Image Preview
+
+    const hotelImgs = document.querySelectorAll(".hotel-images");
+
+    hotelImgs.forEach(each => {
+
+        const previewImg = each.querySelector(".preview-img img");
+        const thumbImgs = each.querySelectorAll(".thumbnail-images img");
+
+        thumbImgs.forEach(each => {
+            each.addEventListener("mouseover",function(){
+                const imgSrc = this.getAttribute('src');
+                previewImg.setAttribute("src",imgSrc)
+            })
+        })
+
+    });
+
 })()

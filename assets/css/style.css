@@ -1562,9 +1562,41 @@ section{
 }
 
 .single-hotel .hotel-details{
-    display: flex;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
     padding: 16px;
+}
+
+.hotel-images .thumbnail-images{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.hotel-images .thumbnail-images::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "View All";
+    width: 62px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    line-height: 40px;
+}
+
+.preview-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.thumbnail-images img{
+    width: 60px;
 }
 
 .single-hotel .hotel-details p,
@@ -1667,6 +1699,7 @@ section{
     background-color: #ebebeb;
     border-radius: 2px;
     padding: 2px 16px;
+    margin-top: 8px;
 }
 
 .hotel-details .facility{
