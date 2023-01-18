@@ -313,11 +313,11 @@
     hotelImgs.forEach(each => {
 
         const previewImg = each.querySelector(".preview-img img");
-        const thumbImgs = each.querySelectorAll(".thumbnail-images img");
+        const thumbImgs = each.querySelectorAll(".thumbnail-images span");
 
         thumbImgs.forEach(each => {
             each.addEventListener("mouseover",function(){
-                const imgSrc = this.getAttribute('src');
+                const imgSrc = this.querySelector("img").getAttribute('src');
                 previewImg.setAttribute("src",imgSrc)
             })
         })
