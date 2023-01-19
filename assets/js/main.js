@@ -153,7 +153,18 @@
         }else{
             $(this).text("Show Flight Details")
         }
-        $(this).parent().siblings('.flight-info-details').slideToggle('fast')
+        $(this).parent().siblings('.flight-info-details').slideToggle("300")
+    })
+
+    // Toggle Visa Info
+
+    $(".require-info-toggle").on("click",function(){
+        if($(this).text() == 'View Required Documents'){
+            $(this).text("Hide Required Documents")
+        }else{
+            $(this).text("View Required Documents")
+        }
+        $(this).parent().parent().siblings('.visa-requirement-details').slideToggle("300")
     })
 
     // Card Content Toggle

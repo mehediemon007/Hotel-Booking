@@ -2398,6 +2398,119 @@ input[type="checkbox"]:checked:before{
 
 /* Visa Results */
 
+.visa-category-links .nav-link{
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    padding: 5px 30px;
+    margin: 0 10px 15px!important;
+}
+
+.visa-category-links .nav-link.active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.single-visa{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding: 24px 16px;
+    margin-bottom: 24px;
+}
+
+.single-visa img{
+    border-radius: 8px;
+}
+
+.visa-meta-info{
+    column-count: 2;
+}
+
+.visa-meta-info li{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.visa-details .note{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    margin-top: 50px;
+}
+
+.visa-fees{
+    text-align: right;
+}
+
+.total-fee span{
+    display: inline-block;
+    font-size: 14px;
+    color: #a1b0cc;
+    margin-bottom: 16px;
+}
+
+.person-fee span{
+    font-size: 14px;
+    color: #a1b0cc;
+}
+
+.person-fee p{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 8px;
+}
+
+.visa-fees .select-btn{
+    width: 100px;
+    text-align: center;
+}
+
+.require-info-toggle{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 12px;
+}
+
+.visa-requirement-details{
+    display: none;
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+    padding-top: 16px;
+}
+
+.requirement-list-wpr{
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 16px 24px 0;
+    margin-top: 16px;
+}
+
+.requirement-list li{
+    position: relative;
+    font-size: 14px;
+    color: #6e7491;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.requirement-list li::before{
+    position: absolute;
+    content: "\2022";
+    top: 0;
+    left: 0;
+    color: #6e7491;
+}
+
 .faq-widget{
     border-radius: 8px;
     box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
@@ -2425,6 +2538,7 @@ input[type="checkbox"]:checked:before{
 
 .faq-label i{
     font-size: 18px;
+    color: var(--primary-color);
 }
 
 .faq .faq-details{
@@ -2433,6 +2547,7 @@ input[type="checkbox"]:checked:before{
 
 .faq-details p{
     font-size: 14px;
+    color: #7c8db0;
 }
 
 /* Booking Review */

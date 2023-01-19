@@ -65,19 +65,19 @@
                     </div>
                     <ul class="nav main-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="./flight-result.html" class="nav-link">
                                 <i class="icofont-ui-flight"></i>
                                 <p>Flights</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="./hotel-result.html" class="nav-link">
                                 <i class="icofont-5-star-hotel"></i>
                                 <p>Hotels</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link active">
                                 <i class="icofont-ticket"></i>
                                 <p>Visa</p>
                             </a>
@@ -119,6 +119,8 @@
                                     <div class="single-option">
                                         <p class="option-label">Intended Flying Date <i class="icofont-rounded-down"></i></p>
                                         <div class="option-select-wrapper">
+                                            <label for="fly-date" class="visually-hidden"></label>
+                                                    <input type="text" class="datePicker visually-hidden" id="fly-date">
                                             <div class="option-select-btn">
                                                 <h2>22 <sub>Jan'23</sub></h2>
                                                 <p>Monday</p>
@@ -169,227 +171,79 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-8">
-                        <div class="flight-list-wpr">
-                            <ul class="nav flight-category" id="flightTab" role="tablist">
+                        <div class="visa-list-wpr">
+                            <ul class="nav visa-category-links" id="visaTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="cheap-tab" data-bs-toggle="tab" href="#cheap" role="tab" aria-controls="cheap" aria-selected="true">
-                                        <h6>Cheapest</h6>
-                                        <p>To get the cheapest available flights</p>
-                                    </a>
+                                    <a class="nav-link active" id="all-visa-tab" data-bs-toggle="tab" href="#all-visa" role="tab" aria-controls="all-visa" aria-selected="true">All</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="short-tab" data-bs-toggle="tab" href="#short" role="tab" aria-controls="short" aria-selected="true">
-                                        <h6>Shortest</h6>
-                                        <p>To get the shortest available flights</p>
-                                    </a>
+                                    <a class="nav-link" id="tourist-visa-tab" data-bs-toggle="tab" href="#tourist-visa" role="tab" aria-controls="tourist-visa" aria-selected="true">Tourist</a>
                                 </li>
                             </ul>
-                            <div class="flights-container">
-                                <div class="tab-content" id="flightTabContent">
-                                    <div class="tab-pane fade show active" id="cheap" role="tabpanel" aria-labelledby="cheap-tab">
-                                        <div class="flight-list">
-                                            <div class="single-flight">
-                                                <div class="flight-details">
-                                                    <div>
-                                                        <img src="./assets/images/services/BG.png" alt="Biman BD" class="air-img">
-                                                        <p class="tag">Biman Bangladesh Airlines</p>
+                            <div class="visa-container">
+                                <div class="tab-content" id="visaTabContent">
+                                    <div class="tab-pane fade show active" id="all-visa" role="tabpanel" aria-labelledby="all-visa-tab">
+                                        <div class="visa-list">
+                                            <div class="single-visa">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <img src="./assets/images/trip/MY.png" alt="Malaysia">
                                                     </div>
-                                                    <div>
-                                                        <p class="tag">Depart</p>
-                                                        <b>19:45</b>
-                                                        <p class="date">Thu, 10 Jan 2023</p>
-                                                        <p class="location">Dhaka</p>
+                                                    <div class="col-6">
+                                                        <div class="visa-details">
+                                                            <h5>Electronic Visa(Adult)</h5>
+                                                            <ul class="visa-meta-info">
+                                                                <li>Visa Type : Tourist</li>
+                                                                <li>Visa Mode : E-Visa</li>
+                                                                <li>Processing Time : 7 - 10 Working Days</li>
+                                                                <li>Validity: Max 90 Days</li>
+                                                                <li>Maximum Stays : 30 Days</li>
+                                                            </ul>
+                                                            <p class="note"><i class="icofont-check-circled text-success"></i> Visa issuance rights reserved by the embassy.</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="text-center">
-                                                        <p class="tag">55 minutes</p>
-                                                        <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
-                                                        <p class="flight-type">Non Stop</p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="tag">Arrive</p>
-                                                        <b>20:45</b>
-                                                        <p class="date">Thu, 10 Jan 2023</p>
-                                                        <p class="location">Chittagong</p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="tag">Price</p>
-                                                        <b>BDT 3,360</b>
-                                                    </div>
-                                                    <div>
-                                                        <a href="./booking.html" class="book-btn">Book Now</a>
+                                                    <div class="col-3">
+                                                        <div class="visa-fees">
+                                                            <div class="total-fee">
+                                                                <p>Total Price</p>
+                                                                <h5 class="mb-0">BDT 5,700</h5>
+                                                                <span>(1 travelers)</span>
+                                                            </div>
+                                                            <div class="person-fee">
+                                                                <span>Price per person</span>
+                                                                <p>BDT 5,700</p>
+                                                            </div>
+                                                            <a href="./visa-booking.html" class="trv-btn select-btn">Select</a>
+                                                        </div>
+                                                        <button class="require-info-toggle">View Required Documents</button>
                                                     </div>
                                                 </div>
-                                                <div class="flight-meta-info">
-                                                    <p class="refund-info">Partially Refundable</p>
-                                                    <p class="info-toggle">Show Flight Details</p>
-                                                </div>
-                                                <div class="flight-info-details">
-                                                    <ul class="nav flight-info-links" id="flight-info-Tab" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link active" id="flight-des-tab" data-bs-toggle="tab" href="#flight-des" role="tab" aria-controls="cheap" aria-selected="true">Flight Details</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link" id="fare-sum-tab" data-bs-toggle="tab" href="#fare-sum" role="tab" aria-controls="fare-sum" aria-selected="true">Fare Summary</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link" id="fare-rule-tab" data-bs-toggle="tab" href="#fare-rule" role="tab" aria-controls="fare-rule" aria-selected="true">Fare Rules</a>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="tab-content" id="flightinfoTabContent">
-                                                        <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
-                                                            <div class="flight-info-content">
-                                                                <div class="content-head">
-                                                                    <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
-                                                                </div>
-                                                                <div class="content-body p-3">
-                                                                    <div class="fare-info-wpr">
-                                                                        <img src="./assets/images/services/BG.png" alt="Biman BD">
-                                                                        <div class="fare-info">
-                                                                            <h6>Biman Bangladesh Airlines <span>BG | 617</span></h6>
-                                                                            <div>
-                                                                                <p>Aircraft : DHC8 Dash 8</p>
-                                                                                <p>Operated by : BG</p>
-                                                                                <p>Economy (G)</p>
-                                                                                <p>Available seats: 9</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="flight-details">
-                                                                        <div>
-                                                                            <b>19:45</b>
-                                                                            <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
-                                                                            <p>Terminal</p>
-                                                                            <p class="terminal-name">Hazrat Shahjalal International Airport</p>
-                                                                            <p>Dhaka,Bangladesh</p>
-                                                                        </div>
-                                                                        <div class="text-center">
-                                                                            <p class="tag">55 minutes</p>
-                                                                            <img src="./assets/images/icons/dash.png" alt="Non stop">
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>20:45</b>
-                                                                            <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
-                                                                            <p>Terminal</p>
-                                                                            <p class="terminal-name">Patenga</p>
-                                                                            <p>Chittagong,Bangladesh</p>
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>Baggage</b>
-                                                                            <p>Adult</p>
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>Check In</b>
-                                                                            <p>20 kg(s)</p>
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>Cabin</b>
-                                                                            <p>7 kg(s)</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
-                                                            <div class="flight-info-content">
-                                                                <div class="content-head">
-                                                                    <h5>Dhaka to Chittagong</h5>
-                                                                </div>
-                                                                <div class="content-body p-3">
-                                                                    <div class="fare-sum-table">
-                                                                        <table class="table table-bordered mb-0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Fare Summary</th>
-                                                                                    <th>Base Fare</th>
-                                                                                    <th>Taxes + Fees</th>
-                                                                                    <th>Per Passenger</th>
-                                                                                    <th>Total</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>Adult</td>
-                                                                                    <td>BDT 2,640</td>
-                                                                                    <td>BDT 725</td>
-                                                                                    <td>BDT (3,365 x 1)</td>
-                                                                                    <td>BDT 3,365</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                            <tfoot>
-                                                                                <tr>
-                                                                                    <td><b>Total (1 Traveler)</b></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td><b>BDT 3,365</b></td>
-                                                                                </tr>
-                                                                            </tfoot>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
-                                                            <div class="flight-info-content">
-                                                                <div class="content-head">
-                                                                    <h5>Fare breakdown</h5>
-                                                                </div>
-                                                                <div class="content-body p-3">
-                                                                    <div class="fare-rules-table">
-                                                                        <table class="table table-bordered mb-0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>
-                                                                                        <b>Cancellation</b>
-                                                                                        <p>(From Scheduled flight departure)</p>
-                                                                                    </th>
-                                                                                    <th>
-                                                                                        <b>Amount/Value</b>
-                                                                                        <p>(Per passenger)</p>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>Maximum penalty amount</td>
-                                                                                    <td>Adult : <b>BDT 2,000</b></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                    <div class="callout-block mb-3">
-                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                    </div>
-                                                                    <div class="fare-rules-table">
-                                                                        <table class="table table-bordered mb-0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>
-                                                                                        <b>Date Change</b>
-                                                                                        <p>(From Scheduled flight departure)</p>
-                                                                                    </th>
-                                                                                    <th>
-                                                                                        <b>Amount/Value</b>
-                                                                                        <p>(Per passenger)</p>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>Maximum penalty amount</td>
-                                                                                    <td>Adult : <b>BDT 1,500</b></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                    <div class="callout-block">
-                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="callout-block">
-                                                                <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
-                                                            </div>
+                                                <div class="visa-requirement-details">
+                                                    <h5>Required Documents for Electronic Visa (Adult)</h5>
+                                                    <div class="requirement-list-wpr">
+                                                        <ul class="requirement-list">
+                                                            <li>Passport: a. Minimum 6 month’s validity required b. At least 2 Blank pages required c. Old passport required (if any)</li>
+                                                            <li>Photo: Two recent passport size photographs with white background (Matt Paper) and without border (Size: 3.5 cm x 5.0 cm). Please do not staple the photographs to the Application Form. Please note, photograph should not be more than 3 months old and should not be used in any of the previous visas.</li>
+                                                            <li>3 Financial Support: Personal Bank and company’s bank statement for last six months mentioning the Bank’s name, Bank’s Telephone Number clearly. Salary slip for the last six months. (If Any)</li>
+                                                            <li>Visa Application Form: Visa Application Form duly filled in and signed by the applicant.</li>
+                                                            <li>Covering-Letter: A covering letter stating the purpose of visit and itinerary.</li>
+                                                            <li>Forwarding-Letter: Forwarding Letter / NOC from the applicant’s company authority on the company’s letterhead stating applicant’s name, designation, passport number, purpose and duration of visa.</li>
+                                                            <li>Proof of Occupation: a. Visa request letter from the applicant and a No Objection Certificate (NOC) from Employer. b. Office ID card / Visiting Card c. BMDC certificate or letter from hospital if the applicant is a Doctor, d. A Bar Council Certificate or letter from a law firm if the applicant is a lawyer e. A recommendation letter from the school / university or student card /evidence of school / university enrolment) if the applicant is a student. f. Salary accounts Bank Statement (preferably) / Pay Slip / Salary Certificate are required for service holders. g. Trade license (original notarized English translation and photocopy of the original trade license required) for proprietorship business, Memorandum of Article for limited company if the applicant’s name is not mentioned in the trade license.</li>
+                                                            <li>Proof of civil status: Marriage certificate, birth certificate of children, death certificate of spouse, if applicable.</li>
+                                                            <li>Round Trip Air Ticket & Hotel Booking: A copy of the round air ticket and Hotel Booking are needed.</li>
+                                                            <li>Processing Time: Total approximate processing time is 7-10 working days (Time may vary depending on applicant’s profile and embassy actually processing time)</li>
+                                                            <li>Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)</li>
+                                                        </ul>
+                                                        <div>
+                                                            <h6 class="mb-3 text-danger">* Remarks</h6>
+                                                            <ul class="requirement-list">
+                                                                <li>FEBD provides only consultancy services and doesn't provide any guarantee for visas.</li>
+                                                                <li>File processing for visas will start only after receiving all necessary documents.</li>
+                                                                <li>Processing time, requirements, and fees are subject to change by the Embassy without any prior notice.</li>
+                                                                <li>The Embassy reserves the right to ask for any additional documents with the above mentioned checklist.</li>
+                                                                <li>All Bengali documents must be translated into English and notarized.</li>
+                                                                <li>Copy of Marriage Certificate (if in Bengali, notarized English translation and photocopy of the original is required) must be submitted if the spouse name does not appear in the passport.</li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -397,214 +251,73 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="short" role="tabpanel" aria-labelledby="short-tab">
-                                        <div class="flight-list">
-                                            <div class="single-flight">
-                                                <div class="flight-details">
-                                                    <div>
-                                                        <img src="./assets/images/services/2A.png" alt="Air Astra" class="air-img">
-                                                        <p class="tag">Air Astra</p>
+                                    <div class="tab-pane fade" id="tourist-visa" role="tabpanel" aria-labelledby="tourist-visa-tab">
+                                        <div class="visa-list">
+                                            <div class="single-visa">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <img src="./assets/images/trip/MY.png" alt="Malaysia">
                                                     </div>
-                                                    <div>
-                                                        <p class="tag">Depart</p>
-                                                        <b>19:45</b>
-                                                        <p class="date">Thu, 10 Jan 2023</p>
-                                                        <p class="location">Dhaka</p>
+                                                    <div class="col-6">
+                                                        <div class="visa-details">
+                                                            <h5>Electronic Visa(Adult)</h5>
+                                                            <ul class="visa-meta-info">
+                                                                <li>Visa Type : Tourist</li>
+                                                                <li>Visa Mode : E-Visa</li>
+                                                                <li>Processing Time : 7 - 10 Working Days</li>
+                                                                <li>Validity: Max 90 Days</li>
+                                                                <li>Maximum Stays : 30 Days</li>
+                                                            </ul>
+                                                            <p class="note"><i class="icofont-check-circled text-success"></i> Visa issuance rights reserved by the embassy.</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="text-center">
-                                                        <p class="tag">30 minutes</p>
-                                                        <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
-                                                        <p class="flight-type">Non Stop</p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="tag">Arrive</p>
-                                                        <b>20:45</b>
-                                                        <p class="date">Thu, 10 Jan 2023</p>
-                                                        <p class="location">Chittagong</p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="tag">Price</p>
-                                                        <b>BDT 5,550</b>
-                                                    </div>
-                                                    <div>
-                                                        <a href="./booking.html" class="book-btn">Book Now</a>
+                                                    <div class="col-3">
+                                                        <div class="visa-fees">
+                                                            <div class="total-fee">
+                                                                <p>Total Price</p>
+                                                                <h5 class="mb-0">BDT 5,700</h5>
+                                                                <span>(1 travelers)</span>
+                                                            </div>
+                                                            <div class="person-fee">
+                                                                <span>Price per person</span>
+                                                                <p>BDT 5,700</p>
+                                                            </div>
+                                                            <a href="./visa-booking.html" class="trv-btn select-btn">Select</a>
+                                                        </div>
+                                                        <button class="require-info-toggle">View Required Documents</button>
                                                     </div>
                                                 </div>
-                                                <div class="flight-meta-info">
-                                                    <p class="refund-info">Partially Refundable</p>
-                                                    <p class="info-toggle">Show Flight Details</p>
-                                                </div>
-                                                <div class="flight-info-details">
-                                                    <ul class="nav flight-info-links" id="flight-info-Tab" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link active" id="flight-des-tab" data-bs-toggle="tab" href="#flight-des" role="tab" aria-controls="cheap" aria-selected="true">Flight Details</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link" id="fare-sum-tab" data-bs-toggle="tab" href="#fare-sum" role="tab" aria-controls="fare-sum" aria-selected="true">Fare Summary</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link" id="fare-rule-tab" data-bs-toggle="tab" href="#fare-rule" role="tab" aria-controls="fare-rule" aria-selected="true">Fare Rules</a>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="tab-content" id="flightinfoTabContent">
-                                                        <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
-                                                            <div class="flight-info-content">
-                                                                <div class="content-head">
-                                                                    <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
-                                                                </div>
-                                                                <div class="content-body p-3">
-                                                                    <div class="fare-info-wpr">
-                                                                        <img src="./assets/images/services/2A.png" alt="Air Astra">
-                                                                        <div class="fare-info">
-                                                                            <h6>AIR ASTRA <span>AA | 617</span></h6>
-                                                                            <div>
-                                                                                <p>Aircraft : DHC8 Dash 8</p>
-                                                                                <p>Operated by : BG</p>
-                                                                                <p>Economy (G)</p>
-                                                                                <p>Available seats: 9</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="flight-details">
-                                                                        <div>
-                                                                            <b>19:45</b>
-                                                                            <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
-                                                                            <p>Terminal</p>
-                                                                            <p class="terminal-name">Hazrat Shahjalal International Airport</p>
-                                                                            <p>Dhaka,Bangladesh</p>
-                                                                        </div>
-                                                                        <div class="text-center">
-                                                                            <p class="tag">55 minutes</p>
-                                                                            <img src="./assets/images/icons/dash.png" alt="Non stop">
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>20:45</b>
-                                                                            <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
-                                                                            <p>Terminal</p>
-                                                                            <p class="terminal-name">Patenga</p>
-                                                                            <p>Chittagong,Bangladesh</p>
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>Baggage</b>
-                                                                            <p>Adult</p>
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>Check In</b>
-                                                                            <p>20 kg(s)</p>
-                                                                        </div>
-                                                                        <div>
-                                                                            <b>Cabin</b>
-                                                                            <p>7 kg(s)</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
-                                                            <div class="flight-info-content">
-                                                                <div class="content-head">
-                                                                    <h5>Dhaka to Chittagong</h5>
-                                                                </div>
-                                                                <div class="content-body p-3">
-                                                                    <div class="fare-sum-table">
-                                                                        <table class="table table-bordered mb-0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Fare Summary</th>
-                                                                                    <th>Base Fare</th>
-                                                                                    <th>Taxes + Fees</th>
-                                                                                    <th>Per Passenger</th>
-                                                                                    <th>Total</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>Adult</td>
-                                                                                    <td>BDT 2,640</td>
-                                                                                    <td>BDT 725</td>
-                                                                                    <td>BDT (3,365 x 1)</td>
-                                                                                    <td>BDT 3,365</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                            <tfoot>
-                                                                                <tr>
-                                                                                    <td><b>Total (1 Traveler)</b></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td></td>
-                                                                                    <td><b>BDT 3,365</b></td>
-                                                                                </tr>
-                                                                            </tfoot>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
-                                                            <div class="flight-info-content">
-                                                                <div class="content-head">
-                                                                    <h5>Fare breakdown</h5>
-                                                                </div>
-                                                                <div class="content-body p-3">
-                                                                    <div class="fare-rules-table">
-                                                                        <table class="table table-bordered mb-0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>
-                                                                                        <b>Cancellation</b>
-                                                                                        <p>(From Scheduled flight departure)</p>
-                                                                                    </th>
-                                                                                    <th>
-                                                                                        <b>Amount/Value</b>
-                                                                                        <p>(Per passenger)</p>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>Maximum penalty amount</td>
-                                                                                    <td>Adult : <b>BDT 2,000</b></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                    <div class="callout-block mb-3">
-                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                    </div>
-                                                                    <div class="fare-rules-table">
-                                                                        <table class="table table-bordered mb-0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>
-                                                                                        <b>Date Change</b>
-                                                                                        <p>(From Scheduled flight departure)</p>
-                                                                                    </th>
-                                                                                    <th>
-                                                                                        <b>Amount/Value</b>
-                                                                                        <p>(Per passenger)</p>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>Maximum penalty amount</td>
-                                                                                    <td>Adult : <b>BDT 1,500</b></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                    <div class="callout-block">
-                                                                        <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="callout-block">
-                                                                <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
-                                                            </div>
+                                                <div class="visa-requirement-details">
+                                                    <h5>Required Documents for Electronic Visa (Adult)</h5>
+                                                    <div class="requirement-list-wpr">
+                                                        <ul class="requirement-list">
+                                                            <li>Passport: a. Minimum 6 month’s validity required b. At least 2 Blank pages required c. Old passport required (if any)</li>
+                                                            <li>Photo: Two recent passport size photographs with white background (Matt Paper) and without border (Size: 3.5 cm x 5.0 cm). Please do not staple the photographs to the Application Form. Please note, photograph should not be more than 3 months old and should not be used in any of the previous visas.</li>
+                                                            <li>3 Financial Support: Personal Bank and company’s bank statement for last six months mentioning the Bank’s name, Bank’s Telephone Number clearly. Salary slip for the last six months. (If Any)</li>
+                                                            <li>Visa Application Form: Visa Application Form duly filled in and signed by the applicant.</li>
+                                                            <li>Covering-Letter: A covering letter stating the purpose of visit and itinerary.</li>
+                                                            <li>Forwarding-Letter: Forwarding Letter / NOC from the applicant’s company authority on the company’s letterhead stating applicant’s name, designation, passport number, purpose and duration of visa.</li>
+                                                            <li>Proof of Occupation: a. Visa request letter from the applicant and a No Objection Certificate (NOC) from Employer. b. Office ID card / Visiting Card c. BMDC certificate or letter from hospital if the applicant is a Doctor, d. A Bar Council Certificate or letter from a law firm if the applicant is a lawyer e. A recommendation letter from the school / university or student card /evidence of school / university enrolment) if the applicant is a student. f. Salary accounts Bank Statement (preferably) / Pay Slip / Salary Certificate are required for service holders. g. Trade license (original notarized English translation and photocopy of the original trade license required) for proprietorship business, Memorandum of Article for limited company if the applicant’s name is not mentioned in the trade license.</li>
+                                                            <li>Proof of civil status: Marriage certificate, birth certificate of children, death certificate of spouse, if applicable.</li>
+                                                            <li>Round Trip Air Ticket & Hotel Booking: A copy of the round air ticket and Hotel Booking are needed.</li>
+                                                            <li>Processing Time: Total approximate processing time is 7-10 working days (Time may vary depending on applicant’s profile and embassy actually processing time)</li>
+                                                            <li>Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)</li>
+                                                        </ul>
+                                                        <div>
+                                                            <h6 class="mb-3 text-danger">* Remarks</h6>
+                                                            <ul class="requirement-list">
+                                                                <li>FEBD provides only consultancy services and doesn't provide any guarantee for visas.</li>
+                                                                <li>File processing for visas will start only after receiving all necessary documents.</li>
+                                                                <li>Processing time, requirements, and fees are subject to change by the Embassy without any prior notice.</li>
+                                                                <li>The Embassy reserves the right to ask for any additional documents with the above mentioned checklist.</li>
+                                                                <li>All Bengali documents must be translated into English and notarized.</li>
+                                                                <li>Copy of Marriage Certificate (if in Bengali, notarized English translation and photocopy of the original is required) must be submitted if the spouse name does not appear in the passport.</li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
