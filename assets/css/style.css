@@ -1819,12 +1819,12 @@ section{
     z-index: 9;
 }
 
-.overview-navigation .nav-menu{
+.overview-navigation .overview-nav-menu{
     display: flex;
     justify-content: space-between;
 }
 
-.overview-navigation .nav-menu li{
+.overview-navigation .overview-nav-menu li{
     color: var(--text-color);
     font-weight: var(--font-weight-bold);
     border-bottom: 2px solid transparent;
@@ -1833,12 +1833,12 @@ section{
     text-align: center;
 }
 
-.nav-menu li.active{
+.overview-nav-menu li.active{
     border-color: var(--primary-color);
 }
 
 
-.nav-menu li.active a{
+.overview-nav-menu li.active a{
     color: var(--primary-color);
 }
 

@@ -246,13 +246,6 @@
         }
     })
 
-    // ScrollToWatch
-
-    $('.overview-navigation').scrollWatchMapTo('ul.nav-menu > li', null, {
-        resolutionMode: 'focus-line',
-        viewMarginTop: 53
-    });
-    
 })(jQuery);
 
 (function(){
@@ -341,6 +334,14 @@
             })
         })
 
+    });
+
+    // ScrollToWatch
+
+    var spy = new Gumshoe('.overview-nav-menu a',{
+        offset: function () {
+            return headerContainer.getBoundingClientRect().height + 120;
+        }
     });
 
 })()
