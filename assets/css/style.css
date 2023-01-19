@@ -1964,6 +1964,62 @@ li.single-location label{
     cursor: pointer;
 }
 
+.amenity-wpr{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border-bottom: 1px solid #bababa80;
+    padding: 24px 0;
+}
+
+.amenity-wpr .single-amenity{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    grid-gap: 16px;
+}
+
+.single-amenity .icon{
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border: 1px solid #aad9ff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.extra-amenity-wpr{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 24px;
+}
+
+.extra-amenity li{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.rules-list{
+    margin-bottom: 16px;
+}
+
+.rules-list ul{
+    column-count: 2;
+}
+
+.rules-list ul li{
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 6px;
+    padding-left: 16px;
+}
+
+.rules-list ul li::before{
+    position: absolute;
+    content: "\2022";
+    left: 0;
+}
+
 /* Sidebar Filtering */
 
 .sidebar-filter-widget{
