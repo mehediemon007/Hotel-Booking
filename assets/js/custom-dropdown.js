@@ -1,9 +1,5 @@
-let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh", "Belgium", "Bhutan",
-                 "Brazil", "Canada", "China", "Denmark", "Ethiopia", "Finland", "France", "Germany",
-                 "Hungary", "Iceland", "India", "Indonesia", "Iran", "Italy", "Japan", "Malaysia",
-                 "Maldives", "Mexico", "Morocco", "Nepal", "Netherlands", "Nigeria", "Norway", "Pakistan",
-                 "Peru", "Russia", "Romania", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland",
-                 "Thailand", "Turkey", "Uganda", "Ukraine", "United States", "United Kingdom", "Vietnam"];
+let countries = ["Dhaka", "Chittagong", "Rajshahi", "Sylhet", "Cox's Bazar", "Jessore", "Barishal",
+                 "Saidpur"];
 
 const airports = document.querySelectorAll(".airport-select");
 
