@@ -1664,8 +1664,7 @@ section{
 }
 
 .bar-content p{
-    font-size: 4px;
-    font-weight: 400;
+    font-size: 12px !important;
     color: #9b9b9b;
 }
 
@@ -1923,10 +1922,23 @@ section{
 }
 
 .room-price-option .discount{
+    position: relative;
     font-weight: var(--font-weight-normal);
     color: var(--primary-color);
-    background-color: rgb(0 140 255 / 10%);
+    background-color: #afd6f7;
     padding: 8px;
+}
+
+.room-price-option .discount::before{
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    left: 32px;
+    bottom: -16px;
+    border-top: 14px solid #afd6f7;
+    border-left: 32px solid #afd6f7;
+    border-bottom: 30px solid transparent;
+    z-index: -1;
 }
 
 #location .nearby-hotels{
@@ -2123,7 +2135,6 @@ li.single-location label{
 }
 
 #reviews .bar-content p{
-    font-size: 12px;
     font-weight: var(--font-weight-semi-bold);
     color: var(--text-color);
 }
@@ -2716,6 +2727,23 @@ input[type="checkbox"]:checked:before{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.booking-review-card .hotel-meta-info{
+    display: flex;
+    background-color: rgb(0 140 255 / 10%);
+    border-radius: 8px;
+    padding: 16px 0;
+}
+
+.hotel-meta-info p{
+    color: var(--primary-color);
+    border-right: 1px dashed var(--primary-color);
+    padding: 0 20px;
+}
+
+.hotel-meta-info p:last-child{
+    border-right: 0;
 }
 
 /* Breadcrumb */
