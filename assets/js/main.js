@@ -246,6 +246,14 @@
         }
     })
 
+     // Dropdown
+
+    $(".faq-label").on("click", function () {
+        var $this = $(this);
+        $("i", this).toggleClass("icofont-rounded-down icofont-rounded-up");
+        $($this).next().slideToggle("1000");
+    });
+
 })(jQuery);
 
 (function(){
@@ -338,10 +346,14 @@
 
     // ScrollToWatch
 
-    var spy = new Gumshoe('.overview-nav-menu a',{
-        offset: function () {
-            return headerContainer.getBoundingClientRect().height + 120;
-        }
-    });
+    const stickyMenu = document.querySelector(".overview-navigation");
+
+    if(stickyMenu != null){
+        var spy = new Gumshoe('.overview-nav-menu a',{
+            offset: function () {
+                return headerContainer.getBoundingClientRect().height + 150;
+            }
+        });
+    }
 
 })()
