@@ -90,19 +90,6 @@
 
     $('.owl-nav button').attr('aria-label', 'owl-navigation');
 
-    // Range Date Picker
-
-    $(function() {
-        $('input[name="datetimes"]').daterangepicker({
-          timePicker: false,
-          startDate: moment().startOf('hour'),
-          endDate: moment().startOf('hour').add(32, 'hour'),
-          locale: {
-            format: 'DD/M'
-          }
-        });
-    });
-
     // Ticket Options
 
     $(".option-select-btn").on("click",function(){
@@ -174,6 +161,55 @@
         $(this).siblings(".card-body").slideToggle("300")
     })
 
+    // Range Date Picker
+
+    $(function() {
+        $('input[name="datetimes"]').daterangepicker({
+          timePicker: false,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale: {
+            format: 'MM/DD/YYYY'
+          }
+        });
+
+        $(".datetimes").each(function(i,elem){
+            $(elem).on("change",function(){
+
+                const selecDates = $(this).val().split("-");
+                const depDate = selecDates[0];
+                const reDate = selecDates[1];
+
+                // const selectDate = $(this).val();
+                // const lastDate = selectDate.split("-")[1];
+    
+                // const lastDateStr = new Date(lastDate);
+
+                const depDateStr = new Date(depDate);
+                const reDateStr = new Date(reDate);
+    
+                const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+
+                let formateDepDate = depDateStr.toLocaleDateString('en-DE', options);
+                let depDateValue = formateDepDate.split(/,| /);
+                depDateValue.splice(1,1);
+
+                let formateReDate = reDateStr.toLocaleDateString('en-DE', options);
+                let reDateValue = formateReDate.split(/,| /);
+                reDateValue.splice(1,1);
+    
+                // var dateEle =  '<h2>'+ dateValue[1] +'<sub>'+ dateValue[2] +'\''+ dateValue[3].slice(-2) +'</sub></h2> <p>'+ dateValue[0] +'</p>';
+
+                let depDateEle =  `<h2>${depDateValue[1]} <sub>${depDateValue[2]}'${depDateValue[3].slice(-2)}</sub></h2> <p>${depDateValue[0]}</p>`;
+                let reDateEle =  `<h2>${reDateValue[1]} <sub>${reDateValue[2]}'${reDateValue[3].slice(-2)}</sub></h2> <p>${reDateValue[0]}</p>`;
+
+                $("#dep-date").siblings(".option-select-btn").html(depDateEle)
+                $(this).siblings('.option-select-btn').html(reDateEle)
+    
+            })
+        })
+    });
+
     // Date Picker
 
     if($(".datePicker").length){
@@ -183,7 +219,8 @@
             offset: 10,
         }).datepicker("setDate",'now');
 
-        $(document).ready(function(){
+        $(function() {
+
             $(".option-select-btn").siblings('.datePicker').each(function(i,elem){
                 const currentDate = $(elem).datepicker( "getDate" );
                 const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
@@ -196,7 +233,8 @@
                 $(this).siblings('.option-select-btn').html(dateEle);
                 
             })
-        })
+
+        });
 
         $(".datePicker").on("focus",function(){
             var dim = $(this).offset();
