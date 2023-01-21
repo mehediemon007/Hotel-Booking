@@ -367,4 +367,27 @@
         });
     }
 
+    // Increment Decrement Event
+
+    const increBtn = document.querySelectorAll(".qun-up");
+    const decreBtn = document.querySelectorAll(".qun-dwn");
+
+    increBtn.forEach(each => {
+        each.addEventListener("click",function(){
+            const qtyInput = this.previousElementSibling;
+            (qtyInput.value)++;
+        })
+    })
+
+    decreBtn.forEach(each => {
+        each.addEventListener("click",function(){
+            const qtyInput = this.nextElementSibling;
+            if(qtyInput.value == 1){
+                return
+            }else{
+                (qtyInput.value)--;
+            }
+        })
+    })
+
 })()

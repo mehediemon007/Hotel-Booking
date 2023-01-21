@@ -653,6 +653,11 @@ section{
     text-align: center;
 }
 
+button.qun-up:hover,
+button.qun-dwn:hover{
+    color: var(--primary-color);
+}
+
 .traveller-quantity button{
     width: 20%;
     height: 80%;
