@@ -460,4 +460,15 @@
         })
     })
 
+    // Room Selection
+
+    const roomApply = document.querySelector(".room-apply");
+
+    if(roomApply != null){
+        roomApply.addEventListener("click",function(){
+            const qtyValue = document.querySelector(".quantity-input");
+            console.log(qtyValue.value)
+        })
+    }
+
 })()
