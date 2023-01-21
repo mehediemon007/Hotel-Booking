@@ -190,7 +190,7 @@ visa.forEach(each => {
         let arr = [];
         let searchWord = searchInp.value.toLowerCase();
         arr = countries.filter(data => {
-            return data.toLowerCase().startsWith(searchWord);
+            return data.name.toLowerCase().startsWith(searchWord);
         }).map(data => {
             let isSelected = data == selectBtn.firstElementChild.innerText ? "selected" : "";
             return `<li class="${isSelected}">
