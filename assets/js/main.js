@@ -178,7 +178,7 @@
 
     if($(".datePicker").length){
         $(".datePicker").datepicker({
-            format:'dd/mm/yyyy',
+            format:'mm/dd/yyyy',
             autoclose:true,
             offset: 10,
         });
@@ -193,6 +193,24 @@
                 });
             }
         })
+
+        $('.datePicker').on('change', function(){
+            const selectDate = new Date(this.value);
+            const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+            let formateDate = selectDate.toLocaleDateString('en-DE', options);
+            let dateValue = formateDate.split(/,| /);
+            dateValue.splice(1,1);
+
+            console.log(dateValue)
+
+
+            // var dateEle =  '<h2>'+ dateValue[1] +'<sub>'+ dateValue[2] +'\''+ dateValue[3].slice(-2) +'</sub></h2> <p>'+ dateValue[0] +'</p>';
+
+            let dateEle =  `<h2>${dateValue[1]} <sub>${dateValue[2]}'${dateValue[3].slice(-2)}</sub></h2> <p>${dateValue[0]}</p>`;
+
+            $(this).siblings('.option-select-btn').html(dateEle);
+        });
+        
     }
 
     // Filter Date
