@@ -181,7 +181,22 @@
             format:'mm/dd/yyyy',
             autoclose:true,
             offset: 10,
-        });
+        }).datepicker("setDate",'now');
+
+        $(document).ready(function(){
+            $(".option-select-btn").siblings('.datePicker').each(function(i,elem){
+                const currentDate = $(elem).datepicker( "getDate" );
+                const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+                let formateDate = currentDate.toLocaleDateString('en-DE', options);
+                let dateValue = formateDate.split(/,| /);
+                dateValue.splice(1,1);
+
+                let dateEle =  `<h2>${dateValue[1]} <sub>${dateValue[2]}'${dateValue[3].slice(-2)}</sub></h2> <p>${dateValue[0]}</p>`;
+
+                $(this).siblings('.option-select-btn').html(dateEle);
+                
+            })
+        })
 
         $(".datePicker").on("focus",function(){
             var dim = $(this).offset();
@@ -195,17 +210,16 @@
         })
 
         $('.datePicker').on('change', function(){
-            const selectDate = new Date(this.value);
+            // const selectDate = new Date(this.value);
+            // const selectDate = new Date($(this).val());
+            const selectDate = $(this).datepicker("getDate");
             const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
             let formateDate = selectDate.toLocaleDateString('en-DE', options);
             let dateValue = formateDate.split(/,| /);
             dateValue.splice(1,1);
 
-            console.log(dateValue)
-
 
             // var dateEle =  '<h2>'+ dateValue[1] +'<sub>'+ dateValue[2] +'\''+ dateValue[3].slice(-2) +'</sub></h2> <p>'+ dateValue[0] +'</p>';
-
             let dateEle =  `<h2>${dateValue[1]} <sub>${dateValue[2]}'${dateValue[3].slice(-2)}</sub></h2> <p>${dateValue[0]}</p>`;
 
             $(this).siblings('.option-select-btn').html(dateEle);
