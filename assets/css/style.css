@@ -788,12 +788,12 @@ section{
     flex-direction: column;
     align-items: flex-start;
     font-size: 12px;
-    font-weight: var(--font-weight-semi-bold);
     padding: 7px 14px;
     cursor: pointer;
 }
 
 .filter-options-list li p{
+    font-weight: var(--font-weight-semi-bold);
     color: var(--primary-color);
 }
 
