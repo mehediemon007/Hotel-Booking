@@ -488,11 +488,15 @@
         flightApply.addEventListener("click",function(event){
             const qtyInputWpr = this.parentElement.parentElement;
             const adultValue = qtyInputWpr.querySelector('input[name="adult"]:checked').nextElementSibling.innerText;
+            const childValue = qtyInputWpr.querySelector('input[name="child"]:checked').nextElementSibling.innerText;
+            const infantValue = qtyInputWpr.querySelector('input[name="infant"]:checked').nextElementSibling.innerText;
             const ticketClass = qtyInputWpr.querySelector('input[name="ticket-class"]:checked').nextElementSibling.innerText;
+
+            const totalTrvlr = parseInt(adultValue) + parseInt(childValue) + parseInt(infantValue);
             
             const optionValueEle = qtyInputWpr.previousElementSibling;
 
-            optionValueEle.innerHTML = `<h2>${adultValue} <sub>Traveller</sub></h2>
+            optionValueEle.innerHTML = `<h2>${totalTrvlr} <sub>Traveller</sub></h2>
                                         <p>${ticketClass}</p>
                                         <p class="info">Group Bookings Not Available!</p>`
         })
