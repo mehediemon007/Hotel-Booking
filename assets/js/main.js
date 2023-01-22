@@ -411,19 +411,24 @@
 
     const hotelImgs = document.querySelectorAll(".hotel-images");
 
-    hotelImgs.forEach(each => {
+    if(hotelImgs != null){
+
+        hotelImgs.forEach(each => {
 
         const previewImg = each.querySelector(".preview-img img");
         const thumbImgs = each.querySelectorAll(".thumbnail-images span");
 
-        thumbImgs.forEach(each => {
-            each.addEventListener("mouseover",function(){
-                const imgSrc = this.querySelector("img").getAttribute('src');
-                previewImg.setAttribute("src",imgSrc)
+            thumbImgs.forEach(each => {
+                each.addEventListener("mouseover",function(){
+                    const imgSrc = this.querySelector("img").getAttribute('src');
+                    previewImg.setAttribute("src",imgSrc)
+                })
             })
-        })
 
-    });
+        });
+
+    }
+
 
     // ScrollToWatch
 
@@ -465,9 +470,13 @@
     const roomApply = document.querySelector(".room-apply");
 
     if(roomApply != null){
-        roomApply.addEventListener("click",function(){
-            const qtyValue = document.querySelector(".quantity-input");
-            console.log(qtyValue.value)
+        roomApply.addEventListener("click",function(event){
+            const qtyInputWpr = this.parentElement.parentElement;
+            const qtyInputs = qtyInputWpr.querySelectorAll(".quantity-input")
+            
+            const optionValueEle = qtyInputWpr.previousElementSibling;
+
+            optionValueEle.innerHTML = `<h2>${qtyInputs[0].value} <sub>Room</sub> ${qtyInputs[1].value} <sub>Adults</sub></h2>`
         })
     }
 
