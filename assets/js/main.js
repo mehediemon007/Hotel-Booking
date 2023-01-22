@@ -480,4 +480,23 @@
         })
     }
 
+    // Flight Selection
+
+    const flightApply = document.querySelector(".flight-apply");
+
+    if(flightApply != null){
+        flightApply.addEventListener("click",function(event){
+            const qtyInputWpr = this.parentElement.parentElement;
+            const adultValue = qtyInputWpr.querySelector('input[name="adult"]:checked').nextElementSibling.innerText;
+            const ticketClass = qtyInputWpr.querySelector('input[name="ticket-class"]:checked').nextElementSibling.innerText;
+            
+            const optionValueEle = qtyInputWpr.previousElementSibling;
+
+            optionValueEle.innerHTML = `<h2>${adultValue} <sub>Traveller</sub></h2>
+                                        <p>${ticketClass}</p>
+                                        <p class="info">Group Bookings Not Available!</p>`
+        })
+    }
+
+
 })()
