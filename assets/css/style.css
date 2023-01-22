@@ -353,7 +353,27 @@ section{
 .toolbar-right{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 16px;
+}
+
+.toolbar-right .profile-link{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+}
+
+.toolbar-right .profile-link i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 4px;
+    vertical-align: middle;
 }
 
 .toolbar-right .offer img{
@@ -405,6 +425,10 @@ section{
     position: fixed;
     animation: slideInDown 0.2s linear;
     z-index: 100;
+}
+
+.header-2 .header-wpr{
+    padding: 16px 0;
 }
 
 @keyframes slideInDown {
@@ -3080,6 +3104,113 @@ input[type="checkbox"]:checked:before{
     padding: 16px;
     margin: 24px 0;
     text-align: center;
+}
+
+/* User Dashboard */
+
+.trv-user-dashboard{
+    padding: 70px 0;
+}
+
+.user-info-dashboard .info-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px 16px 16px;
+}
+
+.info-heading .user-id{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.user-id img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.info-heading .edit-user{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 6px 24px;
+    transition: .1s;
+}
+
+.info-heading .edit-user:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.user-menu{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    padding: 8px;
+}
+
+.user-menu li a{
+    display: block;
+    font-size: 15px;
+    color: var(--primary-color);
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.user-menu li a.active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.user-menu a i{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.user-info-dashboard{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+}
+
+.user-detail{
+    padding: 24px;
+}
+
+.user-detail .alert{
+    font-size: 14px;
+    color: #52556f;
+    margin-bottom: 24px;
+}
+
+.user-detail .info-card{
+    padding: 16px 32px 24px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.info-card .info-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.info-list li p{
+    flex: 1 1 0;
+    font-size: 14px;
+    color: #52556f;
+}
+
+.info-list li p.type{
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
 }
 
 
