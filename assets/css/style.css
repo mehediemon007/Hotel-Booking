@@ -3116,7 +3116,7 @@ input[type="checkbox"]:checked:before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px 16px 16px;
+    padding: 16px 32px 0 16px;
 }
 
 .info-heading .user-id{
@@ -3176,17 +3176,17 @@ input[type="checkbox"]:checked:before{
     box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
 }
 
-.user-detail{
+.info-detail{
     padding: 24px;
 }
 
-.user-detail .alert{
+.info-detail .alert{
     font-size: 14px;
     color: #52556f;
     margin-bottom: 24px;
 }
 
-.user-detail .info-card{
+.info-detail .info-card{
     padding: 16px 32px 24px;
     border: 1px solid #dee2e6;
     border-radius: 8px;
@@ -3211,6 +3211,10 @@ input[type="checkbox"]:checked:before{
 .info-list li p.type{
     font-weight: var(--font-weight-bold);
     color: var(--text-color);
+}
+
+.info-card .input-grp label{
+    font-weight: var(--font-weight-bold);
 }
 
 
