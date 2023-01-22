@@ -143,6 +143,16 @@
         $(this).parent().siblings('.flight-info-details').slideToggle("300")
     })
 
+    $(".booking-info-card .info-toggle").on("click",function(){
+        if($(this).text() == 'Show Details'){
+            $(this).text("Hide Details")
+        }else{
+            $(this).text("Show Details")
+        }
+
+        $(this).parent().siblings('.meta-info-wpr').slideToggle("300")
+    })
+
     // Toggle Visa Info
 
     $(".require-info-toggle").on("click",function(){

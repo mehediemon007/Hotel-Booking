@@ -3257,6 +3257,153 @@ input[type="checkbox"]:checked:before{
     color: var(--white-color);
 }
 
+/* Booked Items List */
+
+.booked-container{
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px rgb(28 5 77 / 10%), 0 12px 32px rgb(0 0 0 / 5%);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.booked-flight-list .single-flight{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(7 4 146 / 10%), 0 24px 60px rgb(6 47 125 / 5%), 0 12px 24px rgb(27 59 119 / 5%);
+}
+
+.booking-info-card .card-heading{
+    background-color: var(--primary-color);
+    border-radius: 8px 8px 0 0;
+}
+
+.booking-info-card .card-heading p{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+}
+
+.booking-info-card .company-name img{
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.booking-info-card .card-heading .btn{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    margin-left: 8px;
+}
+
+.booking-info-content{
+    display: grid;
+    grid-template-columns: .8fr 1fr .8fr;
+    grid-gap: 12px;
+}
+
+.booking-info-content *{
+    font-size: 14px;
+}
+
+.booking-info-content .flight-time{
+    text-align: center;
+    border-left: 2px solid rgb(0 140 255 / 10%);
+    border-right: 2px solid rgb(0 140 255 / 10%);
+    padding: 0 16px;
+}
+
+.booking-info-content ul li{
+    margin-bottom: 2px;
+}
+
+ul.ticket-info li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-info-card .info-toggle{
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    color: Var(--primary-color);
+    padding: 0 16px 16px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.single-flight .meta-info-wpr{
+    display: none;
+    border-top: 1px solid #dee2e6;
+    padding: 16px;
+}
+
+.passenger-info .psnger-name{
+    font-size: 14px;
+    color: #52556f;
+}
+
+ul.psnger-meta-info{
+    border-top: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+    margin: 16px 0;
+    padding: 6px 0;
+}
+
+ul.psnger-meta-info li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.psnger-meta-info li p{
+    flex: 1 1 0;
+    font-size: 14px;
+    color: var(--primary-color);
+    padding: 6px 0;
+}
+
+.psnger-meta-info p:first-child{
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
+}
+
+.booked-flight-list .flight-summary{
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 24px 16px;
+}
+
+.booked-flight-list .flight-details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.itinerary-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itinerary-details p{
+    font-size: 14px;
+    color: #52556f;
+    margin-bottom: 4px;
+}
+
+.itinerary-details .tag{
+    font-size: 12px;
+    color: #7c8db0;
+}
+
+.itinerary-details .plane-name,
+.itinerary-details .dpart-time{
+    font-weight: var(--font-weight-bold);
+}
+
+.itinerary-details .status{
+    font-weight: var(--font-weight-bold);
+}
+
+.status.pending{
+    color: #f2b809;
+}
+
 
 /* Footer */
 

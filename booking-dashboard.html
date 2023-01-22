@@ -9,7 +9,7 @@
     
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" href="images/logo/image-logo.png">
-    <title>Profile</title>
+    <title>Profile | Booking</title>
 
     <!-- Inject:css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
@@ -90,201 +90,131 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="flights-container">
-                            <div class="tab-content" id="flightTabContent">
+                        <div class="booked-container">
+                            <div class="tab-content" id="bookedTabContent">
                                 <div class="tab-pane fade show active" id="flights" role="tabpanel" aria-labelledby="flights-tab">
                                     <h5 class="text-center mb-4">Flight Booking History</h5>
-                                    <div class="flight-list">
+                                    <div class="booked-flight-list">
                                         <div class="single-flight">
-                                            <div class="flight-details">
-                                                <div>
-                                                    <img src="./assets/images/services/BG.png" alt="Biman BD" class="air-img">
-                                                    <p class="tag">Biman Bangladesh Airlines</p>
+                                            <div class="booking-info-card">
+                                                <div class="card-heading">
+                                                    <div class="company-name d-flex align-items-center">
+                                                        <div><img src="./assets/images/services/BG.png" alt="Biman"></div>
+                                                        <p>Biman Bangladesh Airlines</p>
+                                                    </div>
+                                                    <div class="ticket-info text-center">
+                                                        <p>Ticket Status : Pending</p>
+                                                        <p>Booking ID : FL65100Q7049</p>
+                                                        <p>Last Tickting Date : 22 Dec 2022</p>
+                                                    </div>
+                                                    <div class="ticket-price d-flex align-items-center">
+                                                        <h6 class="text-white mb-0">BDT <span class="text-white">3,334</span></h6>
+                                                        <a href="#" class="btn btn-sm">Unpaid</a>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <p class="tag">Depart</p>
-                                                    <b>19:45</b>
-                                                    <p class="date">Thu, 10 Jan 2023</p>
-                                                    <p class="location">Dhaka</p>
-                                                </div>
-                                                <div class="text-center">
-                                                    <p class="tag">55 minutes</p>
-                                                    <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
-                                                    <p class="flight-type">Non Stop</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Arrive</p>
-                                                    <b>20:45</b>
-                                                    <p class="date">Thu, 10 Jan 2023</p>
-                                                    <p class="location">Chittagong</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Price</p>
-                                                    <b>BDT 3,360</b>
-                                                </div>
-                                                <div>
-                                                    <a href="./booking.html" class="book-btn">Book Now</a>
-                                                </div>
-                                            </div>
-                                            <div class="flight-meta-info">
-                                                <p class="refund-info">Partially Refundable</p>
-                                                <p class="info-toggle">Show Flight Details</p>
-                                            </div>
-                                            <div class="flight-info-details">
-                                                <div class="tab-content" id="flightinfoTabContent">
-                                                    <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-info-wpr">
-                                                                    <img src="./assets/images/services/BG.png" alt="Biman BD">
-                                                                    <div class="fare-info">
-                                                                        <h6>Biman Bangladesh Airlines <span>BG | 617</span></h6>
-                                                                        <div>
-                                                                            <p>Aircraft : DHC8 Dash 8</p>
-                                                                            <p>Operated by : BG</p>
-                                                                            <p>Economy (G)</p>
-                                                                            <p>Available seats: 9</p>
-                                                                        </div>
-                                                                    </div>
+                                                <div class="card-body">
+                                                    <div class="booking-info-content">
+                                                        <ul>
+                                                            <li><b>Lead Passenger:</b> Mehedi Hasan Emon</li>
+                                                            <li><b>Booked On:</b> Jan 22nd 23, 10:42</li>
+                                                            <li><b>Flight Date:</b> Sun, Jan 25nd 23, 12:42</li>
+                                                            <li><b>Trip Type:</b> Oneway</li>
+                                                        </ul>
+                                                        <div class="flight-time">
+                                                            <p>Biman Bangladesh Airlines BG | 165</p>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <b>Dhaka</b>
+                                                                <div class="text-center">
+                                                                    <p class="tag">55 minutes</p>
+                                                                    <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
+                                                                    <p class="flight-type">Non Stop</p>
                                                                 </div>
-                                                                <div class="flight-details">
-                                                                    <div>
-                                                                        <b>19:45</b>
-                                                                        <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
-                                                                        <p>Terminal</p>
-                                                                        <p class="terminal-name">Hazrat Shahjalal International Airport</p>
-                                                                        <p>Dhaka,Bangladesh</p>
-                                                                    </div>
-                                                                    <div class="text-center">
-                                                                        <p class="tag">55 minutes</p>
-                                                                        <img src="./assets/images/icons/dash.png" alt="Non stop">
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>20:45</b>
-                                                                        <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
-                                                                        <p>Terminal</p>
-                                                                        <p class="terminal-name">Patenga</p>
-                                                                        <p>Chittagong,Bangladesh</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Baggage</b>
-                                                                        <p>Adult</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Check In</b>
-                                                                        <p>20 kg(s)</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Cabin</b>
-                                                                        <p>7 kg(s)</p>
-                                                                    </div>
-                                                                </div>
+                                                                <b>Chittagong</b>
                                                             </div>
+                                                        </div>
+                                                        <ul class="ticket-info">
+                                                            <li><b>PNR:</b><p>BK-IFFC</p></li>
+                                                            <li><b>Airline Reference:</b> <p> ---</p></li>
+                                                            <li><b>Ticket No:</b><p> ---</p></li>
+                                                            <li><b>Trip Type:</b><p>615</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p class="info-toggle">Show Details</p>
+                                            </div>
+                                            <div class="meta-info-wpr">
+                                                <div class="passenger-info">
+                                                    <h6>Passenger Name</h6>
+                                                    <p class="psnger-name">Mehedi Hasan Emon</p>
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <ul class="psnger-meta-info">
+                                                                <li><p>PNR</p><p><b>BG-LKIT1</b></p></li>
+                                                                <li><p>Air Ref</p><p>---</p></li>
+                                                                <li><p>Issued Date</p><p>---</p></li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Dhaka to Chittagong</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-sum-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Fare Summary</th>
-                                                                                <th>Base Fare</th>
-                                                                                <th>Taxes + Fees</th>
-                                                                                <th>Per Passenger</th>
-                                                                                <th>Total</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Adult</td>
-                                                                                <td>BDT 2,640</td>
-                                                                                <td>BDT 725</td>
-                                                                                <td>BDT (3,365 x 1)</td>
-                                                                                <td>BDT 3,365</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                        <tfoot>
-                                                                            <tr>
-                                                                                <td><b>Total (1 Traveler)</b></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td><b>BDT 3,365</b></td>
-                                                                            </tr>
-                                                                        </tfoot>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
+                                                </div>
+                                                <h6 class="mb-3">Flight Summary</h6>
+                                                <div class="flight-summary">
+                                                    <h6>Dhaka to Chittagong, 10 Jan 2023</h6>
+                                                    <div class="flight-details">
+                                                        <div>
+                                                            <img src="./assets/images/services/BG.png" alt="Biman BD" class="air-img">
+                                                            <p class="tag">Biman Bangladesh Airlines</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="tag">Depart</p>
+                                                            <b>19:45</b>
+                                                            <p class="date">Thu, 10 Jan 2023</p>
+                                                            <p class="location">Dhaka</p>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <p class="tag">55 minutes</p>
+                                                            <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
+                                                            <p class="flight-type">Non Stop</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="tag">Arrive</p>
+                                                            <b>20:45</b>
+                                                            <p class="date">Thu, 10 Jan 2023</p>
+                                                            <p class="location">Chittagong</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="tag">Price</p>
+                                                            <b>BDT 3,360</b>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Fare breakdown</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-rules-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>
-                                                                                    <b>Cancellation</b>
-                                                                                    <p>(From Scheduled flight departure)</p>
-                                                                                </th>
-                                                                                <th>
-                                                                                    <b>Amount/Value</b>
-                                                                                    <p>(Per passenger)</p>
-                                                                                </th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Maximum penalty amount</td>
-                                                                                <td>Adult : <b>BDT 2,000</b></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="callout-block mb-3">
-                                                                    <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                </div>
-                                                                <div class="fare-rules-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>
-                                                                                    <b>Date Change</b>
-                                                                                    <p>(From Scheduled flight departure)</p>
-                                                                                </th>
-                                                                                <th>
-                                                                                    <b>Amount/Value</b>
-                                                                                    <p>(Per passenger)</p>
-                                                                                </th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Maximum penalty amount</td>
-                                                                                <td>Adult : <b>BDT 1,500</b></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="callout-block">
-                                                                    <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                </div>
-                                                            </div>
+                                                    <h6 class="text-primary">Itinerary Deatails</h6>
+                                                    <div class="itinerary-details">
+                                                        <div>
+                                                            <p class="tag">Flight</p>
+                                                            <p>Biman Bangladesh Airlines</p>
+                                                            <h6 class="mb-1">BG - 615</h6>
+                                                            <p>Economy (G) Class</p>
+                                                            <p class="plane-name">Aircraft - Boeing 737-800</p>
                                                         </div>
-                                                        <div class="callout-block">
-                                                            <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
+                                                        <div>
+                                                            <p class="tag">Departure</p>
+                                                            <p>DAC</p>
+                                                            <p>(Hazrat Shahjalal International Airport)</p>
+                                                            <p>-</p>
+                                                            <p class="dpart-time">15:45 , Sun 22 Jan 2023</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="tag">Arrival</p>
+                                                            <p>DAC</p>
+                                                            <p>(Patenga)</p>
+                                                            <p>-</p>
+                                                            <p class="dpart-time">16:45 , Sun 22 Jan 2023</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="tag">Status</p>
+                                                            <p class="status pending">Pending</p>
+                                                            <p>Checkin Baggage: <b>20 Kg(s)</b></p>
+                                                            <p>Cabin Baggage: <b>7 Kg(s)</b>(Per pax)</p>
+                                                            <p class="dpart-time">1 hour</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -294,406 +224,14 @@
                                 </div>
                                 <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
                                     <h5 class="text-center mb-4">Hotel Booking History</h5>
-                                    <div class="flight-list">
-                                        <div class="single-flight">
-                                            <div class="flight-details">
-                                                <div>
-                                                    <img src="./assets/images/services/BG.png" alt="Biman BD" class="air-img">
-                                                    <p class="tag">Biman Bangladesh Airlines</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Depart</p>
-                                                    <b>19:45</b>
-                                                    <p class="date">Thu, 10 Jan 2023</p>
-                                                    <p class="location">Dhaka</p>
-                                                </div>
-                                                <div class="text-center">
-                                                    <p class="tag">55 minutes</p>
-                                                    <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
-                                                    <p class="flight-type">Non Stop</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Arrive</p>
-                                                    <b>20:45</b>
-                                                    <p class="date">Thu, 10 Jan 2023</p>
-                                                    <p class="location">Chittagong</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Price</p>
-                                                    <b>BDT 3,360</b>
-                                                </div>
-                                                <div>
-                                                    <a href="./booking.html" class="book-btn">Book Now</a>
-                                                </div>
-                                            </div>
-                                            <div class="flight-meta-info">
-                                                <p class="refund-info">Partially Refundable</p>
-                                                <p class="info-toggle">Show Flight Details</p>
-                                            </div>
-                                            <div class="flight-info-details">
-                                                <div class="tab-content" id="flightinfoTabContent">
-                                                    <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-info-wpr">
-                                                                    <img src="./assets/images/services/BG.png" alt="Biman BD">
-                                                                    <div class="fare-info">
-                                                                        <h6>Biman Bangladesh Airlines <span>BG | 617</span></h6>
-                                                                        <div>
-                                                                            <p>Aircraft : DHC8 Dash 8</p>
-                                                                            <p>Operated by : BG</p>
-                                                                            <p>Economy (G)</p>
-                                                                            <p>Available seats: 9</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flight-details">
-                                                                    <div>
-                                                                        <b>19:45</b>
-                                                                        <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
-                                                                        <p>Terminal</p>
-                                                                        <p class="terminal-name">Hazrat Shahjalal International Airport</p>
-                                                                        <p>Dhaka,Bangladesh</p>
-                                                                    </div>
-                                                                    <div class="text-center">
-                                                                        <p class="tag">55 minutes</p>
-                                                                        <img src="./assets/images/icons/dash.png" alt="Non stop">
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>20:45</b>
-                                                                        <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
-                                                                        <p>Terminal</p>
-                                                                        <p class="terminal-name">Patenga</p>
-                                                                        <p>Chittagong,Bangladesh</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Baggage</b>
-                                                                        <p>Adult</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Check In</b>
-                                                                        <p>20 kg(s)</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Cabin</b>
-                                                                        <p>7 kg(s)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Dhaka to Chittagong</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-sum-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Fare Summary</th>
-                                                                                <th>Base Fare</th>
-                                                                                <th>Taxes + Fees</th>
-                                                                                <th>Per Passenger</th>
-                                                                                <th>Total</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Adult</td>
-                                                                                <td>BDT 2,640</td>
-                                                                                <td>BDT 725</td>
-                                                                                <td>BDT (3,365 x 1)</td>
-                                                                                <td>BDT 3,365</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                        <tfoot>
-                                                                            <tr>
-                                                                                <td><b>Total (1 Traveler)</b></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td><b>BDT 3,365</b></td>
-                                                                            </tr>
-                                                                        </tfoot>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Fare breakdown</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-rules-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>
-                                                                                    <b>Cancellation</b>
-                                                                                    <p>(From Scheduled flight departure)</p>
-                                                                                </th>
-                                                                                <th>
-                                                                                    <b>Amount/Value</b>
-                                                                                    <p>(Per passenger)</p>
-                                                                                </th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Maximum penalty amount</td>
-                                                                                <td>Adult : <b>BDT 2,000</b></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="callout-block mb-3">
-                                                                    <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                </div>
-                                                                <div class="fare-rules-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>
-                                                                                    <b>Date Change</b>
-                                                                                    <p>(From Scheduled flight departure)</p>
-                                                                                </th>
-                                                                                <th>
-                                                                                    <b>Amount/Value</b>
-                                                                                    <p>(Per passenger)</p>
-                                                                                </th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Maximum penalty amount</td>
-                                                                                <td>Adult : <b>BDT 1,500</b></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="callout-block">
-                                                                    <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="callout-block">
-                                                            <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="visa-tab">
                                     <h5 class="text-center mb-4">Visa Booking History</h5>
-                                    <div class="flight-list">
-                                        <div class="single-flight">
-                                            <div class="flight-details">
-                                                <div>
-                                                    <img src="./assets/images/services/BG.png" alt="Biman BD" class="air-img">
-                                                    <p class="tag">Biman Bangladesh Airlines</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Depart</p>
-                                                    <b>19:45</b>
-                                                    <p class="date">Thu, 10 Jan 2023</p>
-                                                    <p class="location">Dhaka</p>
-                                                </div>
-                                                <div class="text-center">
-                                                    <p class="tag">55 minutes</p>
-                                                    <img src="./assets/images/icons/non-stop-shape.png" alt="Non stop">
-                                                    <p class="flight-type">Non Stop</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Arrive</p>
-                                                    <b>20:45</b>
-                                                    <p class="date">Thu, 10 Jan 2023</p>
-                                                    <p class="location">Chittagong</p>
-                                                </div>
-                                                <div>
-                                                    <p class="tag">Price</p>
-                                                    <b>BDT 3,360</b>
-                                                </div>
-                                                <div>
-                                                    <a href="./booking.html" class="book-btn">Book Now</a>
-                                                </div>
-                                            </div>
-                                            <div class="flight-meta-info">
-                                                <p class="refund-info">Partially Refundable</p>
-                                                <p class="info-toggle">Show Flight Details</p>
-                                            </div>
-                                            <div class="flight-info-details">
-                                                <div class="tab-content" id="flightinfoTabContent">
-                                                    <div class="tab-pane fade show active" id="flight-des" role="tabpanel" aria-labelledby="flight-des-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Dhaka to Chittagong, 10 Jan 2023</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-info-wpr">
-                                                                    <img src="./assets/images/services/BG.png" alt="Biman BD">
-                                                                    <div class="fare-info">
-                                                                        <h6>Biman Bangladesh Airlines <span>BG | 617</span></h6>
-                                                                        <div>
-                                                                            <p>Aircraft : DHC8 Dash 8</p>
-                                                                            <p>Operated by : BG</p>
-                                                                            <p>Economy (G)</p>
-                                                                            <p>Available seats: 9</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flight-details">
-                                                                    <div>
-                                                                        <b>19:45</b>
-                                                                        <p class="date">Thu, 10 Jan 2023 <b>(DAC)</b></p>
-                                                                        <p>Terminal</p>
-                                                                        <p class="terminal-name">Hazrat Shahjalal International Airport</p>
-                                                                        <p>Dhaka,Bangladesh</p>
-                                                                    </div>
-                                                                    <div class="text-center">
-                                                                        <p class="tag">55 minutes</p>
-                                                                        <img src="./assets/images/icons/dash.png" alt="Non stop">
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>20:45</b>
-                                                                        <p class="date">Thu, 10 Jan 2023 <b>(CGP)</b></p>
-                                                                        <p>Terminal</p>
-                                                                        <p class="terminal-name">Patenga</p>
-                                                                        <p>Chittagong,Bangladesh</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Baggage</b>
-                                                                        <p>Adult</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Check In</b>
-                                                                        <p>20 kg(s)</p>
-                                                                    </div>
-                                                                    <div>
-                                                                        <b>Cabin</b>
-                                                                        <p>7 kg(s)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="fare-sum" role="tabpanel" aria-labelledby="fare-sum-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Dhaka to Chittagong</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-sum-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Fare Summary</th>
-                                                                                <th>Base Fare</th>
-                                                                                <th>Taxes + Fees</th>
-                                                                                <th>Per Passenger</th>
-                                                                                <th>Total</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Adult</td>
-                                                                                <td>BDT 2,640</td>
-                                                                                <td>BDT 725</td>
-                                                                                <td>BDT (3,365 x 1)</td>
-                                                                                <td>BDT 3,365</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                        <tfoot>
-                                                                            <tr>
-                                                                                <td><b>Total (1 Traveler)</b></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td><b>BDT 3,365</b></td>
-                                                                            </tr>
-                                                                        </tfoot>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="fare-rule" role="tabpanel" aria-labelledby="fare-rule-tab">
-                                                        <div class="flight-info-content">
-                                                            <div class="content-head">
-                                                                <h5>Fare breakdown</h5>
-                                                            </div>
-                                                            <div class="content-body p-3">
-                                                                <div class="fare-rules-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>
-                                                                                    <b>Cancellation</b>
-                                                                                    <p>(From Scheduled flight departure)</p>
-                                                                                </th>
-                                                                                <th>
-                                                                                    <b>Amount/Value</b>
-                                                                                    <p>(Per passenger)</p>
-                                                                                </th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Maximum penalty amount</td>
-                                                                                <td>Adult : <b>BDT 2,000</b></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="callout-block mb-3">
-                                                                    <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                </div>
-                                                                <div class="fare-rules-table">
-                                                                    <table class="table table-bordered mb-0">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>
-                                                                                    <b>Date Change</b>
-                                                                                    <p>(From Scheduled flight departure)</p>
-                                                                                </th>
-                                                                                <th>
-                                                                                    <b>Amount/Value</b>
-                                                                                    <p>(Per passenger)</p>
-                                                                                </th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Maximum penalty amount</td>
-                                                                                <td>Adult : <b>BDT 1,500</b></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="callout-block">
-                                                                    <p><b>*Note For Date Change:</b> Service Fees, Fare difference and Tax difference will be additionally applied on top of penalty amount which is nonrefundable in any circumstances.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="callout-block">
-                                                            <p><b>*Important:</b> The airline fees are continuously changing. Flight Expert doesn’t certify the fees/price shown above. The mentioned fees are for prediction of easiness of our customer. You can change the date only by choosing the same airline on a different date. Users have to pay the fare difference of RBD or classes between booked and latest booking, if there is any.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="trv-pagination">
+                            <div class="trv-pagination mt-5">
                                 <a href="#" class="pagination-item"><i class="icofont-simple-left"></i></a>
                                 <a href="#" class="pagination-item active">1</a>
                                 <a href="#" class="pagination-item">2</a>
