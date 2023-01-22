@@ -3404,6 +3404,22 @@ ul.psnger-meta-info li{
     color: #f2b809;
 }
 
+/* Add Member */
+
+.info-detail hr{
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 1;
+}
+
+.add-mem-btn{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
 
 /* Footer */
 
