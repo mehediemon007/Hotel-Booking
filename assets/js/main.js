@@ -140,17 +140,17 @@
         }else{
             $(this).text("Show Flight Details")
         }
-        $(this).parent().siblings('.flight-info-details').slideToggle("300")
+        $(this).parent().siblings('.flight-info-details').slideToggle("")
     })
 
-    $(".booking-info-card .info-toggle").on("click",function(){
+    $(".booking-info-tgl").on("click",function(){
         if($(this).text() == 'Show Details'){
             $(this).text("Hide Details")
         }else{
             $(this).text("Show Details")
         }
 
-        $(this).parent().siblings('.meta-info-wpr').slideToggle("300")
+        $(this).parent().siblings('.meta-info-wpr').slideToggle("")
     })
 
     // Toggle Visa Info
@@ -337,13 +337,20 @@
         }
     })
 
-     // Dropdown
+     // Faq Dropdown
 
     $(".faq-label").on("click", function () {
         var $this = $(this);
         $("i", this).toggleClass("icofont-rounded-down icofont-rounded-up");
         $($this).next().slideToggle("1000");
     });
+
+    // Add Member Form Toggle
+
+    $(".add-mem-btn").on("click",function(){
+        $(this).parent().slideToggle("")
+        $(this).parent().siblings(".personal-details").slideToggle("")
+    })
 
 })(jQuery);
 
@@ -355,7 +362,7 @@
 
     if(headerContainer != null){
         window.onscroll = ()=>{
-            this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
+            this.scrollY > 50 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
         }
     }
 

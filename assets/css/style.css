@@ -3180,10 +3180,11 @@ input[type="checkbox"]:checked:before{
     padding: 24px;
 }
 
-.info-detail .alert{
+.user-info-dashboard .alert{
     font-size: 14px;
     color: #52556f;
     margin-bottom: 24px;
+    padding: 0;
 }
 
 .info-detail .info-card{
@@ -3310,6 +3311,10 @@ input[type="checkbox"]:checked:before{
     padding: 0 16px;
 }
 
+.flight-time b{
+    color: #7c8db0;
+}
+
 .booking-info-content ul li{
     margin-bottom: 2px;
 }
@@ -3319,7 +3324,7 @@ ul.ticket-info li{
     justify-content: space-between;
 }
 
-.booking-info-card .info-toggle{
+.booking-info-tgl{
     font-size: 14px;
     font-weight: var(--font-weight-bold);
     color: Var(--primary-color);
@@ -3405,6 +3410,10 @@ ul.psnger-meta-info li{
 }
 
 /* Add Member */
+
+.user-info-dashboard .personal-details{
+    display: none;
+}
 
 .info-detail hr{
     height: 2px;

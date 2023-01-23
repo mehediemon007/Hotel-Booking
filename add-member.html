@@ -68,16 +68,115 @@
                         </div>
                     </div>
                     <div class="col-9">
-                        <div class="user-info-dashboard">
-                            <div class="info-detail">
+                        <div class="user-info-dashboard p-4">
+                            <div class="info-detail p-0">
                                 <h5>Co-Traveler List</h5>
-                                <p class="alert p-0 mb-3"><i class="icofont-exclamation-circle"></i> You have (0) travelers</p>
+                                <p class="alert"><i class="icofont-exclamation-circle"></i> You have (0) travelers</p>
                                 <div class="info-card border-0 p-0">
                                     <h5>Booking User</h5>
                                     <p>emon@gmail.com</p>
                                 </div>
                                 <hr>
                                 <button class="add-mem-btn"><i class="icofont-user-male"></i> Add Member</button>
+                            </div>
+                            <div class="personal-details">
+                                <h5 class="mb-0">Personal Details</h5>
+                                <p class="alert"><i class="icofont-exclamation-circle"></i> As mentioned on your passport or government approved IDs</p>
+                                <form class="personal-info-form info-form">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <fieldset class="input-grp">
+                                                <label class="required">Select Title </label>
+                                                <div class="d-flex mb-2">
+                                                    <div class="honor-input">
+                                                        <input type="radio" id="mr" name="honor">
+                                                        <label for="mr">Mr</label>
+                                                    </div>
+                                                    <div class="honor-input">
+                                                        <input type="radio" id="mrs" name="honor">
+                                                        <label for="mrs">Mrs</label>
+                                                    </div>
+                                                    <div class="honor-input">
+                                                        <input type="radio" id="ms" name="honor">
+                                                        <label for="ms">Ms</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-6">
+                                            <fieldset class="input-grp">
+                                                <label for="fa-name" class="required">First Name</label>
+                                                <input type="text" placeholder="First Name" id="fa-name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-6">
+                                            <fieldset class="input-grp">
+                                                <label for="la-name" class="required">Last Name</label>
+                                                <input type="text" placeholder="Last Name" id="la-name">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-6">
+                                            <fieldset class="input-grp">
+                                                <label for="dob" class="required">Date of Birth</label>
+                                                <input type="text" placeholder="Select a date" id="dob" class="datePicker">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-6">
+                                            <fieldset class="input-grp">
+                                                <label for="p-num">Passport Number (Optional)</label>
+                                                <input type="text" placeholder="Passport Number" id="p-num">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-6">
+                                            <fieldset class="input-grp">
+                                                <label for="pex-date">Passport Expiry Date (Optional)</label>
+                                                <input type="text" placeholder="Select a date" id="pex-date" class="datePicker">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-6">
+                                            <fieldset class="input-grp">
+                                                <label for="city" class="required">City</label>
+                                                <input type="text" placeholder="City" id="city">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-6">
+                                            <fieldset class="input-grp">
+                                                <label for="country" class="required">Country </label>
+                                                <select id="country">
+                                                    <option value="bd">Bangladesh</option>
+                                                    <option value="ind">India</option>
+                                                    <option value="usa">USA</option>
+                                                    <option value="sau">Saudi Arabia</option>
+                                                    <option value="qatar">Qatar</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="my-3">
+                                    <h5 class="mb-0">Passport Information</h5>
+                                    <p class="alert p-0 mb-3">Traveler holding passport can fill the below form</p>
+                                    <form class="personal-info-form info-form">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <fieldset class="input-grp">
+                                                    <label for="p-num">Passport Number (Optional)</label>
+                                                    <input type="text" placeholder="Passport Number" id="p-num">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-6">
+                                                <fieldset class="input-grp">
+                                                    <label for="pex-date">Passport Expiry Date (Optional)</label>
+                                                    <input type="text" placeholder="Select a date" id="pex-date" class="datePicker">
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div>
+                                    <a href="#" class="trv-btn secondary-btn me-3">Save & Close</a>
+                                    <a href="./add-member.html" class="trv-btn secondary-btn">Back</a>
+                                </div>
                             </div>
                         </div>
                     </div>
