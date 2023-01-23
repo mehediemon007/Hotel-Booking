@@ -452,7 +452,10 @@
 
 /* Max Width 360px */
 @media only screen and (max-width:360px){
-
+    .filter-types .single-type label{
+        font-size: 12px;
+        font-weight: var(--font-weight-semi-bold);
+    }
 }
 
 /* Max Width 320px */
