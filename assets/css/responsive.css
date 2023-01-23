@@ -15,7 +15,10 @@
 /* Min Width 992px and Max Width 1199px */
 @media only screen and (min-width:992px) and (max-width:1199px){
 
-   
+    .container{
+        max-width: 95% !important;
+    }
+
 }
 
 /* Min Width 992px */
@@ -53,6 +56,14 @@
     .container-right{
         padding-left: 16px;
     }
+
+    .download-content input{
+        width: 80%;
+    }
+
+    .app-link-btn{
+        right: 120px;
+    }
 }
 
 /* Max Width 1099px */
@@ -68,6 +79,45 @@
 
     .quick-view-container{
         width: 70%;
+    }
+
+    .app-link-btn{
+        top: 56px;
+    }
+
+}
+
+/* Max Width 1024px */
+@media only screen and (max-width:1024px){
+
+    .single-option .option-select-btn h2{
+        font-size: 28px;
+    }
+
+    .filter-options{
+        grid-template-columns: repeat(2,1fr);
+        padding: 12px;
+        grid-gap: 12px;
+    }
+
+    .filter-options .single-option{
+        border: 1px solid #e7e7e7;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    .filter-options .toggle-airport{
+        left: -30px;
+    }
+
+    .more-options-wpr .single-option {
+        grid-template-columns: 24px 1fr;
+        grid-gap: 8px;
+        padding: 12px 8px;
+    }
+
+    .app-link-btn{
+        right: 107px;
     }
 
 }

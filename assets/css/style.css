@@ -640,6 +640,13 @@ section{
     color: #4a4a4a;
 }
 
+.option-select-btn h2 + p{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .single-option .option-select-btn .info{
     color: #cf8100;
 }

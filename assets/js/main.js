@@ -10,7 +10,6 @@
 
     
     $(".offers-slider").owlCarousel({
-        items:2.5,
         loop:true,
         autoplay:false,
         slideBy: 2,
@@ -18,14 +17,18 @@
         navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
         dots:false,
         responsive:{
-            // 0:{
-            //     items: 2,
-            //     center:false
-            // },
-            // 575:{
-            //     items: 5,
-            //     center:true,
-            // },
+            0:{
+                items: 2,
+            },
+            575:{
+                items: 1.5,
+            },
+            992:{
+                items: 2.15
+            },
+            1200:{
+                items:2.5,
+            }
         }
     })
 
@@ -33,7 +36,6 @@
 
     
     $(".trips-slider").owlCarousel({
-        items:5.5,
         loop:true,
         autoplay:false,
         slideBy: 1,
@@ -42,21 +44,26 @@
         dots:false,
         margin: 16,
         responsive:{
-            // 0:{
-            //     items: 2,
-            //     center:false
-            // },
-            // 575:{
-            //     items: 5,
-            //     center:true,
-            // },
+            0:{
+                items: 2,
+                center:false
+            },
+            575:{
+                items: 5,
+                center:true,
+            },
+            992:{
+                items: 4.5
+            },
+            1200:{
+                items: 5.5
+            }
         }
     })
 
     // Quick Links Slider
 
     $(".quick-links-slider").owlCarousel({
-        items:3,
         loop:true,
         autoplay:false,
         slideBy: 1,
@@ -65,14 +72,15 @@
         dots:false,
         margin: 16,
         responsive:{
-            // 0:{
-            //     items: 2,
-            //     center:false
-            // },
-            // 575:{
-            //     items: 5,
-            //     center:true,
-            // },
+            0:{
+                items: 1,
+            },
+            992:{
+                items: 2.25,
+            },
+            1200:{
+                items:3
+            }
         }
     })
 
