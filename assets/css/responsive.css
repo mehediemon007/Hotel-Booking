@@ -126,6 +126,56 @@
 
 @media only screen and (max-width:991px){
 
+    .sec-heading h2{
+        font-size: 28px;
+    }
+
+    .owl-nav button{
+        top: -57px;
+    }
+
+    .trv-apps-wpr{
+        padding: 32px 16px;
+    }
+
+    .download-content h2,
+    .offers-sec-heading h2{
+        font-size: 32px;
+    }
+
+    .download-content > p{
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    .download-content input{
+        width: 100%;
+    }
+
+    .download-content input::placeholder{
+        font-size: 14px;
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    .app-link-btn{
+        right: 0;
+        padding: 0 6px;
+    }
+
+    .more-options-wpr{
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .more-options-wpr::-webkit-scrollbar{
+        display: none;
+    }
+
+    .more-options-wpr .single-option{
+        min-width: max-content;
+    }
+
     .trv-header{
         background-color: var(--white-color);
     }
@@ -163,11 +213,6 @@
         border-bottom: 1px solid rgba(48,48,48,.15);
     }
 
-    .logo img{
-        max-width: 100px;
-        height: 90px;
-    }
-
     .header-icon{
         color: var(--text-color);
     }
@@ -203,23 +248,54 @@
 /* Max Width 767px */
 @media only screen and (max-width:767px){
     
-    .form-group.required label{
-        text-align: left;
+    .container{
+        max-width: 95% !important;
     }
 
-    .product-review-tabs-content .nav{
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        justify-content: flex-start;
+    .owl-nav button{
+        right: 10px;
     }
 
-    .product-review-tabs-content .nav li a{
-        padding: 5px 10px;
+    .owl-nav button.owl-prev{
+        right: 44px;
     }
 
-    .product-review-tabs-content .nav li a.active:before{
-        content: none;
+    .sec-heading h2{
+        max-width: 80%;
     }
+
+    .toolbar-right .login-btn{
+        width: 130px;
+    }
+
+    .offers-wpr,
+    .top-trips-wpr{
+        padding: 24px 0 24px 24px;
+    }
+
+    .download-content h2{
+        font-size: 28px;
+    }
+
+    .download-content p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .app-link-btn{
+        position: relative;
+        width: 100%;
+        top: 0;
+        border-radius: 5px;
+        margin-top: 16px;
+    }
+
+    .offers-sec-heading{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    
 }
 
 /* Max Width 575px */

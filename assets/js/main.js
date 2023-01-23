@@ -18,9 +18,9 @@
         dots:false,
         responsive:{
             0:{
-                items: 2,
+                items: 1.25,
             },
-            575:{
+            767:{
                 items: 1.5,
             },
             992:{
@@ -45,12 +45,10 @@
         margin: 16,
         responsive:{
             0:{
-                items: 2,
-                center:false
+                items: 2.5,
             },
-            575:{
-                items: 5,
-                center:true,
+            767:{
+                items: 3.5,
             },
             992:{
                 items: 4.5
@@ -73,7 +71,10 @@
         margin: 16,
         responsive:{
             0:{
-                items: 1,
+                items: 1.25,
+            },
+            767:{
+                items: 2
             },
             992:{
                 items: 2.25,
