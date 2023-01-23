@@ -11,7 +11,7 @@
     
     $(".offers-slider").owlCarousel({
         loop:true,
-        autoplay:false,
+        autoplay:true,
         slideBy: 2,
         nav:true,
         navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
@@ -40,7 +40,7 @@
     
     $(".trips-slider").owlCarousel({
         loop:true,
-        autoplay:false,
+        autoplay:true,
         slideBy: 1,
         nav:true,
         navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
@@ -69,7 +69,7 @@
 
     $(".quick-links-slider").owlCarousel({
         loop:true,
-        autoplay:false,
+        autoplay:true,
         slideBy: 1,
         nav:true,
         navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
@@ -99,7 +99,7 @@
     $(".hotel-image-slides").owlCarousel({
         items:1,
         loop:true,
-        autoplay:false,
+        autoplay:true,
         nav:true,
         navText: ["<i class='icofont-thin-left'></i>","<i class='icofont-thin-right'></i>"],
         dots:false,
