@@ -422,6 +422,12 @@
     .booking-filter-links .nav-link i{
         font-size: 32px;
     }
+
+    .filter-options .toggle-airport{
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
     
 }
 
