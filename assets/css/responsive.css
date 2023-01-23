@@ -342,12 +342,12 @@
         gap: 8px;
     }
 
-    .header-wpr .login-btn{
-        display: none;
+    .login-btn{
+        display: none !important;
     }
 
-    .header-wpr .login-btn.btn-sm{
-        display: inline-block;
+    .login-btn.btn-sm{
+        display: inline-block !important;
         width: 45px;
         height: 45px;
         font-size: 20px;
