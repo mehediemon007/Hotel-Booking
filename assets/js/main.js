@@ -370,6 +370,16 @@
         $(this).parent().siblings(".personal-details").slideToggle("")
     })
 
+    // Filter Widget Toggle
+
+    $(".filter-toggle").on("click",function(){
+        $(".sidebar-filter-wpr").addClass("show")
+    })
+
+    $(".filter-cls").on("click",function(){
+        $(".sidebar-filter-wpr").removeClass("show")
+    })
+
 })(jQuery);
 
 (function(){
