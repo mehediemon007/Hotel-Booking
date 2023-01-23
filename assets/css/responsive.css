@@ -95,7 +95,7 @@
     }
 
     .filter-options{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,minmax(0,1fr));
         padding: 12px;
         grid-gap: 12px;
     }
@@ -326,178 +326,49 @@
 /* Max Width 480px */
 @media only screen and (max-width:480px){
 
-    .sec-padding{
-        padding: 50px 0;
+    .toolbar-right .offer{
+        flex-direction: column;
+        gap: 8px;
     }
 
-    .sec-pt{
-        padding-top: 50px;
-    }
-    
-    .sec-pb{
-        padding-bottom: 50px;
-    }
-    
-    .sec-mt{
-        margin-top: 50px;
+    .offer .content p:last-child{
+        display: none;
     }
 
-    .logo img{
-        max-width: 100%;
-        height: 50px;
-    }
-
-    .nav-toggle{
-        display: inline-block;
-        width: 30px;
-        height: 30px;
+    .single-option .option-select-btn h2{
         font-size: 24px;
-        color: var(--primary-color);
-        text-align: center;
-        line-height: 30px;
     }
 
-    .nav-list{
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(191, 223, 249, 1);
-        transition: left .3s ease-in-out;
-        z-index: 1000;
+    .single-option .option-select-btn sub{
+        font-size: 17px;
     }
 
-    .nav-list.open{
-        left: 0;
+    .offer-item .item-content .offer-name{
+        font-size: 16px;
     }
 
-    .nav-list li{
-        display: block;
-        padding: 16px;
-        margin: 0;
-        border-bottom: 1px dashed var(--primary-color);
-    }
-
-    .nav-list li:last-child{
-        border-bottom: 0;
-    }
-
-    .nav-list li a{
-        color: var(--white-color);
-    }
-
-    .nav-list li.nav-close{
-        font-size: 24px;
-        color: var(--white-color);
-        background-color: var(--secondary-color);
-        border-bottom: none;
-        text-align: right;
-        padding: 8px 16px;
-    }
-
-    .toolbar-contact-list{
-        text-align: center;
-    }
-
-    .trv-toolbar .social-links{
-        justify-content: center;
-    }
-
-    .toolbar-contact-list a i, 
-    .trv-toolbar .social-links a{
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
-        line-height: 20px;
-    }
-
-    .toolbar-contact-list a{
-        font-size: 12px;
-    }
-
-    .hero-banner-wpr .banner-item{
-        height: 500px;
-    }
-
-    .hero-banner-wpr .banner-item img{
-        object-fit: cover;
-        object-position: left;
-    }
-
-    .banner-content h1{
-        font-size: 30px;
-    }
-
-    .banner-content p{
-        font-size: 20px;
-    }
-
-    .about-us-content{
-        padding: 24px 0 0;
-    }
-
-    .trv-testimonial .achivement-counter{
-        width: calc(100vw - 32px);
-        height: 200px;
-    }
-    
-    .contact-form{
-        padding: 24px 16px;
-    }
-
-    .trv-footer-tooltip .item{
-        text-align: center;
-        padding-left: 0;
-    }
-
-    .trv-footer-tooltip .item i{
-        position: relative;
-        top: 0;
-        margin-bottom: 16px;
-        transform: translate(0, 0);
-    }
-
-    .middle-footer ul li,
-    .middle-footer p,
-    .middle-footer ul li a,
-    .copyright address{
-        font-size: 14px !important;
-    }
-
-    .trv-footer-tooltip h4{
-        font-size: 18px;
-        margin-top: 12px;
-    }
-
-    .trv-footer-tooltip p{
-        font-size: 14px;
+    .filter-content .filter-types{
+        gap: 16px;
     }
 }
 
 /* Max Width 380px */
 @media only screen and (max-width:380px){
 
-    .video-post-info .read-more{
-        top: -40px;
-        left: -65%;
+    .filter-content .filter-types{
+        gap: 8px;
     }
 
-    .product-thumb .stepper{
-        display: none;
+    .filter-options{
+        grid-template-columns: 1fr;
     }
 
-    .product-layout .button-group{
-        justify-content: center;
+    .booking-filter-wpr .booking-filter-links{
+        gap: 16px;
     }
 
-    .qty-add-to-cart-wrap{
-        flex-wrap: wrap;
-        row-gap: 10px;
-    }
-
-    .btn-theme, .product-info .btn-wishlist{
-        padding: 14px 8px;
+    .booking-filter-links .nav-link i{
+        font-size: 32px;
     }
     
 }
