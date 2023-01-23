@@ -375,6 +375,15 @@
     .filter-content .filter-types{
         gap: 16px;
     }
+
+    .social-links{
+        text-align: center;
+    }
+
+    .copyright p{
+        text-align: center;
+        margin-top: 16px;
+    }
 }
 
 /* Max Width 416px */
