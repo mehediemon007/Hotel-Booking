@@ -398,6 +398,35 @@
     .single-option .option-label{
         font-size: 14px;
     }
+
+    .social-login a{
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 55px;
+        padding: 0;
+    }
+
+    .social-login a p{
+        display: none;
+    }
+
+}
+
+/* Max Width 390px */
+@media only screen and (max-width:390px){
+
+    .filter-options{
+        grid-template-columns: 1fr;
+    }
+
+    .filter-options .toggle-airport{
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
 }
 
 /* Max Width 380px */
@@ -411,22 +440,12 @@
         gap: 8px;
     }
 
-    .filter-options{
-        grid-template-columns: 1fr;
-    }
-
     .booking-filter-wpr .booking-filter-links{
         gap: 16px;
     }
 
     .booking-filter-links .nav-link i{
         font-size: 32px;
-    }
-
-    .filter-options .toggle-airport{
-        top: -24px;
-        left: 50%;
-        transform: translateX(-50%) rotate(90deg);
     }
     
 }

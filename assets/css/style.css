@@ -405,6 +405,7 @@ section{
     text-align: center;
     line-height: 42px;
     padding: 0 10px;
+    outline: none;
 }
 
 .header-wpr{
