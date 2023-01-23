@@ -268,6 +268,12 @@
         line-height: 40px;
     }
 
+    .fare-sum-table table{
+        display: block;
+        width: 100%;
+        overflow: auto;
+    }
+
     .social-links{
         text-align: center;
     }
@@ -335,6 +341,15 @@
     .sidebar-filter-widget{
         width: 90vw;
         height: 90vh;
+    }
+
+    .content-body .fare-info-wpr{
+        grid-template-columns: 1fr;
+    }
+
+    .fare-info-wpr img{
+        width: 50px;
+        grid-gap: 4px;
     }
 
 }
