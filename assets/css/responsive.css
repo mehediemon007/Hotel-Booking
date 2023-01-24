@@ -324,6 +324,15 @@
         overflow: auto;
     }
 
+    .booking-review-card .fare-info-wpr{
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+
+    .booking-review-card .hotel-details{
+        align-items: flex-start;
+    }
+
     .single-visa img{
         max-height: 200px;
     }
@@ -425,6 +434,15 @@
         gap: 12px;
     }
 
+    .hotel-review-card .hotel-meta-info{
+        padding: 8px 0;
+    }
+
+    .hotel-meta-info p{
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
 }
 
 /* Max Width 416px */
@@ -468,6 +486,13 @@
 
     .flight-details .tag + img{
         width: 80px;
+    }
+
+    .hotel-review-card .flight-details{
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: start;
+        grid-gap: 4px 8px;
     }
 
     .social-login a{

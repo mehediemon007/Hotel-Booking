@@ -74,8 +74,8 @@
         <!-- Booking Review -->
         <div class="trv-booking-review-wpr py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-8">
+                <div class="row g-4">
+                    <div class="col-lg-8">
                         <div class="booking-review-content">
                             <div class="sec-title d-flex justify-content-between align-items-center">
                                 <h4>Review Your Booking</h4>
@@ -85,11 +85,11 @@
                                 </div>
                             </div>
                             <div class="single-visa">
-                                <div class="row">
-                                    <div class="col-3">
+                                <div class="row g-3 g-xl-0">
+                                    <div class="col-sm-3">
                                         <img src="./assets/images/trip/MY.png" alt="Malaysia">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm-9 col-xl-6">
                                         <div class="visa-details">
                                             <h5>Electronic Visa(Adult)</h5>
                                             <ul class="visa-meta-info">
@@ -102,19 +102,22 @@
                                             <p class="note"><i class="icofont-check-circled text-success"></i> Visa issuance rights reserved by the embassy.</p>
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="visa-fees">
-                                            <div class="total-fee">
-                                                <p>Total Price</p>
-                                                <h5 class="mb-0">BDT 5,700</h5>
-                                                <span>(1 travelers)</span>
+                                    <div class="col-12 col-xl-3">
+                                        <div class="visa-pricing">
+                                            <div class="visa-fees text-xl-end">
+                                                <div class="total-fee">
+                                                    <p>Total Price</p>
+                                                    <h5 class="mb-0">BDT 5,700</h5>
+                                                    <span>(1 travelers)</span>
+                                                </div>
+                                                <div class="person-fee">
+                                                    <span>Price per person</span>
+                                                    <p>BDT 5,700</p>
+                                                </div>
+                                                <a href="./visa-booking.html" class="trv-btn select-btn">Select</a>
                                             </div>
-                                            <div class="person-fee">
-                                                <span>Price per person</span>
-                                                <p>BDT 5,700</p>
-                                            </div>
+                                            <button class="require-info-toggle">View Required Documents</button>
                                         </div>
-                                        <button class="require-info-toggle">View Required Documents</button>
                                     </div>
                                 </div>
                                 <div class="visa-requirement-details">
@@ -182,43 +185,43 @@
                                                         </div>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="fa-name" class="required">First Name</label>
                                                         <input type="text" placeholder="First Name" id="fa-name">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="la-name" class="required">Last Name</label>
                                                         <input type="text" placeholder="Last Name" id="la-name">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="dob" class="required">Date of Birth</label>
                                                         <input type="text" placeholder="Select a date" id="dob" class="datePicker">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="p-num">Passport Number (Optional)</label>
                                                         <input type="text" placeholder="Passport Number" id="p-num">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="pex-date">Passport Expiry Date (Optional)</label>
                                                         <input type="text" placeholder="Select a date" id="pex-date" class="datePicker">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="city" class="required">City</label>
                                                         <input type="text" placeholder="City" id="city">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="country" class="required">Country </label>
                                                         <select id="country">
@@ -238,19 +241,19 @@
                                         <p class="alert"><i class="icofont-exclamation-circle"></i> Receive booking confirmation & updates</p>
                                         <form class="contact-info-form info-form">
                                             <div class="row">
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="mail" class="required">Email</label>
                                                         <input type="email" placeholder="Email" id="mail">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
-                                                    <fieldset class="input-grp">
+                                                <div class="col-sm-6">
+                                                    <fieldset class="input-grp mb-4 mb-sm-0">
                                                         <label for="phone" class="required">Contact Number</label>
                                                         <input name="phone" type="text" placeholder="" id="phone" class="phone">
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="flyer">Frequent Flyer (If any)</label>
                                                         <select id="flyer">
@@ -262,7 +265,7 @@
                                                         </select>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-sm-6">
                                                     <fieldset class="input-grp">
                                                         <label for="ff-num">Frequent Flyer (If any)</label>
                                                         <input type="text" placeholder="Frequent Flayer Number" id="ff-num" disabled>
@@ -277,25 +280,25 @@
                                 <p class="total-traveler">Traveler 1 (Adult)</p>
                                 <div class="traveler-data">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <p><b>Name :</b><b>Mr Hasan Emon</b></p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <p><b>Gender :</b><b>Male</b></p>
                                         </div>
                                         <div class="col-12">
                                             <p><b>Date of Birth :</b><b>3 November, 1994</b></p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <p><b>City :</b><b>Dhaka</b></p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <p><b>Country :</b><b>Bangladesh</b></p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <p><b>Email :</b><b>mehediemon7@gmail.com</b></p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6">
                                             <p><b>Phone Number :</b><b>8801629795421</b></p>
                                         </div>
                                     </div>
@@ -319,7 +322,7 @@
                             <button class="continue-btn">Continue</button>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="sidebar-widget">
                             <div class="fare-sum-card position-relative">
                                 <span class="content-toggle"><i class="icofont-circled-up"></i></span>
