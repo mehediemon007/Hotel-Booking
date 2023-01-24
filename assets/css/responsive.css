@@ -137,9 +137,17 @@
         gap: 32px;
     }
 
+    #reviews .total-ratings{
+        font-size: 13px;
+    }
+
     .prev-day span, .next-day span{
         left: auto;
         right: 0;
+    }
+
+    .overview-navigation .overview-nav-menu{
+        display: none;
     }
     
 }
@@ -219,6 +227,37 @@
     .visa-filter-content .filter-options{
         grid-template-columns: repeat(2,1fr);
     }
+    
+    .amenity-wpr .single-amenity{
+        grid-template-columns: 35px 1fr;
+        grid-gap: 8px;
+    }
+
+    .single-amenity .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .extra-amenity-wpr,
+    .amenity-wpr{
+        grid-gap: 8px;
+    }
+
+    .single-amenity b{
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .extra-amenity h6{
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
 }
 
@@ -285,6 +324,28 @@
     .visa-details .note{
         margin-top: 24px;
     }
+
+    .extra-amenity-wpr{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .amenity-wpr .single-amenity {
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .bar-content p:first-child{
+        width: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #location .nearby-hotels{
+        grid-template-columns: 1fr;
+    }
     
 }
 
@@ -339,6 +400,11 @@
 
     .visa-details .note{
         margin-top: 8px;
+    }
+
+    #reviews .rating-bars-wpr{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 
     .social-links{
@@ -443,6 +509,21 @@
         padding: 0 8px;
     }
 
+    .extra-amenity-wpr{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .review-filter-links{
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .review-filter-links::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+
 }
 
 /* Max Width 416px */
@@ -493,6 +574,10 @@
         grid-template-columns: max-content 1fr;
         align-items: start;
         grid-gap: 4px 8px;
+    }
+
+    #reviews .rating-bars-wpr{
+        grid-template-columns: repeat(2,1fr);
     }
 
     .social-login a{
@@ -550,6 +635,13 @@
 
     .booking-filter-links .nav-link i{
         font-size: 32px;
+    }
+
+    .extra-amenity-wpr{
+        grid-template-columns: 1fr;
+    }
+    .rules-list ul{
+        column-count: 1;
     }
     
 }
