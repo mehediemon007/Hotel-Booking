@@ -94,6 +94,13 @@
         top: 56px;
     }
 
+    .user-menu li a{
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
 }
 
 /* Max Width 1024px */

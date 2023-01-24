@@ -3170,13 +3170,16 @@ input[type="checkbox"]:checked:before{
     display: block;
     font-size: 15px;
     color: var(--primary-color);
-    border-radius: 4px;
     padding: 6px 12px;
 }
 
-.user-menu li a.active{
-    color: var(--white-color);
+.user-menu li.active{
     background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.user-menu li.active a{
+    color: var(--white-color);
 }
 
 .user-menu a i{
