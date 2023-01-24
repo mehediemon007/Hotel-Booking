@@ -168,6 +168,38 @@
 
 @media only screen and (max-width:991px){
 
+    .trv-apps-wpr{
+        padding: 24px;
+    }
+
+    .download-content input{
+        width: 100%;
+    }
+
+    .download-content input::placeholder{
+        font-size: 14px;
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    .app-link-btn{
+        right: 0;
+    }
+
+    .more-options-wpr{
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+
+    .more-options-wpr::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+
+    .more-options-wpr .single-option{
+        min-width: max-content;
+    }
+
     .filter-toggle{
         width: 100%;
         display: flex;
@@ -302,6 +334,7 @@
     }
 
     .sec-heading h2{
+        font-size: 32px;
         max-width: 80%;
     }
 
@@ -376,6 +409,10 @@
 
 /* Max Width 575px */
 @media only screen and (max-width:575px){
+
+    .apps-links{
+        margin-top: 16px;
+    }
     
     .form-group.required label{
         text-align: left;
@@ -556,6 +593,11 @@
     .hotel-images .owl-nav button i{
         font-size: 24px;
         color: var(--primary-color);
+    }
+
+    .sec-heading h2{
+        font-size: 24px;
+        width: 90%;
     }
 
 }
