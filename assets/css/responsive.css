@@ -25,6 +25,10 @@
     .hotels-container .hotel-list .single-hotel{
         grid-template-columns: 1fr;
     }
+
+    .traveller-quantity button{
+        width: 40px;
+    }
 }
 
 /* Min Width 992px */
@@ -415,6 +419,12 @@
         font-size: 14px;
     }
 
+    .booking-review-content .sec-title{
+        flex-direction: column-reverse;
+        align-items: flex-start !important;
+        gap: 12px;
+    }
+
 }
 
 /* Max Width 416px */
@@ -450,6 +460,14 @@
 
     .single-visa img {
         max-height: 100px;
+    }
+
+    .booking-review-card .fare-info-wpr{
+        grid-gap: 8px;
+    }
+
+    .flight-details .tag + img{
+        width: 80px;
     }
 
     .social-login a{
