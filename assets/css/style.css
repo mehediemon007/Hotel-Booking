@@ -2512,10 +2512,6 @@ input[type="checkbox"]:checked:before{
     margin-top: 50px;
 }
 
-.visa-fees{
-    text-align: right;
-}
-
 .total-fee span{
     display: inline-block;
     font-size: 14px;

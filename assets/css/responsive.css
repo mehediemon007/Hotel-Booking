@@ -55,6 +55,20 @@
         right: 120px;
     }
 
+    .visa-pricing{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .total-fee span{
+        margin-bottom: 4px;
+    }
+
+    .require-info-toggle{
+        width: max-content;
+    }
+
 }
 
 /* Max Width 1099px */
@@ -198,6 +212,10 @@
         justify-content: center;
     }
 
+    .visa-filter-content .filter-options{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
 
 /* Max Width 767px */
@@ -259,6 +277,10 @@
     .flight-category .nav-link{
         padding: 8px;
     }
+
+    .visa-details .note{
+        margin-top: 24px;
+    }
     
 }
 
@@ -296,6 +318,14 @@
         display: block;
         width: 100%;
         overflow: auto;
+    }
+
+    .single-visa img{
+        max-height: 200px;
+    }
+
+    .visa-details .note{
+        margin-top: 8px;
     }
 
     .social-links{
@@ -376,6 +406,15 @@
         grid-gap: 4px;
     }
 
+    .traveller-quantity button{
+        width: 35px;
+        height: 30px;
+    }
+
+    .traveller-quantity button i{
+        font-size: 14px;
+    }
+
 }
 
 /* Max Width 416px */
@@ -409,6 +448,10 @@
         align-items: flex-start;
     }
 
+    .single-visa img {
+        max-height: 100px;
+    }
+
     .social-login a{
         display: block;
         width: 60px;
@@ -428,7 +471,8 @@
 /* Max Width 390px */
 @media only screen and (max-width:390px){
 
-    .filter-options{
+    .filter-options,
+    .visa-filter-content .filter-options{
         grid-template-columns: 1fr;
     }
 
