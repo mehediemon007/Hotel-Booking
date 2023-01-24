@@ -428,12 +428,12 @@
         let maxValue = 10000;
         let rangeValue = (maxValue - minValue);
  
-        rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
+        rangeBg.style.width = (((currentValue * 100 ) / rangeValue) - 2.5 ) + '%';
  
         inputSlider.oninput = (()=>{
             currentValue = inputSlider.value - minValue;
             slideValue.innerHTML = inputSlider.value + ' BDT';
-            rangeBg.style.width = ((currentValue * 100 ) / rangeValue) + '%';
+            rangeBg.style.width = (((currentValue * 100 ) / rangeValue) - 2.5 ) + '%';
         });
     }
 
