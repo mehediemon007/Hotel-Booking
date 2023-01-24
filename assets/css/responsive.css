@@ -147,9 +147,20 @@
     }
 
     .overview-navigation .overview-nav-menu{
-        display: none;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: scroll;
     }
-    
+
+    .overview-navigation .overview-nav-menu::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .overview-navigation .overview-nav-menu li{
+        min-width: max-content;
+    }
+
 }
 
 /* Max Width 991px */
@@ -596,6 +607,10 @@
 
     #reviews .rating-bars-wpr{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .overview-navigation{
+        top: 55px;
     }
 
     .social-login a{
