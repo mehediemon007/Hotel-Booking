@@ -432,6 +432,10 @@
         grid-template-columns: repeat(3,1fr);
     }
 
+    #similar-property .property-wpr{
+        gap: 10px;
+    }
+
     .social-links{
         text-align: center;
     }
@@ -612,6 +616,19 @@
 
     .overview-navigation{
         top: 55px;
+    }
+
+    #similar-property .property-wpr{
+        display: block;
+        gap: 0;
+    }
+
+    #similar-property .single-property{
+        width: 100%;
+    }
+
+    #similar-property .single-property:not(:last-of-type){
+        margin-bottom: 24px;
     }
 
     .social-login a{
