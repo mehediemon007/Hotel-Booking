@@ -1,16 +1,16 @@
 /* Min Width 1400px */
 @media only screen and (min-width:1400px){
-    .flight-list .single-flight .flight-details{
-        gap: 24px;
-        margin-bottom: 0;
-    }
+    
 }
 
 /* Min Width 1200px */
 @media only screen and (min-width:1200px){
 
-    .trv-header.fixed .container{
-        max-width: 1280px;
+    .single-hotel .hotel-price{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
     }
     
 }
@@ -22,6 +22,9 @@
         max-width: 95% !important;
     }
 
+    .hotels-container .hotel-list .single-hotel{
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Min Width 992px */
@@ -51,6 +54,7 @@
     .app-link-btn{
         right: 120px;
     }
+
 }
 
 /* Max Width 1099px */
@@ -76,7 +80,7 @@
 
 /* Max Width 1024px */
 @media only screen and (max-width:1024px){
-
+    
     .single-option .option-select-btn h2{
         font-size: 28px;
     }
@@ -119,6 +123,7 @@
         left: auto;
         right: 0;
     }
+    
 }
 
 /* Max Width 991px */
@@ -181,6 +186,16 @@
 
     .flight-list .single-flight .flight-details{
         gap: 42px;
+    }
+
+    .single-hotel .hotel-details{
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+    }
+
+    .single-hotel .hotel-price{
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
@@ -266,6 +281,15 @@
         text-align: center;
         border-radius: 50%;
         line-height: 40px;
+    }
+
+    .hotels-container .hotel-list .single-hotel{
+        grid-template-columns: 1fr;
+    }
+
+    .single-hotel .hotel-price{
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .fare-sum-table table{
@@ -378,6 +402,11 @@
 
     .flight-list .single-flight .flight-details{
         gap: 16px;
+    }
+
+    .single-hotel .hotel-price{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .social-login a{
