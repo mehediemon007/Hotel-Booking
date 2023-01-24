@@ -227,6 +227,14 @@
     .visa-filter-content .filter-options{
         grid-template-columns: repeat(2,1fr);
     }
+
+    #room-select .room-details{
+        grid-template-columns: 1fr;
+    }
+
+    .room-price-option{
+        height: auto;
+    }
     
     .amenity-wpr .single-amenity{
         grid-template-columns: 35px 1fr;
@@ -257,6 +265,11 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    #reviews .rating-bars-wpr{
+        padding: 0;
+        margin: 16px 0;
     }
 
 }
@@ -522,6 +535,11 @@
     .review-filter-links::-webkit-scrollbar{
         width: 0;
         height: 0;
+    }
+
+    .hotel-images .owl-nav button i{
+        font-size: 24px;
+        color: var(--primary-color);
     }
 
 }
