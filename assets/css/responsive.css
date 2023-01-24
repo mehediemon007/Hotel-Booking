@@ -276,6 +276,10 @@
         grid-template-columns: 1fr;
     }
 
+    #room-select .room-info{
+        border-right: 0;
+    }
+
     .room-price-option{
         height: auto;
     }
@@ -600,6 +604,31 @@
         width: 90%;
     }
 
+    .user-info-dashboard .info-heading{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .info-detail .info-card{
+        padding: 16px;
+    }
+
+    .pay-methods-links .nav-link{
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .pay-methods-links .nav-item{
+        margin-right: 8px;
+    }
+
+    .pay-methods .single-method label{
+        width: 100%;
+    }
+
 }
 
 /* Max Width 416px */
@@ -673,6 +702,25 @@
         margin-bottom: 24px;
     }
 
+    .info-detail{
+        padding: 16px;
+    }
+
+    .info-card .info-list li{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .user-id img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .payment-details{
+        padding: 16px;
+    }
+
     .social-login a{
         display: block;
         width: 60px;
@@ -708,6 +756,11 @@
         grid-template-columns: repeat(2,1fr);
         gap: 16px;
         margin-bottom: 16px;
+    }
+
+    .pay-currency .nav-link{
+        font-size: 14px;
+        padding: 6px 12px;
     }
 }
 
