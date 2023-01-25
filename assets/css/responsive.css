@@ -1,6 +1,10 @@
 /* Min Width 1400px */
 @media only screen and (min-width:1400px){
     
+    .flight-list .single-flight .flight-details{
+        flex-wrap: nowrap;
+    }
+
 }
 
 /* Min Width 1200px */
@@ -11,6 +15,10 @@
         justify-content: flex-end;
         align-items: flex-end;
         text-align: right;
+    }
+
+    .single-visa img{
+        margin-right: 8px;
     }
     
 }
