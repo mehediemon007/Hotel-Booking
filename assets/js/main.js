@@ -390,7 +390,10 @@
 
     if(headerContainer != null){
         window.onscroll = ()=>{
-            this.scrollY > 50 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
+            let pageHeight = document.querySelector("body").scrollHeight;
+            if( pageHeight > 900){
+                this.scrollY > 50 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
+            }
         }
     }
 
