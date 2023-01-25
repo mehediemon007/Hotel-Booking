@@ -750,6 +750,11 @@
         height: 100px;
     }
 
+    .trv-user-dashboard .booking-list-links .nav-link{
+        flex-wrap: wrap;
+        padding: 8px 16px;
+    }
+
     .payment-details{
         padding: 16px;
     }
@@ -820,9 +825,14 @@
         font-size: 32px;
     }
 
+    .trv-user-dashboard .booking-list-links .nav-link{
+        padding: 6px 12px;
+    }
+
     .extra-amenity-wpr{
         grid-template-columns: 1fr;
     }
+
     .rules-list ul{
         column-count: 1;
     }
