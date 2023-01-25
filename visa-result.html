@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" type="text/css" href="assets/css/datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/inTelInput.css">
     <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> <!-- Template Stylesheet -->
@@ -257,10 +258,10 @@
                                         <div class="visa-list">
                                             <div class="single-visa">
                                                 <div class="row g-3">
-                                                    <div class="col-3">
+                                                    <div class="col-sm-3">
                                                         <img src="./assets/images/trip/MY.png" alt="Malaysia">
                                                     </div>
-                                                    <div class="col-6">
+                                                    <div class="col-sm-9 col-xl-6">
                                                         <div class="visa-details">
                                                             <h5>Electronic Visa(Adult)</h5>
                                                             <ul class="visa-meta-info">
@@ -273,20 +274,22 @@
                                                             <p class="note"><i class="icofont-check-circled text-success"></i> Visa issuance rights reserved by the embassy.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <div class="visa-fees">
-                                                            <div class="total-fee">
-                                                                <p>Total Price</p>
-                                                                <h5 class="mb-0">BDT 5,700</h5>
-                                                                <span>(1 travelers)</span>
+                                                    <div class="col-12 col-xl-3">
+                                                        <div class="visa-pricing">
+                                                            <div class="visa-fees text-xl-end">
+                                                                <div class="total-fee">
+                                                                    <p>Total Price</p>
+                                                                    <h5 class="mb-0">BDT 5,700</h5>
+                                                                    <span>(1 travelers)</span>
+                                                                </div>
+                                                                <div class="person-fee">
+                                                                    <span>Price per person</span>
+                                                                    <p>BDT 5,700</p>
+                                                                </div>
+                                                                <a href="./visa-booking.html" class="trv-btn select-btn">Select</a>
                                                             </div>
-                                                            <div class="person-fee">
-                                                                <span>Price per person</span>
-                                                                <p>BDT 5,700</p>
-                                                            </div>
-                                                            <a href="./visa-booking.html" class="trv-btn select-btn">Select</a>
+                                                            <button class="require-info-toggle">View Required Documents</button>
                                                         </div>
-                                                        <button class="require-info-toggle">View Required Documents</button>
                                                     </div>
                                                 </div>
                                                 <div class="visa-requirement-details">
@@ -519,6 +522,7 @@
     <script src="./assets/js/moment-with-locales.min.js"></script>
     <script src="./assets/js/daterangepicker.js"></script>
     <script src="./assets/js/datepicker.min.js"></script>
+    <script src="./assets/js/inTelInput.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
     <script src="./assets/js/custom-dropdown.js"></script>
     <script src="./assets/js/main.js"></script>

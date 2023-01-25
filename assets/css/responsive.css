@@ -449,6 +449,12 @@
         border-right: 0;
         padding: 8px;
     }
+
+    .booked-flight-list .flight-details,
+    .itinerary-details{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
     
 }
 

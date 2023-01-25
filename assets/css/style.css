@@ -3399,6 +3399,7 @@ ul.psnger-meta-info li{
 .itinerary-details{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .itinerary-details p{
@@ -3498,7 +3499,7 @@ ul.psnger-meta-info li{
 
 .modal-content{
     max-width: 500px;
-    height: max-content;
+    max-height: 100%;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 8px;
 }
@@ -3506,6 +3507,8 @@ ul.psnger-meta-info li{
 .modal-content.sign-up-content{
     display: none;
     max-width: 800px;
+    max-height: 100%;
+    overflow: auto;
 }
 
 .modal-head{
