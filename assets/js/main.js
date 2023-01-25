@@ -179,7 +179,7 @@
         }else{
             $(this).text("View Required Documents")
         }
-        $(this).parent().parent().siblings('.visa-requirement-details').slideToggle("300")
+        $(this).parents().siblings('.visa-requirement-details').slideToggle("300")
     })
 
     // Card Content Toggle
