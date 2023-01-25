@@ -101,6 +101,10 @@
         text-overflow: ellipsis;
     }
 
+    .booking-info-content .flight-time img{
+        width: 70px;
+    }
+
 }
 
 /* Max Width 1024px */
@@ -327,6 +331,10 @@
         margin: 16px 0;
     }
 
+    .booking-info-content .flight-time img{
+        width: auto;
+    }
+
 }
 
 /* Max Width 767px */
@@ -414,6 +422,24 @@
 
     #location .nearby-hotels{
         grid-template-columns: 1fr;
+    }
+
+    .card-heading{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .booking-info-content{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .booking-info-content .flight-time{
+        border: 1px solid rgb(0 140 255 / 10%);
+        border-left: 0;
+        border-right: 0;
+        padding: 8px;
     }
     
 }
@@ -763,6 +789,10 @@
         grid-template-columns: repeat(2,1fr);
         gap: 16px;
         margin-bottom: 16px;
+    }
+
+    .booking-info-content .flight-time img{
+        width: 70px;
     }
 
     .pay-currency .nav-link{
